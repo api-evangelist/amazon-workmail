@@ -1,0 +1,70 @@
+aid: amazon-workmail
+name: Amazon WorkMail
+description: >-
+  Amazon WorkMail is a secure, managed business email and calendar service with
+  support for existing desktop and mobile email client applications. It provides
+  encrypted mailboxes, corporate calendaring, full Outlook compatibility, and
+  enterprise-grade security controls for business communications.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Email
+  - Calendar
+  - Business Communication
+  - AWS
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/apis.yml
+created: '2026-03-16'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+apis:
+  - aid: amazon-workmail:amazon-workmail-api
+    name: Amazon WorkMail API
+    description: >-
+      The Amazon WorkMail API provides programmatic access to manage
+      organizations, users, groups, aliases, mailboxes, resources, and mobile
+      device access. It enables automation of email infrastructure provisioning
+      and management for enterprise deployments.
+    humanURL: https://aws.amazon.com/workmail/
+    baseURL: https://workmail.amazonaws.com
+    tags:
+      - Email
+      - Calendar
+      - AWS
+    properties:
+      - type: Documentation
+        url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+      - type: Reference
+        url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+      - type: Getting Started
+        url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+      - type: Pricing
+        url: https://aws.amazon.com/workmail/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/workmail/faqs/
+common:
+  - type: Portal
+    url: https://aws.amazon.com/
+  - type: Website
+    url: https://aws.amazon.com/workmail/
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: Console
+    url: https://console.aws.amazon.com/workmail/
+  - type: Terms of Service
+    url: https://aws.amazon.com/service-terms/
+  - type: Privacy Policy
+    url: https://aws.amazon.com/privacy/
+  - type: Support
+    url: https://aws.amazon.com/premiumsupport/
+  - type: Sign Up
+    url: https://signin.aws.amazon.com/signup?request_type=register
+  - type: Login
+    url: https://aws.amazon.com/console/
+  - type: Status
+    url: https://health.aws.amazon.com/health/status
+  - type: GitHub Organization
+    url: https://github.com/aws
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
