@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Users": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Users"
+        },
+        {
+          "description": "The overview of users for an organization."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": " The token to use to retrieve the next page of results. This value is `null` when there are no more results to return."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ListUsersResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-users-response-structure.json",
+  "description": "ListUsersResponse schema from Amazon WorkMail API"
+}

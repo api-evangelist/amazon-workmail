@@ -1,0 +1,9 @@
+{
+  "type": "integer",
+  "minimum": 0,
+  "maximum": 100,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Percentage",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-percentage-structure.json",
+  "description": "Percentage schema from Amazon WorkMail API"
+}

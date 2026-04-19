@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "ClientToken",
+    "JobId",
+    "OrganizationId"
+  ],
+  "title": "CancelMailboxExportJobRequest",
+  "properties": {
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "The idempotency token for the client request."
+        }
+      ]
+    },
+    "JobId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxExportJobId"
+        },
+        {
+          "description": "The job ID."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-cancel-mailbox-export-job-request-schema.json",
+  "description": "CancelMailboxExportJobRequest schema from Amazon WorkMail API"
+}

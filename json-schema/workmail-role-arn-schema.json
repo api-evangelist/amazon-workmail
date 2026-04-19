@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 20,
+  "maxLength": 2048,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoleArn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-role-arn-schema.json",
+  "description": "RoleArn schema from Amazon WorkMail API"
+}

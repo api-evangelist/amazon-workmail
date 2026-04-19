@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "UserId"
+  ],
+  "name": "DescribeUserRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization under which the user exists."
+        }
+      ]
+    },
+    "UserId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier for the user to be described."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-describe-user-request-structure.json",
+  "description": "DescribeUserRequest schema from Amazon WorkMail API"
+}

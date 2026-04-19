@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "FULL_ACCESS",
+    "SEND_AS",
+    "SEND_ON_BEHALF"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PermissionType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-permission-type-structure.json",
+  "description": "PermissionType schema from Amazon WorkMail API"
+}

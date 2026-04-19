@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "JobId",
+    "OrganizationId"
+  ],
+  "title": "DescribeMailboxExportJobRequest",
+  "properties": {
+    "JobId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxExportJobId"
+        },
+        {
+          "description": "The mailbox export job ID."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-describe-mailbox-export-job-request-schema.json",
+  "description": "DescribeMailboxExportJobRequest schema from Amazon WorkMail API"
+}

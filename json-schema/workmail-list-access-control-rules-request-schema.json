@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId"
+  ],
+  "title": "ListAccessControlRulesRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-access-control-rules-request-schema.json",
+  "description": "ListAccessControlRulesRequest schema from Amazon WorkMail API"
+}

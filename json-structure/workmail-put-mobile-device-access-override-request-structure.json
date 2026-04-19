@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "UserId",
+    "DeviceId",
+    "Effect"
+  ],
+  "name": "PutMobileDeviceAccessOverrideRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "Identifies the WorkMail organization for which you create the override."
+        }
+      ]
+    },
+    "UserId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EntityIdentifier"
+        },
+        {
+          "description": "<p>The WorkMail user for which you create the override. Accepts the following types of user identities:</p> <ul> <li> <p>User ID: <code>12345678-1234-1234-1234-123456789012</code> or <code>S-1-1-12-1234567890-123456789-123456789-1234</code> </p> </li> <li> <p>Email address: <code>user@domain.tld</code> </p> </li> <li> <p>User name: <code>user</code> </p> </li> </ul>"
+        }
+      ]
+    },
+    "DeviceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceId"
+        },
+        {
+          "description": "The mobile device for which you create the override. <code>DeviceId</code> is case insensitive."
+        }
+      ]
+    },
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleEffect"
+        },
+        {
+          "description": "The effect of the override, <code>ALLOW</code> or <code>DENY</code>."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleDescription"
+        },
+        {
+          "description": "A description of the override."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-mobile-device-access-override-request-structure.json",
+  "description": "PutMobileDeviceAccessOverrideRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "JobId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxExportJobId"
+        },
+        {
+          "description": "The job ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StartMailboxExportJobResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-start-mailbox-export-job-response-schema.json",
+  "description": "StartMailboxExportJobResponse schema from Amazon WorkMail API"
+}

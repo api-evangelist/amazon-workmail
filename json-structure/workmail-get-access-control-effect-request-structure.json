@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "IpAddress",
+    "Action"
+  ],
+  "name": "GetAccessControlEffectRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization."
+        }
+      ]
+    },
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpAddress"
+        },
+        {
+          "description": "The IPv4 address."
+        }
+      ]
+    },
+    "Action": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleAction"
+        },
+        {
+          "description": "The access protocol action. Valid values include <code>ActiveSync</code>, <code>AutoDiscover</code>, <code>EWS</code>, <code>IMAP</code>, <code>SMTP</code>, <code>WindowsOutlook</code>, and <code>WebMail</code>."
+        }
+      ]
+    },
+    "UserId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The user ID."
+        }
+      ]
+    },
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The impersonation role ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-access-control-effect-request-structure.json",
+  "description": "GetAccessControlEffectRequest schema from Amazon WorkMail API"
+}

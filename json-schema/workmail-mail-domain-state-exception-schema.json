@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MailDomainStateException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mail-domain-state-exception-schema.json",
+  "description": "MailDomainStateException schema from Amazon WorkMail API"
+}

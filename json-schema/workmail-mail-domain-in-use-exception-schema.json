@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MailDomainInUseException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mail-domain-in-use-exception-schema.json",
+  "description": "MailDomainInUseException schema from Amazon WorkMail API"
+}

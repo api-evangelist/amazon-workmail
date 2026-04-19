@@ -1,0 +1,5 @@
+{
+  "AutoAcceptRequests": "example-value",
+  "AutoDeclineRecurringRequests": "example-value",
+  "AutoDeclineConflictingRequests": "example-value"
+}

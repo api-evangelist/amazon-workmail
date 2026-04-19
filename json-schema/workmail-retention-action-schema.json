@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "DELETE",
+    "PERMANENTLY_DELETE"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RetentionAction",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-retention-action-schema.json",
+  "description": "RetentionAction schema from Amazon WorkMail API"
+}

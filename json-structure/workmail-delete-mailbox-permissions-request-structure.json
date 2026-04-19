@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "EntityId",
+    "GranteeId"
+  ],
+  "name": "DeleteMailboxPermissionsRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier of the organization under which the member (user or group) exists."
+        }
+      ]
+    },
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the member (user or group) that owns the mailbox."
+        }
+      ]
+    },
+    "GranteeId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the member (user or group) for which to delete granted permissions."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-mailbox-permissions-request-structure.json",
+  "description": "DeleteMailboxPermissionsRequest schema from Amazon WorkMail API"
+}

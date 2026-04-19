@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "EntityId"
+  ],
+  "name": "ListAliasesRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization under which the entity exists."
+        }
+      ]
+    },
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier for the entity for which to list the aliases."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. The first call does not contain any tokens."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaxResults"
+        },
+        {
+          "description": "The maximum number of results to return in a single call."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-aliases-request-structure.json",
+  "description": "ListAliasesRequest schema from Amazon WorkMail API"
+}

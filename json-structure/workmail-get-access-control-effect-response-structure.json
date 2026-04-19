@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleEffect"
+        },
+        {
+          "description": "The rule effect."
+        }
+      ]
+    },
+    "MatchedRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleNameList"
+        },
+        {
+          "description": "The rules that match the given parameters, resulting in an effect."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "GetAccessControlEffectResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-access-control-effect-response-structure.json",
+  "description": "GetAccessControlEffectResponse schema from Amazon WorkMail API"
+}

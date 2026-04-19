@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[a-zA-Z]+",
+  "minLength": 1,
+  "maxLength": 64,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AccessControlRuleAction",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-access-control-rule-action-structure.json",
+  "description": "AccessControlRuleAction schema from Amazon WorkMail API"
+}

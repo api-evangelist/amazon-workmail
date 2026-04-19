@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "ImpersonationRoleId"
+  ],
+  "title": "DeleteImpersonationRoleRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization from which to delete the impersonation role."
+        }
+      ]
+    },
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The ID of the impersonation role to delete."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-delete-impersonation-role-request-schema.json",
+  "description": "DeleteImpersonationRoleRequest schema from Amazon WorkMail API"
+}

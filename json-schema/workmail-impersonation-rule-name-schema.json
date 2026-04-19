@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[^\\x00-\\x1F\\x7F\\x3C\\x3E\\x5C]+",
+  "minLength": 1,
+  "maxLength": 64,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImpersonationRuleName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-impersonation-rule-name-schema.json",
+  "description": "ImpersonationRuleName schema from Amazon WorkMail API"
+}

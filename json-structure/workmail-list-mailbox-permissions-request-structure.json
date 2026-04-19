@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "EntityId"
+  ],
+  "name": "ListMailboxPermissionsRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier of the organization under which the user, group, or resource exists."
+        }
+      ]
+    },
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the user, group, or resource for which to list mailbox permissions."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. The first call does not contain any tokens."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaxResults"
+        },
+        {
+          "description": "The maximum number of results to return in a single call."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-mailbox-permissions-request-structure.json",
+  "description": "ListMailboxPermissionsRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PutMobileDeviceAccessOverrideResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-mobile-device-access-override-response-structure.json",
+  "description": "PutMobileDeviceAccessOverrideResponse schema from Amazon WorkMail API"
+}

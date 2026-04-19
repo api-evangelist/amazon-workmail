@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Permission"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Permissions",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-permissions-schema.json",
+  "description": "Permissions schema from Amazon WorkMail API"
+}

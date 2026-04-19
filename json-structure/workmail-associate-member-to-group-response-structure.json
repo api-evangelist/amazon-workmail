@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AssociateMemberToGroupResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-associate-member-to-group-response-structure.json",
+  "description": "AssociateMemberToGroupResponse schema from Amazon WorkMail API"
+}

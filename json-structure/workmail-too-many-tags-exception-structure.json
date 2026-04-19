@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TooManyTagsException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-too-many-tags-exception-structure.json",
+  "description": "TooManyTagsException schema from Amazon WorkMail API"
+}

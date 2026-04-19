@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId"
+  ],
+  "name": "ListAvailabilityConfigurationsRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the <code>AvailabilityConfiguration</code>'s will be listed."
+        }
+      ]
+    },
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaxResults"
+        },
+        {
+          "description": "The maximum number of results to return in a single call."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. The first call does not require a token."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-availability-configurations-request-structure.json",
+  "description": "ListAvailabilityConfigurationsRequest schema from Amazon WorkMail API"
+}

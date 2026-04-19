@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "title": "RegisterMailDomainRequest",
+  "properties": {
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "Idempotency token used when retrying requests."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization under which you're creating the domain."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailDomainName"
+        },
+        {
+          "description": "The name of the mail domain to create in WorkMail and SES."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-register-mail-domain-request-schema.json",
+  "description": "RegisterMailDomainRequest schema from Amazon WorkMail API"
+}

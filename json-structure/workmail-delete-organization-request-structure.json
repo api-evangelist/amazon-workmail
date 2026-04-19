@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DeleteDirectory"
+  ],
+  "name": "DeleteOrganizationRequest",
+  "properties": {
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "The idempotency token associated with the request."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization ID."
+        }
+      ]
+    },
+    "DeleteDirectory": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "If true, deletes the AWS Directory Service directory associated with the organization."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-organization-request-structure.json",
+  "description": "DeleteOrganizationRequest schema from Amazon WorkMail API"
+}

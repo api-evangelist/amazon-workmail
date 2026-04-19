@@ -1,0 +1,156 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Amazon WorkMail Email Management"
+  description: >-
+    Unified workflow for IT administrators and email operations teams to manage
+    Amazon WorkMail organizations, users, groups, and mobile device access.
+    Enables programmatic provisioning, deprovisioning, and governance of
+    enterprise email infrastructure.
+  tags:
+    - AWS
+    - Email
+    - Calendar
+    - Business Communication
+    - Administration
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+binds:
+  - namespace: env
+    keys:
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: AWS_REGION
+
+capability:
+  consumes:
+    - import: workmail
+      location: ./shared/workmail.yaml
+
+  exposes:
+    - type: rest
+      port: 8080
+      namespace: email-management-api
+      description: "Unified REST API for Amazon WorkMail email infrastructure management."
+      resources:
+        - path: /v1/organizations
+          name: organizations
+          description: "WorkMail organization management."
+          operations:
+            - method: GET
+              name: list-organizations
+              description: "List all WorkMail organizations."
+              call: "workmail.list-organizations"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/users
+          name: users
+          description: "User provisioning and management."
+          operations:
+            - method: GET
+              name: list-users
+              description: "List users in an organization."
+              call: "workmail.list-users"
+              with:
+                OrganizationId: "rest.organization_id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+            - method: POST
+              name: create-user
+              description: "Create a new email user."
+              call: "workmail.create-user"
+              with:
+                OrganizationId: "rest.organization_id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/groups
+          name: groups
+          description: "Group management."
+          operations:
+            - method: GET
+              name: list-groups
+              description: "List email groups."
+              call: "workmail.list-groups"
+              with:
+                OrganizationId: "rest.organization_id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/mobile-device-access
+          name: mobile-device-access
+          description: "Mobile device access control."
+          operations:
+            - method: GET
+              name: list-mobile-device-access-rules
+              description: "List mobile device access rules."
+              call: "workmail.list-mobile-device-access-rules"
+              with:
+                OrganizationId: "rest.organization_id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9090
+      namespace: email-management-mcp
+      transport: http
+      description: "MCP server for AI-assisted Amazon WorkMail email infrastructure management."
+      tools:
+        - name: list-organizations
+          description: "List all Amazon WorkMail organizations in the account."
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "workmail.list-organizations"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: list-users
+          description: "List users in a WorkMail organization."
+          hints:
+            readOnly: true
+            openWorld: false
+          call: "workmail.list-users"
+          with:
+            OrganizationId: "tools.organization_id"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: create-user
+          description: "Create a new WorkMail user with mailbox."
+          hints:
+            readOnly: false
+            destructive: false
+            idempotent: false
+          call: "workmail.create-user"
+          with:
+            OrganizationId: "tools.organization_id"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: list-groups
+          description: "List email distribution groups in an organization."
+          hints:
+            readOnly: true
+            openWorld: false
+          call: "workmail.list-groups"
+          with:
+            OrganizationId: "tools.organization_id"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: list-mobile-device-access-rules
+          description: "List mobile device access control rules."
+          hints:
+            readOnly: true
+            openWorld: false
+          call: "workmail.list-mobile-device-access-rules"
+          with:
+            OrganizationId: "tools.organization_id"
+          outputParameters:
+            - type: object
+              mapping: "$."

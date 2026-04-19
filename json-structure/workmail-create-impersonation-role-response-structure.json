@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The new impersonation role ID."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateImpersonationRoleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-impersonation-role-response-structure.json",
+  "description": "CreateImpersonationRoleResponse schema from Amazon WorkMail API"
+}

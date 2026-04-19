@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "EntityId",
+    "Alias"
+  ],
+  "title": "DeleteAliasRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization under which the user exists."
+        }
+      ]
+    },
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier for the member (user or group) from which to have the aliases removed."
+        }
+      ]
+    },
+    "Alias": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailAddress"
+        },
+        {
+          "description": "The aliases to be removed from the user's set of aliases. Duplicate entries in the list are collapsed into single entries (the list is transformed into a set)."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-delete-alias-request-schema.json",
+  "description": "DeleteAliasRequest schema from Amazon WorkMail API"
+}

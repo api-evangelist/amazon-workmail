@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The identifier of the new resource."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreateResourceResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-create-resource-response-schema.json",
+  "description": "CreateResourceResponse schema from Amazon WorkMail API"
+}

@@ -1,0 +1,16 @@
+{
+  "MobileDeviceAccessRuleId": "500123",
+  "Name": "Example Workmail Resource",
+  "Description": "example-value",
+  "Effect": "example-value",
+  "DeviceTypes": "ROOM",
+  "NotDeviceTypes": "ROOM",
+  "DeviceModels": "example-value",
+  "NotDeviceModels": "example-value",
+  "DeviceOperatingSystems": "example-value",
+  "NotDeviceOperatingSystems": "example-value",
+  "DeviceUserAgents": "example-value",
+  "NotDeviceUserAgents": "example-value",
+  "DateCreated": "example-value",
+  "DateModified": "example-value"
+}

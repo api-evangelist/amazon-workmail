@@ -1,0 +1,7 @@
+{
+  "Records": "example-value",
+  "IsTestDomain": "example-value",
+  "IsDefault": "example-value",
+  "OwnershipVerificationStatus": "ENABLED",
+  "DkimVerificationStatus": "ENABLED"
+}

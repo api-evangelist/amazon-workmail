@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "EntityAlreadyRegisteredException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-entity-already-registered-exception-structure.json",
+  "description": "EntityAlreadyRegisteredException schema from Amazon WorkMail API"
+}

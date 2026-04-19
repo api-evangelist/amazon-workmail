@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/EntityIdentifier"
+  },
+  "minItems": 1,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TargetUsers",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-target-users-structure.json",
+  "description": "TargetUsers schema from Amazon WorkMail API"
+}

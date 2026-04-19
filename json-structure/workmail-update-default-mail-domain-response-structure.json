@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UpdateDefaultMailDomainResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-update-default-mail-domain-response-structure.json",
+  "description": "UpdateDefaultMailDomainResponse schema from Amazon WorkMail API"
+}

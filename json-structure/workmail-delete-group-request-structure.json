@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "GroupId"
+  ],
+  "name": "DeleteGroupRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization that contains the group."
+        }
+      ]
+    },
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the group to be deleted."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-group-request-structure.json",
+  "description": "DeleteGroupRequest schema from Amazon WorkMail API"
+}

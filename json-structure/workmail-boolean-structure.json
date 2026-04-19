@@ -1,0 +1,7 @@
+{
+  "type": "boolean",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Boolean",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-boolean-structure.json",
+  "description": "Boolean schema from Amazon WorkMail API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "double",
+  "minimum": 0,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MailboxSize",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mailbox-size-structure.json",
+  "description": "MailboxSize schema from Amazon WorkMail API"
+}

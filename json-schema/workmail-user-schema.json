@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the user."
+        }
+      ]
+    },
+    "Email": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailAddress"
+        },
+        {
+          "description": "The email of the user."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "The name of the user."
+        }
+      ]
+    },
+    "DisplayName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The display name of the user."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EntityState"
+        },
+        {
+          "description": "The state of the user, which can be ENABLED, DISABLED, or DELETED."
+        }
+      ]
+    },
+    "UserRole": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserRole"
+        },
+        {
+          "description": "The role of the user."
+        }
+      ]
+    },
+    "EnabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date indicating when the user was enabled for WorkMail use."
+        }
+      ]
+    },
+    "DisabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date indicating when the user was disabled from WorkMail use."
+        }
+      ]
+    }
+  },
+  "description": "The representation of an WorkMail user.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-user-schema.json"
+}

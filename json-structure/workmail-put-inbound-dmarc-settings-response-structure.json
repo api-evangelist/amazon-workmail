@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PutInboundDmarcSettingsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-inbound-dmarc-settings-response-structure.json",
+  "description": "PutInboundDmarcSettingsResponse schema from Amazon WorkMail API"
+}

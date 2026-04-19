@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "ImpersonationRoleId"
+  ],
+  "name": "GetImpersonationRoleRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization from which to retrieve the impersonation role."
+        }
+      ]
+    },
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The impersonation role ID to retrieve."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-impersonation-role-request-structure.json",
+  "description": "GetImpersonationRoleRequest schema from Amazon WorkMail API"
+}

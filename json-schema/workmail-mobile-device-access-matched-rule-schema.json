@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "MobileDeviceAccessRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleId"
+        },
+        {
+          "description": "Identifier of the rule that a simulated user matches."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleName"
+        },
+        {
+          "description": "Name of a rule that a simulated user matches."
+        }
+      ]
+    }
+  },
+  "description": "The rule that a simulated user matches.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MobileDeviceAccessMatchedRule",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mobile-device-access-matched-rule-schema.json"
+}

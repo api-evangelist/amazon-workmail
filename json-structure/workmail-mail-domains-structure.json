@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MailDomainSummary"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MailDomains",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mail-domains-structure.json",
+  "description": "MailDomains schema from Amazon WorkMail API"
+}

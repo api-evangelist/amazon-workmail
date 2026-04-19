@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ReservedNameException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-reserved-name-exception-structure.json",
+  "description": "ReservedNameException schema from Amazon WorkMail API"
+}

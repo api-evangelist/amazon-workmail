@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "UserId",
+    "MailboxQuota"
+  ],
+  "title": "UpdateMailboxQuotaRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier for the organization that contains the user for whom to update the mailbox quota."
+        }
+      ]
+    },
+    "UserId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifer for the user for whom to update the mailbox quota."
+        }
+      ]
+    },
+    "MailboxQuota": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxQuota"
+        },
+        {
+          "description": "The updated mailbox quota, in MB, for the specified user."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-update-mailbox-quota-request-schema.json",
+  "description": "UpdateMailboxQuotaRequest schema from Amazon WorkMail API"
+}

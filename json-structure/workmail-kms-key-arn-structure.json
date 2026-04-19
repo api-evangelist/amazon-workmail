@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "arn:aws:kms:[a-z0-9-]*:[a-z0-9-]+:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}",
+  "minLength": 20,
+  "maxLength": 2048,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "KmsKeyArn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-kms-key-arn-structure.json",
+  "description": "KmsKeyArn schema from Amazon WorkMail API"
+}

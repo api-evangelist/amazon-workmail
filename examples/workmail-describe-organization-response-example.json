@@ -1,0 +1,11 @@
+{
+  "OrganizationId": "500123",
+  "Alias": "example-value",
+  "State": "example-value",
+  "DirectoryId": "500123",
+  "DirectoryType": "ROOM",
+  "DefaultMailDomain": "example-value",
+  "CompletedDate": "example-value",
+  "ErrorMessage": "example-value",
+  "ARN": "arn:aws:workmail:us-east-1:123456789012:organization/m-abc123"
+}

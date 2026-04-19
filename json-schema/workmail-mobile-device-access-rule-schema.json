@@ -1,0 +1,149 @@
+{
+  "type": "object",
+  "properties": {
+    "MobileDeviceAccessRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleId"
+        },
+        {
+          "description": "The ID assigned to a mobile access rule."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleName"
+        },
+        {
+          "description": "The name of a mobile access rule."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleDescription"
+        },
+        {
+          "description": "The description of a mobile access rule."
+        }
+      ]
+    },
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleEffect"
+        },
+        {
+          "description": "The effect of the rule when it matches. Allowed values are <code>ALLOW</code> or <code>DENY</code>."
+        }
+      ]
+    },
+    "DeviceTypes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceTypeList"
+        },
+        {
+          "description": "Device types that a rule will match."
+        }
+      ]
+    },
+    "NotDeviceTypes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceTypeList"
+        },
+        {
+          "description": "Device types that a rule <b>will not</b> match. All other device types will match."
+        }
+      ]
+    },
+    "DeviceModels": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceModelList"
+        },
+        {
+          "description": "Device models that a rule will match."
+        }
+      ]
+    },
+    "NotDeviceModels": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceModelList"
+        },
+        {
+          "description": "Device models that a rule <b>will not</b> match. All other device models will match."
+        }
+      ]
+    },
+    "DeviceOperatingSystems": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceOperatingSystemList"
+        },
+        {
+          "description": "Device operating systems that a rule will match."
+        }
+      ]
+    },
+    "NotDeviceOperatingSystems": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceOperatingSystemList"
+        },
+        {
+          "description": "Device operating systems that a rule <b>will not</b> match. All other device types will match."
+        }
+      ]
+    },
+    "DeviceUserAgents": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceUserAgentList"
+        },
+        {
+          "description": "Device user agents that a rule will match."
+        }
+      ]
+    },
+    "NotDeviceUserAgents": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceUserAgentList"
+        },
+        {
+          "description": "Device user agents that a rule <b>will not</b> match. All other device user agents will match."
+        }
+      ]
+    },
+    "DateCreated": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date and time at which an access rule was created."
+        }
+      ]
+    },
+    "DateModified": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date and time at which an access rule was modified."
+        }
+      ]
+    }
+  },
+  "description": "A rule that controls access to mobile devices for an WorkMail group.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MobileDeviceAccessRule",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mobile-device-access-rule-schema.json"
+}

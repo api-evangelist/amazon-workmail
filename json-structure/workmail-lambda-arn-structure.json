@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "arn:aws:lambda:[a-z]{2}-[a-z]+-\\d{1}:\\d{12}:function:[a-zA-Z0-9\\-_\\.]+(:(\\$LATEST|[a-zA-Z0-9\\-_]+))?",
+  "minLength": 49,
+  "maxLength": 256,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "LambdaArn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-lambda-arn-structure.json",
+  "description": "LambdaArn schema from Amazon WorkMail API"
+}

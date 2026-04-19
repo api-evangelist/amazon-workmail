@@ -1,0 +1,8 @@
+{
+  "Id": "500123",
+  "Name": "Example Workmail Resource",
+  "Type": "ROOM",
+  "State": "example-value",
+  "EnabledDate": "example-value",
+  "DisabledDate": "example-value"
+}

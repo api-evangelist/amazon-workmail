@@ -1,0 +1,10 @@
+{
+  "Id": "500123",
+  "Email": "user@example.com",
+  "Name": "Example Workmail Resource",
+  "DisplayName": "Example Workmail Resource",
+  "State": "example-value",
+  "UserRole": "example-value",
+  "EnabledDate": "example-value",
+  "DisabledDate": "example-value"
+}

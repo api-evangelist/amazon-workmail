@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "USER",
+    "RESOURCE",
+    "SYSTEM_USER"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "UserRole",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-user-role-structure.json",
+  "description": "UserRole schema from Amazon WorkMail API"
+}

@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "ImpersonationRoleId",
+    "Name",
+    "Type",
+    "Rules"
+  ],
+  "title": "UpdateImpersonationRoleRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization that contains the impersonation role to update."
+        }
+      ]
+    },
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The ID of the impersonation role to update."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleName"
+        },
+        {
+          "description": "The updated impersonation role name."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleType"
+        },
+        {
+          "description": "The updated impersonation role type."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleDescription"
+        },
+        {
+          "description": "The updated impersonation role description."
+        }
+      ]
+    },
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleList"
+        },
+        {
+          "description": "The updated list of rules."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-update-impersonation-role-request-schema.json",
+  "description": "UpdateImpersonationRoleRequest schema from Amazon WorkMail API"
+}

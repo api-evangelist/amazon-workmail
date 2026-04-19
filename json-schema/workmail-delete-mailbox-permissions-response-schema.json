@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteMailboxPermissionsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-delete-mailbox-permissions-response-schema.json",
+  "description": "DeleteMailboxPermissionsResponse schema from Amazon WorkMail API"
+}

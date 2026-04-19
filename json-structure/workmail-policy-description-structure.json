@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w\\d\\s\\S\\-!?=,.;:'_]+",
+  "maxLength": 256,
+  "format": "password",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PolicyDescription",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-policy-description-structure.json",
+  "description": "PolicyDescription schema from Amazon WorkMail API"
+}

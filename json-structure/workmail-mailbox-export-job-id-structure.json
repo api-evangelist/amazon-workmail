@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[A-Za-z0-9-]+",
+  "minLength": 1,
+  "maxLength": 63,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MailboxExportJobId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mailbox-export-job-id-structure.json",
+  "description": "MailboxExportJobId schema from Amazon WorkMail API"
+}

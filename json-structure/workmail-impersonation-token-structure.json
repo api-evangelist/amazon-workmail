@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\x21-\\x7e]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImpersonationToken",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-impersonation-token-structure.json",
+  "description": "ImpersonationToken schema from Amazon WorkMail API"
+}

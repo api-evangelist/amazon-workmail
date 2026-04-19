@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "title": "DeleteAvailabilityConfigurationRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the <code>AvailabilityConfiguration</code> will be deleted."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The domain for which the <code>AvailabilityConfiguration</code> will be deleted."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-delete-availability-configuration-request-schema.json",
+  "description": "DeleteAvailabilityConfigurationRequest schema from Amazon WorkMail API"
+}

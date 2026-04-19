@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^r-[0-9a-f]{32}$",
+  "minLength": 34,
+  "maxLength": 34,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ResourceId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-resource-id-structure.json",
+  "description": "ResourceId schema from Amazon WorkMail API"
+}

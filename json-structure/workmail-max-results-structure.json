@@ -1,0 +1,9 @@
+{
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 100,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MaxResults",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-max-results-structure.json",
+  "description": "MaxResults schema from Amazon WorkMail API"
+}

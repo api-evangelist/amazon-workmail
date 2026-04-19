@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "GroupId",
+    "MemberId"
+  ],
+  "title": "AssociateMemberToGroupRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization under which the group exists."
+        }
+      ]
+    },
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The group to which the member (user or group) is associated."
+        }
+      ]
+    },
+    "MemberId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The member (user or group) to associate to the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-associate-member-to-group-request-schema.json",
+  "description": "AssociateMemberToGroupRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AssociateDelegateToResourceResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-associate-delegate-to-resource-response-structure.json",
+  "description": "AssociateDelegateToResourceResponse schema from Amazon WorkMail API"
+}

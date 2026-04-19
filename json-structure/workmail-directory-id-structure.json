@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^d-[0-9a-f]{10}$",
+  "minLength": 12,
+  "maxLength": 12,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DirectoryId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-directory-id-structure.json",
+  "description": "DirectoryId schema from Amazon WorkMail API"
+}

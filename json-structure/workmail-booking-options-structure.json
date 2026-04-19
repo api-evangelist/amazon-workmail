@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "AutoAcceptRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "The resource's ability to automatically reply to requests. If disabled, delegates must be associated to the resource."
+        }
+      ]
+    },
+    "AutoDeclineRecurringRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "The resource's ability to automatically decline any recurring requests."
+        }
+      ]
+    },
+    "AutoDeclineConflictingRequests": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "The resource's ability to automatically decline any conflicting requests."
+        }
+      ]
+    }
+  },
+  "description": "At least one delegate must be associated to the resource to disable automatic replies from the resource.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "BookingOptions",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-booking-options-structure.json"
+}

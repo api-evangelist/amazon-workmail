@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/OrganizationSummary"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "OrganizationSummaries",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-organization-summaries-structure.json",
+  "description": "OrganizationSummaries schema from Amazon WorkMail API"
+}

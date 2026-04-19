@@ -1,0 +1,693 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "amz": "https://amazonaws.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AccessControlRule": "amz:AccessControlRule",
+    "Name": {
+      "@id": "amz:Name",
+      "@type": "xsd:string"
+    },
+    "Effect": {
+      "@id": "amz:Effect",
+      "@type": "xsd:string"
+    },
+    "Description": {
+      "@id": "amz:Description",
+      "@type": "xsd:string"
+    },
+    "IpRanges": {
+      "@id": "amz:IpRanges",
+      "@type": "xsd:string"
+    },
+    "NotIpRanges": {
+      "@id": "amz:NotIpRanges",
+      "@type": "xsd:string"
+    },
+    "Actions": {
+      "@id": "amz:Actions",
+      "@type": "xsd:string"
+    },
+    "NotActions": {
+      "@id": "amz:NotActions",
+      "@type": "xsd:string"
+    },
+    "UserIds": {
+      "@id": "amz:UserIds",
+      "@type": "xsd:string"
+    },
+    "NotUserIds": {
+      "@id": "amz:NotUserIds",
+      "@type": "xsd:string"
+    },
+    "DateCreated": {
+      "@id": "amz:DateCreated",
+      "@type": "xsd:string"
+    },
+    "DateModified": {
+      "@id": "amz:DateModified",
+      "@type": "xsd:string"
+    },
+    "ImpersonationRoleIds": {
+      "@id": "amz:ImpersonationRoleIds",
+      "@type": "xsd:string"
+    },
+    "NotImpersonationRoleIds": {
+      "@id": "amz:NotImpersonationRoleIds",
+      "@type": "xsd:string"
+    },
+    "AssociateDelegateToResourceRequest": "amz:AssociateDelegateToResourceRequest",
+    "OrganizationId": {
+      "@id": "amz:OrganizationId",
+      "@type": "xsd:string"
+    },
+    "ResourceId": {
+      "@id": "amz:ResourceId",
+      "@type": "xsd:string"
+    },
+    "EntityId": {
+      "@id": "amz:EntityId",
+      "@type": "xsd:string"
+    },
+    "AssociateDelegateToResourceResponse": "amz:AssociateDelegateToResourceResponse",
+    "AssociateMemberToGroupRequest": "amz:AssociateMemberToGroupRequest",
+    "GroupId": {
+      "@id": "amz:GroupId",
+      "@type": "xsd:string"
+    },
+    "MemberId": {
+      "@id": "amz:MemberId",
+      "@type": "xsd:string"
+    },
+    "AssociateMemberToGroupResponse": "amz:AssociateMemberToGroupResponse",
+    "AssumeImpersonationRoleRequest": "amz:AssumeImpersonationRoleRequest",
+    "ImpersonationRoleId": {
+      "@id": "amz:ImpersonationRoleId",
+      "@type": "xsd:string"
+    },
+    "AssumeImpersonationRoleResponse": "amz:AssumeImpersonationRoleResponse",
+    "Token": {
+      "@id": "amz:Token",
+      "@type": "xsd:string"
+    },
+    "ExpiresIn": {
+      "@id": "amz:ExpiresIn",
+      "@type": "xsd:string"
+    },
+    "AvailabilityConfiguration": "amz:AvailabilityConfiguration",
+    "DomainName": {
+      "@id": "amz:DomainName",
+      "@type": "xsd:string"
+    },
+    "ProviderType": {
+      "@id": "amz:ProviderType",
+      "@type": "xsd:string"
+    },
+    "EwsProvider": {
+      "@id": "amz:EwsProvider",
+      "@type": "xsd:string"
+    },
+    "LambdaProvider": {
+      "@id": "amz:LambdaProvider",
+      "@type": "xsd:string"
+    },
+    "BookingOptions": {
+      "@id": "amz:BookingOptions",
+      "@type": "xsd:string"
+    },
+    "AutoAcceptRequests": {
+      "@id": "amz:AutoAcceptRequests",
+      "@type": "xsd:string"
+    },
+    "AutoDeclineRecurringRequests": {
+      "@id": "amz:AutoDeclineRecurringRequests",
+      "@type": "xsd:string"
+    },
+    "AutoDeclineConflictingRequests": {
+      "@id": "amz:AutoDeclineConflictingRequests",
+      "@type": "xsd:string"
+    },
+    "CancelMailboxExportJobRequest": "amz:CancelMailboxExportJobRequest",
+    "ClientToken": {
+      "@id": "amz:ClientToken",
+      "@type": "xsd:string"
+    },
+    "JobId": {
+      "@id": "amz:JobId",
+      "@type": "xsd:string"
+    },
+    "CancelMailboxExportJobResponse": "amz:CancelMailboxExportJobResponse",
+    "CreateAliasRequest": "amz:CreateAliasRequest",
+    "Alias": {
+      "@id": "amz:Alias",
+      "@type": "xsd:string"
+    },
+    "CreateAliasResponse": "amz:CreateAliasResponse",
+    "CreateAvailabilityConfigurationRequest": "amz:CreateAvailabilityConfigurationRequest",
+    "CreateAvailabilityConfigurationResponse": "amz:CreateAvailabilityConfigurationResponse",
+    "CreateGroupRequest": "amz:CreateGroupRequest",
+    "CreateGroupResponse": "amz:CreateGroupResponse",
+    "CreateImpersonationRoleRequest": "amz:CreateImpersonationRoleRequest",
+    "Type": {
+      "@id": "amz:Type",
+      "@type": "xsd:string"
+    },
+    "Rules": {
+      "@id": "amz:Rules",
+      "@type": "xsd:string"
+    },
+    "CreateImpersonationRoleResponse": "amz:CreateImpersonationRoleResponse",
+    "CreateMobileDeviceAccessRuleRequest": "amz:CreateMobileDeviceAccessRuleRequest",
+    "DeviceTypes": {
+      "@id": "amz:DeviceTypes",
+      "@type": "xsd:string"
+    },
+    "NotDeviceTypes": {
+      "@id": "amz:NotDeviceTypes",
+      "@type": "xsd:string"
+    },
+    "DeviceModels": {
+      "@id": "amz:DeviceModels",
+      "@type": "xsd:string"
+    },
+    "NotDeviceModels": {
+      "@id": "amz:NotDeviceModels",
+      "@type": "xsd:string"
+    },
+    "DeviceOperatingSystems": {
+      "@id": "amz:DeviceOperatingSystems",
+      "@type": "xsd:string"
+    },
+    "NotDeviceOperatingSystems": {
+      "@id": "amz:NotDeviceOperatingSystems",
+      "@type": "xsd:string"
+    },
+    "DeviceUserAgents": {
+      "@id": "amz:DeviceUserAgents",
+      "@type": "xsd:string"
+    },
+    "NotDeviceUserAgents": {
+      "@id": "amz:NotDeviceUserAgents",
+      "@type": "xsd:string"
+    },
+    "CreateMobileDeviceAccessRuleResponse": "amz:CreateMobileDeviceAccessRuleResponse",
+    "MobileDeviceAccessRuleId": {
+      "@id": "amz:MobileDeviceAccessRuleId",
+      "@type": "xsd:string"
+    },
+    "CreateOrganizationRequest": "amz:CreateOrganizationRequest",
+    "DirectoryId": {
+      "@id": "amz:DirectoryId",
+      "@type": "xsd:string"
+    },
+    "Domains": {
+      "@id": "amz:Domains",
+      "@type": "xsd:string"
+    },
+    "KmsKeyArn": {
+      "@id": "amz:KmsKeyArn",
+      "@type": "xsd:string"
+    },
+    "EnableInteroperability": {
+      "@id": "amz:EnableInteroperability",
+      "@type": "xsd:string"
+    },
+    "CreateOrganizationResponse": "amz:CreateOrganizationResponse",
+    "CreateResourceRequest": "amz:CreateResourceRequest",
+    "CreateResourceResponse": "amz:CreateResourceResponse",
+    "CreateUserRequest": "amz:CreateUserRequest",
+    "DisplayName": {
+      "@id": "amz:DisplayName",
+      "@type": "xsd:string"
+    },
+    "Password": {
+      "@id": "amz:Password",
+      "@type": "xsd:string"
+    },
+    "CreateUserResponse": "amz:CreateUserResponse",
+    "UserId": {
+      "@id": "amz:UserId",
+      "@type": "xsd:string"
+    },
+    "Delegate": "amz:Delegate",
+    "Id": {
+      "@id": "amz:Id",
+      "@type": "xsd:string"
+    },
+    "DeleteAccessControlRuleRequest": "amz:DeleteAccessControlRuleRequest",
+    "DeleteAccessControlRuleResponse": "amz:DeleteAccessControlRuleResponse",
+    "DeleteAliasRequest": "amz:DeleteAliasRequest",
+    "DeleteAliasResponse": "amz:DeleteAliasResponse",
+    "DeleteAvailabilityConfigurationRequest": "amz:DeleteAvailabilityConfigurationRequest",
+    "DeleteAvailabilityConfigurationResponse": "amz:DeleteAvailabilityConfigurationResponse",
+    "DeleteEmailMonitoringConfigurationRequest": "amz:DeleteEmailMonitoringConfigurationRequest",
+    "DeleteEmailMonitoringConfigurationResponse": "amz:DeleteEmailMonitoringConfigurationResponse",
+    "DeleteGroupRequest": "amz:DeleteGroupRequest",
+    "DeleteGroupResponse": "amz:DeleteGroupResponse",
+    "DeleteImpersonationRoleRequest": "amz:DeleteImpersonationRoleRequest",
+    "DeleteImpersonationRoleResponse": "amz:DeleteImpersonationRoleResponse",
+    "DeleteMailboxPermissionsRequest": "amz:DeleteMailboxPermissionsRequest",
+    "GranteeId": {
+      "@id": "amz:GranteeId",
+      "@type": "xsd:string"
+    },
+    "DeleteMailboxPermissionsResponse": "amz:DeleteMailboxPermissionsResponse",
+    "DeleteMobileDeviceAccessOverrideRequest": "amz:DeleteMobileDeviceAccessOverrideRequest",
+    "DeviceId": {
+      "@id": "amz:DeviceId",
+      "@type": "xsd:string"
+    },
+    "DeleteMobileDeviceAccessOverrideResponse": "amz:DeleteMobileDeviceAccessOverrideResponse",
+    "DeleteMobileDeviceAccessRuleRequest": "amz:DeleteMobileDeviceAccessRuleRequest",
+    "DeleteMobileDeviceAccessRuleResponse": "amz:DeleteMobileDeviceAccessRuleResponse",
+    "DeleteOrganizationRequest": "amz:DeleteOrganizationRequest",
+    "DeleteDirectory": {
+      "@id": "amz:DeleteDirectory",
+      "@type": "xsd:string"
+    },
+    "DeleteOrganizationResponse": "amz:DeleteOrganizationResponse",
+    "State": {
+      "@id": "amz:State",
+      "@type": "xsd:string"
+    },
+    "DeleteResourceRequest": "amz:DeleteResourceRequest",
+    "DeleteResourceResponse": "amz:DeleteResourceResponse",
+    "DeleteRetentionPolicyRequest": "amz:DeleteRetentionPolicyRequest",
+    "DeleteRetentionPolicyResponse": "amz:DeleteRetentionPolicyResponse",
+    "DeleteUserRequest": "amz:DeleteUserRequest",
+    "DeleteUserResponse": "amz:DeleteUserResponse",
+    "DeregisterFromWorkMailRequest": "amz:DeregisterFromWorkMailRequest",
+    "DeregisterFromWorkMailResponse": "amz:DeregisterFromWorkMailResponse",
+    "DeregisterMailDomainRequest": "amz:DeregisterMailDomainRequest",
+    "DeregisterMailDomainResponse": "amz:DeregisterMailDomainResponse",
+    "DescribeEmailMonitoringConfigurationRequest": "amz:DescribeEmailMonitoringConfigurationRequest",
+    "DescribeEmailMonitoringConfigurationResponse": "amz:DescribeEmailMonitoringConfigurationResponse",
+    "RoleArn": {
+      "@id": "amz:RoleArn",
+      "@type": "xsd:string"
+    },
+    "LogGroupArn": {
+      "@id": "amz:LogGroupArn",
+      "@type": "xsd:string"
+    },
+    "DescribeGroupRequest": "amz:DescribeGroupRequest",
+    "DescribeGroupResponse": "amz:DescribeGroupResponse",
+    "Email": {
+      "@id": "amz:Email",
+      "@type": "xsd:string"
+    },
+    "EnabledDate": {
+      "@id": "amz:EnabledDate",
+      "@type": "xsd:string"
+    },
+    "DisabledDate": {
+      "@id": "amz:DisabledDate",
+      "@type": "xsd:string"
+    },
+    "DescribeInboundDmarcSettingsRequest": "amz:DescribeInboundDmarcSettingsRequest",
+    "DescribeInboundDmarcSettingsResponse": "amz:DescribeInboundDmarcSettingsResponse",
+    "Enforced": {
+      "@id": "amz:Enforced",
+      "@type": "xsd:string"
+    },
+    "DescribeMailboxExportJobRequest": "amz:DescribeMailboxExportJobRequest",
+    "DescribeMailboxExportJobResponse": "amz:DescribeMailboxExportJobResponse",
+    "S3BucketName": {
+      "@id": "amz:S3BucketName",
+      "@type": "xsd:string"
+    },
+    "S3Prefix": {
+      "@id": "amz:S3Prefix",
+      "@type": "xsd:string"
+    },
+    "S3Path": {
+      "@id": "amz:S3Path",
+      "@type": "xsd:string"
+    },
+    "EstimatedProgress": {
+      "@id": "amz:EstimatedProgress",
+      "@type": "xsd:string"
+    },
+    "ErrorInfo": {
+      "@id": "amz:ErrorInfo",
+      "@type": "xsd:string"
+    },
+    "StartTime": {
+      "@id": "amz:StartTime",
+      "@type": "xsd:string"
+    },
+    "EndTime": {
+      "@id": "amz:EndTime",
+      "@type": "xsd:string"
+    },
+    "DescribeOrganizationRequest": "amz:DescribeOrganizationRequest",
+    "DescribeOrganizationResponse": "amz:DescribeOrganizationResponse",
+    "DirectoryType": {
+      "@id": "amz:DirectoryType",
+      "@type": "xsd:string"
+    },
+    "DefaultMailDomain": {
+      "@id": "amz:DefaultMailDomain",
+      "@type": "xsd:string"
+    },
+    "CompletedDate": {
+      "@id": "amz:CompletedDate",
+      "@type": "xsd:string"
+    },
+    "ErrorMessage": {
+      "@id": "amz:ErrorMessage",
+      "@type": "xsd:string"
+    },
+    "ARN": {
+      "@id": "amz:ARN",
+      "@type": "xsd:string"
+    },
+    "DescribeResourceRequest": "amz:DescribeResourceRequest",
+    "DescribeResourceResponse": "amz:DescribeResourceResponse",
+    "DescribeUserRequest": "amz:DescribeUserRequest",
+    "DescribeUserResponse": "amz:DescribeUserResponse",
+    "UserRole": {
+      "@id": "amz:UserRole",
+      "@type": "xsd:string"
+    },
+    "DisassociateDelegateFromResourceRequest": "amz:DisassociateDelegateFromResourceRequest",
+    "DisassociateDelegateFromResourceResponse": "amz:DisassociateDelegateFromResourceResponse",
+    "DisassociateMemberFromGroupRequest": "amz:DisassociateMemberFromGroupRequest",
+    "DisassociateMemberFromGroupResponse": "amz:DisassociateMemberFromGroupResponse",
+    "DnsRecord": "amz:DnsRecord",
+    "Hostname": {
+      "@id": "amz:Hostname",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "amz:Value",
+      "@type": "xsd:string"
+    },
+    "Domain": "amz:Domain",
+    "HostedZoneId": {
+      "@id": "amz:HostedZoneId",
+      "@type": "xsd:string"
+    },
+    "EwsAvailabilityProvider": "amz:EwsAvailabilityProvider",
+    "EwsEndpoint": {
+      "@id": "amz:EwsEndpoint",
+      "@type": "xsd:string"
+    },
+    "EwsUsername": {
+      "@id": "amz:EwsUsername",
+      "@type": "xsd:string"
+    },
+    "EwsPassword": {
+      "@id": "amz:EwsPassword",
+      "@type": "xsd:string"
+    },
+    "FolderConfiguration": "amz:FolderConfiguration",
+    "Action": {
+      "@id": "amz:Action",
+      "@type": "xsd:string"
+    },
+    "Period": {
+      "@id": "amz:Period",
+      "@type": "xsd:string"
+    },
+    "GetAccessControlEffectRequest": "amz:GetAccessControlEffectRequest",
+    "IpAddress": {
+      "@id": "amz:IpAddress",
+      "@type": "xsd:string"
+    },
+    "GetAccessControlEffectResponse": "amz:GetAccessControlEffectResponse",
+    "MatchedRules": {
+      "@id": "amz:MatchedRules",
+      "@type": "xsd:string"
+    },
+    "GetDefaultRetentionPolicyRequest": "amz:GetDefaultRetentionPolicyRequest",
+    "GetDefaultRetentionPolicyResponse": "amz:GetDefaultRetentionPolicyResponse",
+    "FolderConfigurations": {
+      "@id": "amz:FolderConfigurations",
+      "@type": "xsd:string"
+    },
+    "GetImpersonationRoleEffectRequest": "amz:GetImpersonationRoleEffectRequest",
+    "TargetUser": {
+      "@id": "amz:TargetUser",
+      "@type": "xsd:string"
+    },
+    "GetImpersonationRoleEffectResponse": "amz:GetImpersonationRoleEffectResponse",
+    "GetImpersonationRoleRequest": "amz:GetImpersonationRoleRequest",
+    "GetImpersonationRoleResponse": "amz:GetImpersonationRoleResponse",
+    "GetMailDomainRequest": "amz:GetMailDomainRequest",
+    "GetMailDomainResponse": "amz:GetMailDomainResponse",
+    "Records": {
+      "@id": "amz:Records",
+      "@type": "xsd:string"
+    },
+    "IsTestDomain": {
+      "@id": "amz:IsTestDomain",
+      "@type": "xsd:string"
+    },
+    "IsDefault": {
+      "@id": "amz:IsDefault",
+      "@type": "xsd:string"
+    },
+    "OwnershipVerificationStatus": {
+      "@id": "amz:OwnershipVerificationStatus",
+      "@type": "xsd:string"
+    },
+    "DkimVerificationStatus": {
+      "@id": "amz:DkimVerificationStatus",
+      "@type": "xsd:string"
+    },
+    "GetMailboxDetailsRequest": "amz:GetMailboxDetailsRequest",
+    "GetMailboxDetailsResponse": "amz:GetMailboxDetailsResponse",
+    "MailboxQuota": {
+      "@id": "amz:MailboxQuota",
+      "@type": "xsd:string"
+    },
+    "MailboxSize": {
+      "@id": "amz:MailboxSize",
+      "@type": "xsd:string"
+    },
+    "GetMobileDeviceAccessEffectRequest": "amz:GetMobileDeviceAccessEffectRequest",
+    "DeviceType": {
+      "@id": "amz:DeviceType",
+      "@type": "xsd:string"
+    },
+    "DeviceModel": {
+      "@id": "amz:DeviceModel",
+      "@type": "xsd:string"
+    },
+    "DeviceOperatingSystem": {
+      "@id": "amz:DeviceOperatingSystem",
+      "@type": "xsd:string"
+    },
+    "DeviceUserAgent": {
+      "@id": "amz:DeviceUserAgent",
+      "@type": "xsd:string"
+    },
+    "GetMobileDeviceAccessEffectResponse": "amz:GetMobileDeviceAccessEffectResponse",
+    "GetMobileDeviceAccessOverrideRequest": "amz:GetMobileDeviceAccessOverrideRequest",
+    "GetMobileDeviceAccessOverrideResponse": "amz:GetMobileDeviceAccessOverrideResponse",
+    "Group": "amz:Group",
+    "ImpersonationMatchedRule": "amz:ImpersonationMatchedRule",
+    "ImpersonationRuleId": {
+      "@id": "amz:ImpersonationRuleId",
+      "@type": "xsd:string"
+    },
+    "ImpersonationRole": "amz:ImpersonationRole",
+    "ImpersonationRule": "amz:ImpersonationRule",
+    "TargetUsers": {
+      "@id": "amz:TargetUsers",
+      "@type": "xsd:string"
+    },
+    "NotTargetUsers": {
+      "@id": "amz:NotTargetUsers",
+      "@type": "xsd:string"
+    },
+    "LambdaAvailabilityProvider": "amz:LambdaAvailabilityProvider",
+    "LambdaArn": {
+      "@id": "amz:LambdaArn",
+      "@type": "xsd:string"
+    },
+    "ListAccessControlRulesRequest": "amz:ListAccessControlRulesRequest",
+    "ListAccessControlRulesResponse": "amz:ListAccessControlRulesResponse",
+    "ListAliasesRequest": "amz:ListAliasesRequest",
+    "NextToken": {
+      "@id": "amz:NextToken",
+      "@type": "xsd:string"
+    },
+    "MaxResults": {
+      "@id": "amz:MaxResults",
+      "@type": "xsd:string"
+    },
+    "ListAliasesResponse": "amz:ListAliasesResponse",
+    "Aliases": {
+      "@id": "amz:Aliases",
+      "@type": "xsd:string"
+    },
+    "ListAvailabilityConfigurationsRequest": "amz:ListAvailabilityConfigurationsRequest",
+    "ListAvailabilityConfigurationsResponse": "amz:ListAvailabilityConfigurationsResponse",
+    "AvailabilityConfigurations": {
+      "@id": "amz:AvailabilityConfigurations",
+      "@type": "xsd:string"
+    },
+    "ListGroupMembersRequest": "amz:ListGroupMembersRequest",
+    "ListGroupMembersResponse": "amz:ListGroupMembersResponse",
+    "Members": {
+      "@id": "amz:Members",
+      "@type": "xsd:string"
+    },
+    "ListGroupsRequest": "amz:ListGroupsRequest",
+    "ListGroupsResponse": "amz:ListGroupsResponse",
+    "Groups": {
+      "@id": "amz:Groups",
+      "@type": "xsd:string"
+    },
+    "ListImpersonationRolesRequest": "amz:ListImpersonationRolesRequest",
+    "ListImpersonationRolesResponse": "amz:ListImpersonationRolesResponse",
+    "Roles": {
+      "@id": "amz:Roles",
+      "@type": "xsd:string"
+    },
+    "ListMailDomainsRequest": "amz:ListMailDomainsRequest",
+    "ListMailDomainsResponse": "amz:ListMailDomainsResponse",
+    "MailDomains": {
+      "@id": "amz:MailDomains",
+      "@type": "xsd:string"
+    },
+    "ListMailboxExportJobsRequest": "amz:ListMailboxExportJobsRequest",
+    "ListMailboxExportJobsResponse": "amz:ListMailboxExportJobsResponse",
+    "Jobs": {
+      "@id": "amz:Jobs",
+      "@type": "xsd:string"
+    },
+    "ListMailboxPermissionsRequest": "amz:ListMailboxPermissionsRequest",
+    "ListMailboxPermissionsResponse": "amz:ListMailboxPermissionsResponse",
+    "Permissions": {
+      "@id": "amz:Permissions",
+      "@type": "xsd:string"
+    },
+    "ListMobileDeviceAccessOverridesRequest": "amz:ListMobileDeviceAccessOverridesRequest",
+    "ListMobileDeviceAccessOverridesResponse": "amz:ListMobileDeviceAccessOverridesResponse",
+    "Overrides": {
+      "@id": "amz:Overrides",
+      "@type": "xsd:string"
+    },
+    "ListMobileDeviceAccessRulesRequest": "amz:ListMobileDeviceAccessRulesRequest",
+    "ListMobileDeviceAccessRulesResponse": "amz:ListMobileDeviceAccessRulesResponse",
+    "ListOrganizationsRequest": "amz:ListOrganizationsRequest",
+    "ListOrganizationsResponse": "amz:ListOrganizationsResponse",
+    "OrganizationSummaries": {
+      "@id": "amz:OrganizationSummaries",
+      "@type": "xsd:string"
+    },
+    "ListResourceDelegatesRequest": "amz:ListResourceDelegatesRequest",
+    "ListResourceDelegatesResponse": "amz:ListResourceDelegatesResponse",
+    "Delegates": {
+      "@id": "amz:Delegates",
+      "@type": "xsd:string"
+    },
+    "ListResourcesRequest": "amz:ListResourcesRequest",
+    "ListResourcesResponse": "amz:ListResourcesResponse",
+    "Resources": {
+      "@id": "amz:Resources",
+      "@type": "xsd:string"
+    },
+    "ListTagsForResourceRequest": "amz:ListTagsForResourceRequest",
+    "ResourceARN": {
+      "@id": "amz:ResourceARN",
+      "@type": "xsd:string"
+    },
+    "ListTagsForResourceResponse": "amz:ListTagsForResourceResponse",
+    "Tags": {
+      "@id": "amz:Tags",
+      "@type": "xsd:string"
+    },
+    "ListUsersRequest": "amz:ListUsersRequest",
+    "ListUsersResponse": "amz:ListUsersResponse",
+    "Users": {
+      "@id": "amz:Users",
+      "@type": "xsd:string"
+    },
+    "MailDomainSummary": "amz:MailDomainSummary",
+    "DefaultDomain": {
+      "@id": "amz:DefaultDomain",
+      "@type": "xsd:string"
+    },
+    "MailboxExportJob": "amz:MailboxExportJob",
+    "Member": "amz:Member",
+    "MobileDeviceAccessMatchedRule": "amz:MobileDeviceAccessMatchedRule",
+    "MobileDeviceAccessOverride": "amz:MobileDeviceAccessOverride",
+    "MobileDeviceAccessRule": "amz:MobileDeviceAccessRule",
+    "OrganizationSummary": "amz:OrganizationSummary",
+    "Permission": "amz:Permission",
+    "GranteeType": {
+      "@id": "amz:GranteeType",
+      "@type": "xsd:string"
+    },
+    "PermissionValues": {
+      "@id": "amz:PermissionValues",
+      "@type": "xsd:string"
+    },
+    "PutAccessControlRuleRequest": "amz:PutAccessControlRuleRequest",
+    "PutAccessControlRuleResponse": "amz:PutAccessControlRuleResponse",
+    "PutEmailMonitoringConfigurationRequest": "amz:PutEmailMonitoringConfigurationRequest",
+    "PutEmailMonitoringConfigurationResponse": "amz:PutEmailMonitoringConfigurationResponse",
+    "PutInboundDmarcSettingsRequest": "amz:PutInboundDmarcSettingsRequest",
+    "PutInboundDmarcSettingsResponse": "amz:PutInboundDmarcSettingsResponse",
+    "PutMailboxPermissionsRequest": "amz:PutMailboxPermissionsRequest",
+    "PutMailboxPermissionsResponse": "amz:PutMailboxPermissionsResponse",
+    "PutMobileDeviceAccessOverrideRequest": "amz:PutMobileDeviceAccessOverrideRequest",
+    "PutMobileDeviceAccessOverrideResponse": "amz:PutMobileDeviceAccessOverrideResponse",
+    "PutRetentionPolicyRequest": "amz:PutRetentionPolicyRequest",
+    "PutRetentionPolicyResponse": "amz:PutRetentionPolicyResponse",
+    "RedactedEwsAvailabilityProvider": "amz:RedactedEwsAvailabilityProvider",
+    "RegisterMailDomainRequest": "amz:RegisterMailDomainRequest",
+    "RegisterMailDomainResponse": "amz:RegisterMailDomainResponse",
+    "RegisterToWorkMailRequest": "amz:RegisterToWorkMailRequest",
+    "RegisterToWorkMailResponse": "amz:RegisterToWorkMailResponse",
+    "ResetPasswordRequest": "amz:ResetPasswordRequest",
+    "ResetPasswordResponse": "amz:ResetPasswordResponse",
+    "Resource": "amz:Resource",
+    "StartMailboxExportJobRequest": "amz:StartMailboxExportJobRequest",
+    "StartMailboxExportJobResponse": "amz:StartMailboxExportJobResponse",
+    "TagResourceRequest": "amz:TagResourceRequest",
+    "TagResourceResponse": "amz:TagResourceResponse",
+    "Tag": "amz:Tag",
+    "Key": {
+      "@id": "amz:Key",
+      "@type": "xsd:string"
+    },
+    "TestAvailabilityConfigurationRequest": "amz:TestAvailabilityConfigurationRequest",
+    "TestAvailabilityConfigurationResponse": "amz:TestAvailabilityConfigurationResponse",
+    "TestPassed": {
+      "@id": "amz:TestPassed",
+      "@type": "xsd:string"
+    },
+    "FailureReason": {
+      "@id": "amz:FailureReason",
+      "@type": "xsd:string"
+    },
+    "UntagResourceRequest": "amz:UntagResourceRequest",
+    "TagKeys": {
+      "@id": "amz:TagKeys",
+      "@type": "xsd:string"
+    },
+    "UntagResourceResponse": "amz:UntagResourceResponse",
+    "UpdateAvailabilityConfigurationRequest": "amz:UpdateAvailabilityConfigurationRequest",
+    "UpdateAvailabilityConfigurationResponse": "amz:UpdateAvailabilityConfigurationResponse",
+    "UpdateDefaultMailDomainRequest": "amz:UpdateDefaultMailDomainRequest",
+    "UpdateDefaultMailDomainResponse": "amz:UpdateDefaultMailDomainResponse",
+    "UpdateImpersonationRoleRequest": "amz:UpdateImpersonationRoleRequest",
+    "UpdateImpersonationRoleResponse": "amz:UpdateImpersonationRoleResponse",
+    "UpdateMailboxQuotaRequest": "amz:UpdateMailboxQuotaRequest",
+    "UpdateMailboxQuotaResponse": "amz:UpdateMailboxQuotaResponse",
+    "UpdateMobileDeviceAccessRuleRequest": "amz:UpdateMobileDeviceAccessRuleRequest",
+    "UpdateMobileDeviceAccessRuleResponse": "amz:UpdateMobileDeviceAccessRuleResponse",
+    "UpdatePrimaryEmailAddressRequest": "amz:UpdatePrimaryEmailAddressRequest",
+    "UpdatePrimaryEmailAddressResponse": "amz:UpdatePrimaryEmailAddressResponse",
+    "UpdateResourceRequest": "amz:UpdateResourceRequest",
+    "UpdateResourceResponse": "amz:UpdateResourceResponse",
+    "User": "amz:User"
+  }
+}

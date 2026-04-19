@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteMobileDeviceAccessOverrideResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-mobile-device-access-override-response-structure.json",
+  "description": "DeleteMobileDeviceAccessOverrideResponse schema from Amazon WorkMail API"
+}

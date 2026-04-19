@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\S\\s]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MobileDeviceAccessRuleDescription",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mobile-device-access-rule-description-schema.json",
+  "description": "MobileDeviceAccessRuleDescription schema from Amazon WorkMail API"
+}

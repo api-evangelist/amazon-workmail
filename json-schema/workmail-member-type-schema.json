@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "GROUP",
+    "USER"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MemberType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-member-type-schema.json",
+  "description": "MemberType schema from Amazon WorkMail API"
+}

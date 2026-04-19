@@ -1,0 +1,4 @@
+{
+  "ResourceARN": "arn:aws:workmail:us-east-1:123456789012:organization/m-abc123",
+  "Tags": "example-value"
+}

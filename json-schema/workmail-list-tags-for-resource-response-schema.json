@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "A list of tag key-value pairs."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListTagsForResourceResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-tags-for-resource-response-schema.json",
+  "description": "ListTagsForResourceResponse schema from Amazon WorkMail API"
+}

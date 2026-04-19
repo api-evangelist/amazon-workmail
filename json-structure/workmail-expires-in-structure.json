@@ -1,0 +1,7 @@
+{
+  "type": "integer",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ExpiresIn",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-expires-in-structure.json",
+  "description": "ExpiresIn schema from Amazon WorkMail API"
+}

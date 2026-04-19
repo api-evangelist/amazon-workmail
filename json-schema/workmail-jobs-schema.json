@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MailboxExportJob"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Jobs",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-jobs-schema.json",
+  "description": "Jobs schema from Amazon WorkMail API"
+}

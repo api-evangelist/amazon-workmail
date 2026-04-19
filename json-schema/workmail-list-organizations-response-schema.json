@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "OrganizationSummaries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationSummaries"
+        },
+        {
+          "description": "The overview of owned organizations presented as a list of organization summaries."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. The value is \"null\" when there are no more results to return."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListOrganizationsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-organizations-response-schema.json",
+  "description": "ListOrganizationsResponse schema from Amazon WorkMail API"
+}

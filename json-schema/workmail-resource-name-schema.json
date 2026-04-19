@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\w\\-.]+(@[a-zA-Z0-9.\\-]+\\.[a-zA-Z0-9-]{2,})?",
+  "minLength": 1,
+  "maxLength": 20,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResourceName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-resource-name-schema.json",
+  "description": "ResourceName schema from Amazon WorkMail API"
+}

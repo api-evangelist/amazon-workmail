@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "title": "GetMailDomainRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the domain is retrieved."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailDomainName"
+        },
+        {
+          "description": "The domain from which you want to retrieve details."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-get-mail-domain-request-schema.json",
+  "description": "GetMailDomainRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[a-zA-Z0-9._%+-]{1,64}@[a-zA-Z0-9.-]+\\.[a-zA-Z-]{2,}",
+  "minLength": 1,
+  "maxLength": 254,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmailAddress",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-email-address-schema.json",
+  "description": "EmailAddress schema from Amazon WorkMail API"
+}

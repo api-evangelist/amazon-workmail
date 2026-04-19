@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier associated with the organization."
+        }
+      ]
+    },
+    "Alias": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationName"
+        },
+        {
+          "description": "The alias associated with the organization."
+        }
+      ]
+    },
+    "DefaultMailDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The default email domain associated with the organization."
+        }
+      ]
+    },
+    "ErrorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The error message associated with the organization. It is only present if unexpected behavior has occurred with regards to the organization. It provides insight or solutions regarding unexpected behavior."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The state associated with the organization."
+        }
+      ]
+    }
+  },
+  "description": "The representation of an organization.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "OrganizationSummary",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-organization-summary-structure.json"
+}

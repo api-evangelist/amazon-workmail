@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Domain"
+  },
+  "minItems": 0,
+  "maxItems": 5,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Domains",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-domains-schema.json",
+  "description": "Domains schema from Amazon WorkMail API"
+}

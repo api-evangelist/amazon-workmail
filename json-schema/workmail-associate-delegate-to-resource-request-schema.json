@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "ResourceId",
+    "EntityId"
+  ],
+  "title": "AssociateDelegateToResourceRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization under which the resource exists."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The resource for which members (users or groups) are associated."
+        }
+      ]
+    },
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The member (user or group) to associate to the resource."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-associate-delegate-to-resource-request-schema.json",
+  "description": "AssociateDelegateToResourceRequest schema from Amazon WorkMail API"
+}

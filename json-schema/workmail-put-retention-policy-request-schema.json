@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "Name",
+    "FolderConfigurations"
+  ],
+  "title": "PutRetentionPolicyRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The organization ID."
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShortString"
+        },
+        {
+          "description": "The retention policy ID."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShortString"
+        },
+        {
+          "description": "The retention policy name."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PolicyDescription"
+        },
+        {
+          "description": "The retention policy description."
+        }
+      ]
+    },
+    "FolderConfigurations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FolderConfigurations"
+        },
+        {
+          "description": "The retention policy folder configurations."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-put-retention-policy-request-schema.json",
+  "description": "PutRetentionPolicyRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "OrganizationStateException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-organization-state-exception-structure.json",
+  "description": "OrganizationStateException schema from Amazon WorkMail API"
+}

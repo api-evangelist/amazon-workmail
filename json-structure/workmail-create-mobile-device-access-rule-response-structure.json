@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "MobileDeviceAccessRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleId"
+        },
+        {
+          "description": "The identifier for the newly created mobile device access rule."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateMobileDeviceAccessRuleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-mobile-device-access-rule-response-structure.json",
+  "description": "CreateMobileDeviceAccessRuleResponse schema from Amazon WorkMail API"
+}

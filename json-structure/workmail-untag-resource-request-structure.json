@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceARN",
+    "TagKeys"
+  ],
+  "name": "UntagResourceRequest",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The resource ARN."
+        }
+      ]
+    },
+    "TagKeys": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagKeyList"
+        },
+        {
+          "description": "The tag keys."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-untag-resource-request-structure.json",
+  "description": "UntagResourceRequest schema from Amazon WorkMail API"
+}

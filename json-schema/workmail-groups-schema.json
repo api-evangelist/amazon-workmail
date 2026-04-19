@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Group"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Groups",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-groups-schema.json",
+  "description": "Groups schema from Amazon WorkMail API"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "INBOX",
+    "DELETED_ITEMS",
+    "SENT_ITEMS",
+    "DRAFTS",
+    "JUNK_EMAIL"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "FolderName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-folder-name-structure.json",
+  "description": "FolderName schema from Amazon WorkMail API"
+}

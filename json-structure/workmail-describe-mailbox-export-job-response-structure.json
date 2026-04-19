@@ -1,0 +1,129 @@
+{
+  "type": "object",
+  "properties": {
+    "EntityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the user or resource associated with the mailbox."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The mailbox export job description."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleArn"
+        },
+        {
+          "description": "The ARN of the AWS Identity and Access Management (IAM) role that grants write permission to the Amazon Simple Storage Service (Amazon S3) bucket."
+        }
+      ]
+    },
+    "KmsKeyArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/KmsKeyArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the symmetric AWS Key Management Service (AWS KMS) key that encrypts the exported mailbox content."
+        }
+      ]
+    },
+    "S3BucketName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3BucketName"
+        },
+        {
+          "description": "The name of the S3 bucket."
+        }
+      ]
+    },
+    "S3Prefix": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3ObjectKey"
+        },
+        {
+          "description": "The S3 bucket prefix."
+        }
+      ]
+    },
+    "S3Path": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3ObjectKey"
+        },
+        {
+          "description": "The path to the S3 bucket and file that the mailbox export job is exporting to."
+        }
+      ]
+    },
+    "EstimatedProgress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Percentage"
+        },
+        {
+          "description": "The estimated progress of the mailbox export job, in percentage points."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxExportJobState"
+        },
+        {
+          "description": "The state of the mailbox export job."
+        }
+      ]
+    },
+    "ErrorInfo": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxExportErrorInfo"
+        },
+        {
+          "description": "Error information for failed mailbox export jobs."
+        }
+      ]
+    },
+    "StartTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The mailbox export job start timestamp."
+        }
+      ]
+    },
+    "EndTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The mailbox export job end timestamp."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeMailboxExportJobResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-describe-mailbox-export-job-response-structure.json",
+  "description": "DescribeMailboxExportJobResponse schema from Amazon WorkMail API"
+}

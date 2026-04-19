@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the IAM Role associated with the email monitoring configuration."
+        }
+      ]
+    },
+    "LogGroupArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogGroupArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the CloudWatch Log group associated with the email monitoring configuration."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DescribeEmailMonitoringConfigurationResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-describe-email-monitoring-configuration-response-structure.json",
+  "description": "DescribeEmailMonitoringConfigurationResponse schema from Amazon WorkMail API"
+}

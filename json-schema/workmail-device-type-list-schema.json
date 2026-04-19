@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DeviceType"
+  },
+  "minItems": 1,
+  "maxItems": 10,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeviceTypeList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-device-type-list-schema.json",
+  "description": "DeviceTypeList schema from Amazon WorkMail API"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\S\\s]*",
+  "minLength": 1,
+  "maxLength": 32,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HostedZoneId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-hosted-zone-id-schema.json",
+  "description": "HostedZoneId schema from Amazon WorkMail API"
+}

@@ -1,0 +1,15 @@
+{
+  "OrganizationId": "500123",
+  "ClientToken": "abc123def456",
+  "Name": "Example Workmail Resource",
+  "Description": "example-value",
+  "Effect": "example-value",
+  "DeviceTypes": "ROOM",
+  "NotDeviceTypes": "ROOM",
+  "DeviceModels": "example-value",
+  "NotDeviceModels": "example-value",
+  "DeviceOperatingSystems": "example-value",
+  "NotDeviceOperatingSystems": "example-value",
+  "DeviceUserAgents": "example-value",
+  "NotDeviceUserAgents": "example-value"
+}

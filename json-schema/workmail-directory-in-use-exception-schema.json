@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DirectoryInUseException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-directory-in-use-exception-schema.json",
+  "description": "DirectoryInUseException schema from Amazon WorkMail API"
+}

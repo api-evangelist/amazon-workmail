@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DirectoryUnavailableException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-directory-unavailable-exception-schema.json",
+  "description": "DirectoryUnavailableException schema from Amazon WorkMail API"
+}

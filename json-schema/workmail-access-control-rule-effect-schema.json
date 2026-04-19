@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ALLOW",
+    "DENY"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccessControlRuleEffect",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-access-control-rule-effect-schema.json",
+  "description": "AccessControlRuleEffect schema from Amazon WorkMail API"
+}

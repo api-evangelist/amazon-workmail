@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "LambdaArn"
+  ],
+  "properties": {
+    "LambdaArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LambdaArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Lambda that acts as the availability provider."
+        }
+      ]
+    }
+  },
+  "description": "Describes a Lambda based availability provider.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LambdaAvailabilityProvider",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-lambda-availability-provider-schema.json"
+}

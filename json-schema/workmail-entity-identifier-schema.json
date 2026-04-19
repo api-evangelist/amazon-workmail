@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[a-zA-Z0-9._%+@-]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EntityIdentifier",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-entity-identifier-schema.json",
+  "description": "EntityIdentifier schema from Amazon WorkMail API"
+}

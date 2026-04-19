@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "MailboxQuota": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxQuota"
+        },
+        {
+          "description": "The maximum allowed mailbox size, in MB, for the specified user."
+        }
+      ]
+    },
+    "MailboxSize": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MailboxSize"
+        },
+        {
+          "description": "The current mailbox size, in MB, for the specified user."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GetMailboxDetailsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-get-mailbox-details-response-schema.json",
+  "description": "GetMailboxDetailsResponse schema from Amazon WorkMail API"
+}

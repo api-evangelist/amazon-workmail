@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Members": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Members"
+        },
+        {
+          "description": "The members associated to the group."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results. The first call does not contain any tokens."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ListGroupMembersResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-group-members-response-structure.json",
+  "description": "ListGroupMembersResponse schema from Amazon WorkMail API"
+}

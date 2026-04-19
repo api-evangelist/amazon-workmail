@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Resource"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Resources",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-resources-structure.json",
+  "description": "Resources schema from Amazon WorkMail API"
+}

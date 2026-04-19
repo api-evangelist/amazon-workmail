@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\S\\s]*|[a-zA-Z0-9/+=]{1,1024}",
+  "minLength": 1,
+  "maxLength": 1024,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "NextToken",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-next-token-structure.json",
+  "description": "NextToken schema from Amazon WorkMail API"
+}

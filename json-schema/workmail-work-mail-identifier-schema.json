@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 12,
+  "maxLength": 256,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkMailIdentifier",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-work-mail-identifier-schema.json",
+  "description": "WorkMailIdentifier schema from Amazon WorkMail API"
+}

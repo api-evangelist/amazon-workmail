@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "pattern": "[\\u0020-\\u00FF]+",
+  "maxLength": 256,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ExternalUserName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-external-user-name-structure.json",
+  "description": "ExternalUserName schema from Amazon WorkMail API"
+}

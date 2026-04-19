@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "MobileDeviceAccessRuleId"
+  ],
+  "name": "DeleteMobileDeviceAccessRuleRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization under which the rule will be deleted."
+        }
+      ]
+    },
+    "MobileDeviceAccessRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleId"
+        },
+        {
+          "description": "The identifier of the rule to be deleted."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-mobile-device-access-rule-request-structure.json",
+  "description": "DeleteMobileDeviceAccessRuleRequest schema from Amazon WorkMail API"
+}

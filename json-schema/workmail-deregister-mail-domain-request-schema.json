@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "title": "DeregisterMailDomainRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the domain will be deregistered."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailDomainName"
+        },
+        {
+          "description": "The domain to deregister in WorkMail and SES."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-deregister-mail-domain-request-schema.json",
+  "description": "DeregisterMailDomainRequest schema from Amazon WorkMail API"
+}

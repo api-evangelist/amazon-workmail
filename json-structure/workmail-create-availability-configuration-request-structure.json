@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "name": "CreateAvailabilityConfigurationRequest",
+  "properties": {
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "An idempotent token that ensures that an API request is executed only once."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the <code>AvailabilityConfiguration</code> will be created."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The domain to which the provider applies."
+        }
+      ]
+    },
+    "EwsProvider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EwsAvailabilityProvider"
+        },
+        {
+          "description": "Exchange Web Services (EWS) availability provider definition. The request must contain exactly one provider definition, either <code>EwsProvider</code> or <code>LambdaProvider</code>."
+        }
+      ]
+    },
+    "LambdaProvider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LambdaAvailabilityProvider"
+        },
+        {
+          "description": "Lambda availability provider definition. The request must contain exactly one provider definition, either <code>EwsProvider</code> or <code>LambdaProvider</code>."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-availability-configuration-request-structure.json",
+  "description": "CreateAvailabilityConfigurationRequest schema from Amazon WorkMail API"
+}

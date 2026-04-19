@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The identifier of the impersonation role."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleName"
+        },
+        {
+          "description": "The impersonation role name."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleType"
+        },
+        {
+          "description": "The impersonation role type."
+        }
+      ]
+    },
+    "DateCreated": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the impersonation role was created."
+        }
+      ]
+    },
+    "DateModified": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the impersonation role was last modified."
+        }
+      ]
+    }
+  },
+  "description": "An impersonation role for the given WorkMail organization.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImpersonationRole",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-impersonation-role-schema.json"
+}

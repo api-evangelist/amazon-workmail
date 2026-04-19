@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId"
+  ],
+  "title": "DescribeInboundDmarcSettingsRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "Lists the ID of the given organization."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-describe-inbound-dmarc-settings-request-schema.json",
+  "description": "DescribeInboundDmarcSettingsRequest schema from Amazon WorkMail API"
+}

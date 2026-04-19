@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/User"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Users",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-users-schema.json",
+  "description": "Users schema from Amazon WorkMail API"
+}

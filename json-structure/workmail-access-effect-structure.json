@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ALLOW",
+    "DENY"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AccessEffect",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-access-effect-structure.json",
+  "description": "AccessEffect schema from Amazon WorkMail API"
+}

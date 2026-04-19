@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "RoleArn",
+    "LogGroupArn"
+  ],
+  "title": "PutEmailMonitoringConfigurationRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The ID of the organization for which the email monitoring configuration is set."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the IAM Role associated with the email monitoring configuration."
+        }
+      ]
+    },
+    "LogGroupArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogGroupArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the CloudWatch Log group associated with the email monitoring configuration."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-put-email-monitoring-configuration-request-schema.json",
+  "description": "PutEmailMonitoringConfigurationRequest schema from Amazon WorkMail API"
+}

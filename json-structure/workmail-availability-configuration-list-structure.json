@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/AvailabilityConfiguration"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AvailabilityConfigurationList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-availability-configuration-list-structure.json",
+  "description": "AvailabilityConfigurationList schema from Amazon WorkMail API"
+}

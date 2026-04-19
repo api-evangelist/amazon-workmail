@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ImpersonationRule"
+  },
+  "minItems": 0,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImpersonationRuleList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-impersonation-rule-list-structure.json",
+  "description": "ImpersonationRuleList schema from Amazon WorkMail API"
+}

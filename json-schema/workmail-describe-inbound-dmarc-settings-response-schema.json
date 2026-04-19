@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Enforced": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Lists the enforcement setting of the applied policy."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeInboundDmarcSettingsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-describe-inbound-dmarc-settings-response-schema.json",
+  "description": "DescribeInboundDmarcSettingsResponse schema from Amazon WorkMail API"
+}

@@ -1,0 +1,15 @@
+{
+  "Name": "Example Workmail Resource",
+  "Effect": "example-value",
+  "Description": "example-value",
+  "IpRanges": "example-value",
+  "NotIpRanges": "example-value",
+  "Actions": "example-value",
+  "NotActions": "example-value",
+  "UserIds": "500123",
+  "NotUserIds": "500123",
+  "DateCreated": "example-value",
+  "DateModified": "example-value",
+  "ImpersonationRoleIds": "500123",
+  "NotImpersonationRoleIds": "500123"
+}

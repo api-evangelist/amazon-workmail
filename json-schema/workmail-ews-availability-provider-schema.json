@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "EwsEndpoint",
+    "EwsUsername",
+    "EwsPassword"
+  ],
+  "properties": {
+    "EwsEndpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Url"
+        },
+        {
+          "description": "The endpoint of the remote EWS server."
+        }
+      ]
+    },
+    "EwsUsername": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExternalUserName"
+        },
+        {
+          "description": "The username used to authenticate the remote EWS server."
+        }
+      ]
+    },
+    "EwsPassword": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Password"
+        },
+        {
+          "description": "The password used to authenticate the remote EWS server."
+        }
+      ]
+    }
+  },
+  "description": "Describes an EWS based availability provider. This is only used as input to the service.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EwsAvailabilityProvider",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-ews-availability-provider-schema.json"
+}

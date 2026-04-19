@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "ImpersonationRoleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleId"
+        },
+        {
+          "description": "The impersonation role ID."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleName"
+        },
+        {
+          "description": "The impersonation role name."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleType"
+        },
+        {
+          "description": "The impersonation role type."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleDescription"
+        },
+        {
+          "description": "The impersonation role description."
+        }
+      ]
+    },
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleList"
+        },
+        {
+          "description": "The list of rules for the given impersonation role."
+        }
+      ]
+    },
+    "DateCreated": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the impersonation role was created."
+        }
+      ]
+    },
+    "DateModified": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date when the impersonation role was last modified."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "GetImpersonationRoleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-impersonation-role-response-structure.json",
+  "description": "GetImpersonationRoleResponse schema from Amazon WorkMail API"
+}

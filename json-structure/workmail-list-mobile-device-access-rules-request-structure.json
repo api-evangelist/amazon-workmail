@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId"
+  ],
+  "name": "ListMobileDeviceAccessRulesRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which to list the rules."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-mobile-device-access-rules-request-structure.json",
+  "description": "ListMobileDeviceAccessRulesRequest schema from Amazon WorkMail API"
+}

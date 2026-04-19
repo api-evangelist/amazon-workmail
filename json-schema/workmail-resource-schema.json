@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the resource."
+        }
+      ]
+    },
+    "Email": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailAddress"
+        },
+        {
+          "description": "The email of the resource."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceName"
+        },
+        {
+          "description": "The name of the resource."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceType"
+        },
+        {
+          "description": "The type of the resource: equipment or room."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EntityState"
+        },
+        {
+          "description": "The state of the resource, which can be ENABLED, DISABLED, or DELETED."
+        }
+      ]
+    },
+    "EnabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date indicating when the resource was enabled for WorkMail use."
+        }
+      ]
+    },
+    "DisabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date indicating when the resource was disabled from WorkMail use."
+        }
+      ]
+    }
+  },
+  "description": "The representation of a resource.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resource",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-resource-schema.json"
+}

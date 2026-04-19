@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShortString"
+        },
+        {
+          "description": "The retention policy ID."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShortString"
+        },
+        {
+          "description": "The retention policy name."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The retention policy description."
+        }
+      ]
+    },
+    "FolderConfigurations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FolderConfigurations"
+        },
+        {
+          "description": "The retention policy folder configurations."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GetDefaultRetentionPolicyResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-get-default-retention-policy-response-schema.json",
+  "description": "GetDefaultRetentionPolicyResponse schema from Amazon WorkMail API"
+}

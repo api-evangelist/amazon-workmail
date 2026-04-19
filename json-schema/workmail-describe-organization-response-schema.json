@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier of an organization."
+        }
+      ]
+    },
+    "Alias": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationName"
+        },
+        {
+          "description": "The alias for an organization."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The state of an organization."
+        }
+      ]
+    },
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The identifier for the directory associated with an WorkMail organization."
+        }
+      ]
+    },
+    "DirectoryType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The type of directory associated with the WorkMail organization."
+        }
+      ]
+    },
+    "DefaultMailDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The default mail domain associated with the organization."
+        }
+      ]
+    },
+    "CompletedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date at which the organization became usable in the WorkMail context, in UNIX epoch time format."
+        }
+      ]
+    },
+    "ErrorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "(Optional) The error message indicating if unexpected behavior was encountered with regards to the organization."
+        }
+      ]
+    },
+    "ARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the organization."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeOrganizationResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-describe-organization-response-schema.json",
+  "description": "DescribeOrganizationResponse schema from Amazon WorkMail API"
+}

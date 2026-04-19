@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PutMailboxPermissionsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-mailbox-permissions-response-structure.json",
+  "description": "PutMailboxPermissionsResponse schema from Amazon WorkMail API"
+}

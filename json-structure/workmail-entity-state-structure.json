@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "ENABLED",
+    "DISABLED",
+    "DELETED"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "EntityState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-entity-state-structure.json",
+  "description": "EntityState schema from Amazon WorkMail API"
+}

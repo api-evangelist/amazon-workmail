@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "EWS",
+    "LAMBDA"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AvailabilityProviderType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-availability-provider-type-schema.json",
+  "description": "AvailabilityProviderType schema from Amazon WorkMail API"
+}

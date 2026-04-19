@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[a-zA-Z0-9.-]+\\.[a-zA-Z-]{2,}",
+  "minLength": 3,
+  "maxLength": 255,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DomainName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-domain-name-structure.json",
+  "description": "DomainName schema from Amazon WorkMail API"
+}

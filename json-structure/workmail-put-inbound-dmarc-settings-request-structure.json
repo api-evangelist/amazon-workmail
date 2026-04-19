@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "Enforced"
+  ],
+  "name": "PutInboundDmarcSettingsRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The ID of the organization that you are applying the DMARC policy to."
+        }
+      ]
+    },
+    "Enforced": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Enforces or suspends a policy after it's applied."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-inbound-dmarc-settings-request-structure.json",
+  "description": "PutInboundDmarcSettingsRequest schema from Amazon WorkMail API"
+}

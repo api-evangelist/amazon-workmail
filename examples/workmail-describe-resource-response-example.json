@@ -1,0 +1,10 @@
+{
+  "ResourceId": "500123",
+  "Email": "user@example.com",
+  "Name": "Example Workmail Resource",
+  "Type": "ROOM",
+  "BookingOptions": "example-value",
+  "State": "example-value",
+  "EnabledDate": "example-value",
+  "DisabledDate": "example-value"
+}

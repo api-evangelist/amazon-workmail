@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "TestPassed": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Boolean indicating whether the test passed or failed."
+        }
+      ]
+    },
+    "FailureReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "String containing the reason for a failed test if <code>TestPassed</code> is false."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "TestAvailabilityConfigurationResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-test-availability-configuration-response-structure.json",
+  "description": "TestAvailabilityConfigurationResponse schema from Amazon WorkMail API"
+}

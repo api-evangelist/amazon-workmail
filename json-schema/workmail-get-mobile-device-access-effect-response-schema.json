@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRuleEffect"
+        },
+        {
+          "description": "The effect of the simulated access, <code>ALLOW</code> or <code>DENY</code>, after evaluating mobile device access rules in the WorkMail organization for the simulated user parameters."
+        }
+      ]
+    },
+    "MatchedRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessMatchedRuleList"
+        },
+        {
+          "description": "A list of the rules which matched the simulated user input and produced the effect."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GetMobileDeviceAccessEffectResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-get-mobile-device-access-effect-response-schema.json",
+  "description": "GetMobileDeviceAccessEffectResponse schema from Amazon WorkMail API"
+}

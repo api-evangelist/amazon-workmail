@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeleteRetentionPolicyResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-delete-retention-policy-response-schema.json",
+  "description": "DeleteRetentionPolicyResponse schema from Amazon WorkMail API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeregisterFromWorkMailResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-deregister-from-work-mail-response-schema.json",
+  "description": "DeregisterFromWorkMailResponse schema from Amazon WorkMail API"
+}

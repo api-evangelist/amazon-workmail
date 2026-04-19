@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "EwsEndpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Url"
+        },
+        {
+          "description": "The endpoint of the remote EWS server."
+        }
+      ]
+    },
+    "EwsUsername": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExternalUserName"
+        },
+        {
+          "description": "The username used to authenticate the remote EWS server."
+        }
+      ]
+    }
+  },
+  "description": "Describes an EWS based availability provider when returned from the service. It does not contain the password of the endpoint.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "RedactedEwsAvailabilityProvider",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-redacted-ews-availability-provider-structure.json"
+}

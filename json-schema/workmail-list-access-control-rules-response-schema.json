@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRulesList"
+        },
+        {
+          "description": "The access control rules."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListAccessControlRulesResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-access-control-rules-response-schema.json",
+  "description": "ListAccessControlRulesResponse schema from Amazon WorkMail API"
+}

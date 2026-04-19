@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The domain name."
+        }
+      ]
+    },
+    "DefaultDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Whether the domain is default or not."
+        }
+      ]
+    }
+  },
+  "description": "The data for a given domain.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MailDomainSummary",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mail-domain-summary-structure.json"
+}

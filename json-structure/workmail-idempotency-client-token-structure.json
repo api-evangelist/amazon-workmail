@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\x21-\\x7e]+",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "IdempotencyClientToken",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-idempotency-client-token-structure.json",
+  "description": "IdempotencyClientToken schema from Amazon WorkMail API"
+}

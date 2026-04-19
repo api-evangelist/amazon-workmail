@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "Name",
+    "Type",
+    "Rules"
+  ],
+  "name": "CreateImpersonationRoleRequest",
+  "properties": {
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "The idempotency token for the client request."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization to create the new impersonation role within."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleName"
+        },
+        {
+          "description": "The name of the new impersonation role."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleType"
+        },
+        {
+          "description": "The impersonation role's type. The available impersonation role types are <code>READ_ONLY</code> or <code>FULL_ACCESS</code>."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleDescription"
+        },
+        {
+          "description": "The description of the new impersonation role."
+        }
+      ]
+    },
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleList"
+        },
+        {
+          "description": "The list of rules for the impersonation role."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-impersonation-role-request-structure.json",
+  "description": "CreateImpersonationRoleRequest schema from Amazon WorkMail API"
+}

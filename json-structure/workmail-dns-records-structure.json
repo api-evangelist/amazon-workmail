@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DnsRecord"
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DnsRecords",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-dns-records-structure.json",
+  "description": "DnsRecords schema from Amazon WorkMail API"
+}

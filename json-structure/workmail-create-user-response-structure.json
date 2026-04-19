@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "UserId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier for the new user."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateUserResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-user-response-structure.json",
+  "description": "CreateUserResponse schema from Amazon WorkMail API"
+}

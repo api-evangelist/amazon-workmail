@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MobileDeviceAccessOverride"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MobileDeviceAccessOverridesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mobile-device-access-overrides-list-schema.json",
+  "description": "MobileDeviceAccessOverridesList schema from Amazon WorkMail API"
+}

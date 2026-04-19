@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\u0020-\\u00FF]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeviceOperatingSystem",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-device-operating-system-structure.json",
+  "description": "DeviceOperatingSystem schema from Amazon WorkMail API"
+}

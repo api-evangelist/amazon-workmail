@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^(?!d-)([\\da-zA-Z]+)([-][\\da-zA-Z]+)*",
+  "minLength": 1,
+  "maxLength": 62,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "OrganizationName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-organization-name-structure.json",
+  "description": "OrganizationName schema from Amazon WorkMail API"
+}

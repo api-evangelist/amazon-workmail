@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MailDomainNotFoundException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mail-domain-not-found-exception-structure.json",
+  "description": "MailDomainNotFoundException schema from Amazon WorkMail API"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CancelMailboxExportJobResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-cancel-mailbox-export-job-response-structure.json",
+  "description": "CancelMailboxExportJobResponse schema from Amazon WorkMail API"
+}

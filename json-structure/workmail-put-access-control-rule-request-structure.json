@@ -1,0 +1,135 @@
+{
+  "type": "object",
+  "required": [
+    "Name",
+    "Effect",
+    "Description",
+    "OrganizationId"
+  ],
+  "name": "PutAccessControlRuleRequest",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleName"
+        },
+        {
+          "description": "The rule name."
+        }
+      ]
+    },
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleEffect"
+        },
+        {
+          "description": "The rule effect."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessControlRuleDescription"
+        },
+        {
+          "description": "The rule description."
+        }
+      ]
+    },
+    "IpRanges": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRangeList"
+        },
+        {
+          "description": "IPv4 CIDR ranges to include in the rule."
+        }
+      ]
+    },
+    "NotIpRanges": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRangeList"
+        },
+        {
+          "description": "IPv4 CIDR ranges to exclude from the rule."
+        }
+      ]
+    },
+    "Actions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ActionsList"
+        },
+        {
+          "description": "Access protocol actions to include in the rule. Valid values include <code>ActiveSync</code>, <code>AutoDiscover</code>, <code>EWS</code>, <code>IMAP</code>, <code>SMTP</code>, <code>WindowsOutlook</code>, and <code>WebMail</code>."
+        }
+      ]
+    },
+    "NotActions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ActionsList"
+        },
+        {
+          "description": "Access protocol actions to exclude from the rule. Valid values include <code>ActiveSync</code>, <code>AutoDiscover</code>, <code>EWS</code>, <code>IMAP</code>, <code>SMTP</code>, <code>WindowsOutlook</code>, and <code>WebMail</code>."
+        }
+      ]
+    },
+    "UserIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserIdList"
+        },
+        {
+          "description": "User IDs to include in the rule."
+        }
+      ]
+    },
+    "NotUserIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserIdList"
+        },
+        {
+          "description": "User IDs to exclude from the rule."
+        }
+      ]
+    },
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier of the organization."
+        }
+      ]
+    },
+    "ImpersonationRoleIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleIdList"
+        },
+        {
+          "description": "Impersonation role IDs to include in the rule."
+        }
+      ]
+    },
+    "NotImpersonationRoleIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleIdList"
+        },
+        {
+          "description": "Impersonation role IDs to exclude from the rule."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-access-control-rule-request-structure.json",
+  "description": "PutAccessControlRuleRequest schema from Amazon WorkMail API"
+}

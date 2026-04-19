@@ -1,0 +1,176 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon WorkMail"
+  description: "Vocabulary mapping operational API dimensions and capability workflows for Amazon WorkMail."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: workmail
+      name: Amazon WorkMail API
+      version: "2017-10-01"
+      baseUrl: https://workmail.amazonaws.com
+      status: active
+
+  resources:
+    - name: organizations
+      api: workmail
+      actions: [list, create, get, delete]
+    - name: users
+      api: workmail
+      actions: [list, create, get, update, delete, register, deregister]
+    - name: groups
+      api: workmail
+      actions: [list, create, get, delete, register, deregister]
+    - name: aliases
+      api: workmail
+      actions: [list, create, delete]
+    - name: resources
+      api: workmail
+      actions: [list, create, get, update, delete]
+    - name: mailboxes
+      api: workmail
+      actions: [list-export-jobs, create-export-job, get-export-job]
+    - name: mobile-device-access
+      api: workmail
+      actions: [list-rules, create-rule, update-rule, delete-rule, get-effect]
+    - name: tags
+      api: workmail
+      actions: [list, add, remove]
+
+  actions:
+    - name: list
+      httpMethods: [GET]
+      pattern: read
+    - name: get
+      httpMethods: [GET]
+      pattern: read
+    - name: create
+      httpMethods: [POST]
+      pattern: write
+    - name: update
+      httpMethods: [PUT, PATCH]
+      pattern: write
+    - name: delete
+      httpMethods: [DELETE]
+      pattern: destructive
+    - name: register
+      httpMethods: [POST]
+      pattern: write
+    - name: deregister
+      httpMethods: [POST]
+      pattern: write
+
+  schemas:
+    core:
+      - name: Organization
+        description: A WorkMail organization
+        key_properties: [OrganizationId, Alias, State, DefaultMailDomain]
+      - name: User
+        description: A WorkMail user with mailbox
+        key_properties: [UserId, Name, Email, DisplayName, State]
+      - name: Group
+        description: An email distribution group
+        key_properties: [GroupId, Name, Email, State]
+      - name: Resource
+        description: A bookable resource (room or equipment)
+        key_properties: [ResourceId, Name, Email, Type, State]
+
+  parameters:
+    pagination:
+      - name: NextToken
+        description: Pagination token
+      - name: MaxResults
+        description: Maximum results per page
+    identifiers:
+      - name: OrganizationId
+        description: WorkMail organization identifier
+      - name: UserId
+        description: User identifier
+      - name: GroupId
+        description: Group identifier
+      - name: ResourceId
+        description: Resource identifier
+
+  enums:
+    entity-states:
+      - ENABLED
+      - DISABLED
+      - DELETED
+    resource-types:
+      - ROOM
+      - EQUIPMENT
+    mobile-device-access-rule-effect:
+      - ALLOW
+      - DENY
+
+  authentication:
+    schemes:
+      - name: HMAC
+        type: hmac
+        description: AWS Signature Version 4 signing
+
+capability:
+  workflows:
+    - name: Email Management
+      file: capabilities/email-management.yaml
+      description: >-
+        Workflow for IT administrators to manage WorkMail organizations, users,
+        groups, and mobile device access policies.
+      apis: [workmail]
+      tool_count: 5
+      personas: [IT Administrator, Email Operations]
+      domains: [Email, Administration, Governance]
+
+  personas:
+    - id: it-administrator
+      name: IT Administrator
+      description: Manages WorkMail infrastructure, user provisioning, and security policies.
+      workflows: [email-management]
+    - id: email-operations
+      name: Email Operations
+      description: Handles day-to-day email user and group management.
+      workflows: [email-management]
+
+  domains:
+    - name: Email
+      description: Enterprise email provisioning and management
+    - name: Administration
+      description: IT administration of email infrastructure
+    - name: Governance
+      description: Mobile device access control and compliance
+
+  namespaces:
+    consumed:
+      - workmail
+    rest:
+      - name: email-management-api
+        port: 8080
+    mcp:
+      - name: email-management-mcp
+        port: 9090
+
+  binds:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - AWS_REGION
+
+crossReference:
+  - resource: organizations
+    operations: [list, create, get]
+    workflows: [email-management]
+    personas: [IT Administrator]
+  - resource: users
+    operations: [list, create]
+    workflows: [email-management]
+    personas: [IT Administrator, Email Operations]
+  - resource: groups
+    operations: [list]
+    workflows: [email-management]
+    personas: [IT Administrator, Email Operations]
+  - resource: mobile-device-access
+    operations: [list-rules]
+    workflows: [email-management]
+    personas: [IT Administrator]

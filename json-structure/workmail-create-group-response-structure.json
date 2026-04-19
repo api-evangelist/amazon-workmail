@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the group."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateGroupResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-group-response-structure.json",
+  "description": "CreateGroupResponse schema from Amazon WorkMail API"
+}

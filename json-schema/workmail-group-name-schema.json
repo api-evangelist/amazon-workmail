@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\u0020-\\u00FF]+",
+  "minLength": 1,
+  "maxLength": 256,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GroupName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-group-name-schema.json",
+  "description": "GroupName schema from Amazon WorkMail API"
+}

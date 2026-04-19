@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[A-Za-z0-9!_.*'()/-]+",
+  "minLength": 1,
+  "maxLength": 1023,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "S3ObjectKey",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-s3-object-key-structure.json",
+  "description": "S3ObjectKey schema from Amazon WorkMail API"
+}

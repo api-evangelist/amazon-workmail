@@ -1,0 +1,11 @@
+{
+  "JobId": "500123",
+  "EntityId": "500123",
+  "Description": "example-value",
+  "S3BucketName": "Example Workmail Resource",
+  "S3Path": "example-value",
+  "EstimatedProgress": "example-value",
+  "State": "example-value",
+  "StartTime": "example-value",
+  "EndTime": "example-value"
+}

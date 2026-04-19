@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 128,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TagKey",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-tag-key-schema.json",
+  "description": "TagKey schema from Amazon WorkMail API"
+}

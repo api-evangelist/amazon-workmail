@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "enum": [
+    "RUNNING",
+    "COMPLETED",
+    "FAILED",
+    "CANCELLED"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MailboxExportJobState",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mailbox-export-job-state-schema.json",
+  "description": "MailboxExportJobState schema from Amazon WorkMail API"
+}

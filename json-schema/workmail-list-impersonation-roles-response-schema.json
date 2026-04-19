@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Roles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleList"
+        },
+        {
+          "description": "The list of impersonation roles under the given WorkMail organization."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to retrieve the next page of results. The value is <code>null</code> when there are no results to return."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListImpersonationRolesResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-impersonation-roles-response-schema.json",
+  "description": "ListImpersonationRolesResponse schema from Amazon WorkMail API"
+}

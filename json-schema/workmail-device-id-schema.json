@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[A-Za-z0-9]+",
+  "minLength": 1,
+  "maxLength": 32,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeviceId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-device-id-schema.json",
+  "description": "DeviceId schema from Amazon WorkMail API"
+}

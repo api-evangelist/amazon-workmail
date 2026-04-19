@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "Rules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MobileDeviceAccessRulesList"
+        },
+        {
+          "description": "The list of mobile device access rules that exist under the specified WorkMail organization."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ListMobileDeviceAccessRulesResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-mobile-device-access-rules-response-structure.json",
+  "description": "ListMobileDeviceAccessRulesResponse schema from Amazon WorkMail API"
+}

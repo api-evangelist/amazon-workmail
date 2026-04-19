@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "GranteeId",
+    "GranteeType",
+    "PermissionValues"
+  ],
+  "properties": {
+    "GranteeId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WorkMailIdentifier"
+        },
+        {
+          "description": "The identifier of the user, group, or resource to which the permissions are granted."
+        }
+      ]
+    },
+    "GranteeType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MemberType"
+        },
+        {
+          "description": "The type of user, group, or resource referred to in GranteeId."
+        }
+      ]
+    },
+    "PermissionValues": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PermissionValues"
+        },
+        {
+          "description": "The permissions granted to the grantee. SEND_AS allows the grantee to send email as the owner of the mailbox (the grantee is not mentioned on these emails). SEND_ON_BEHALF allows the grantee to send email on behalf of the owner of the mailbox (the grantee is not mentioned as the physical sender of these emails). FULL_ACCESS allows the grantee full access to the mailbox, irrespective of other folder-level permissions set on the mailbox."
+        }
+      ]
+    }
+  },
+  "description": "Permission granted to a user, group, or resource to access a certain aspect of another user, group, or resource mailbox.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Permission",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-permission-schema.json"
+}

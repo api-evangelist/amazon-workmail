@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteImpersonationRoleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-impersonation-role-response-structure.json",
+  "description": "DeleteImpersonationRoleResponse schema from Amazon WorkMail API"
+}

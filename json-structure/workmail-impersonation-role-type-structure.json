@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "FULL_ACCESS",
+    "READ_ONLY"
+  ],
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImpersonationRoleType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-impersonation-role-type-structure.json",
+  "description": "ImpersonationRoleType schema from Amazon WorkMail API"
+}

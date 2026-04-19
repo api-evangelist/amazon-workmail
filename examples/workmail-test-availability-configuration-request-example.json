@@ -1,0 +1,6 @@
+{
+  "OrganizationId": "500123",
+  "DomainName": "Example Workmail Resource",
+  "EwsProvider": "500123",
+  "LambdaProvider": "500123"
+}

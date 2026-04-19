@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/AccessControlRule"
+  },
+  "minItems": 0,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AccessControlRulesList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-access-control-rules-list-structure.json",
+  "description": "AccessControlRulesList schema from Amazon WorkMail API"
+}

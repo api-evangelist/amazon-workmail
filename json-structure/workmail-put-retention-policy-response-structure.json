@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PutRetentionPolicyResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-retention-policy-response-structure.json",
+  "description": "PutRetentionPolicyResponse schema from Amazon WorkMail API"
+}

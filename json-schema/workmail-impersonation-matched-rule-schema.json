@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "ImpersonationRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleId"
+        },
+        {
+          "description": "The ID of the rule that matched the input"
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleName"
+        },
+        {
+          "description": "The name of the rule that matched the input."
+        }
+      ]
+    }
+  },
+  "description": "The impersonation rule that matched the input.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImpersonationMatchedRule",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-impersonation-matched-rule-schema.json"
+}

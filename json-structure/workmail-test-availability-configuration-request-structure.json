@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId"
+  ],
+  "name": "TestAvailabilityConfigurationRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization where the availability provider will be tested."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The domain to which the provider applies. If this field is provided, a stored availability provider associated to this domain name will be tested."
+        }
+      ]
+    },
+    "EwsProvider": {
+      "$ref": "#/components/schemas/EwsAvailabilityProvider"
+    },
+    "LambdaProvider": {
+      "$ref": "#/components/schemas/LambdaAvailabilityProvider"
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-test-availability-configuration-request-structure.json",
+  "description": "TestAvailabilityConfigurationRequest schema from Amazon WorkMail API"
+}

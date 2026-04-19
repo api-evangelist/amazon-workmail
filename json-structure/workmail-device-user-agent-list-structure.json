@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DeviceUserAgent"
+  },
+  "minItems": 1,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeviceUserAgentList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-device-user-agent-list-structure.json",
+  "description": "DeviceUserAgentList schema from Amazon WorkMail API"
+}

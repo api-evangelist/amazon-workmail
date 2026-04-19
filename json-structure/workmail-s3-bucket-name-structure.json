@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[A-Za-z0-9.-]+",
+  "minLength": 1,
+  "maxLength": 63,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "S3BucketName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-s3-bucket-name-structure.json",
+  "description": "S3BucketName schema from Amazon WorkMail API"
+}

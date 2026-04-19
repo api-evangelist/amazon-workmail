@@ -1,0 +1,7 @@
+{
+  "OrganizationId": "500123",
+  "DeviceType": "ROOM",
+  "DeviceModel": "example-value",
+  "DeviceOperatingSystem": "example-value",
+  "DeviceUserAgent": "example-value"
+}

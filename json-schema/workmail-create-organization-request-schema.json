@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "required": [
+    "Alias"
+  ],
+  "title": "CreateOrganizationRequest",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The AWS Directory Service directory ID."
+        }
+      ]
+    },
+    "Alias": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationName"
+        },
+        {
+          "description": "The organization alias."
+        }
+      ]
+    },
+    "ClientToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdempotencyClientToken"
+        },
+        {
+          "description": "The idempotency token associated with the request."
+        }
+      ]
+    },
+    "Domains": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Domains"
+        },
+        {
+          "description": "The email domains to associate with the organization."
+        }
+      ]
+    },
+    "KmsKeyArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/KmsKeyArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of a customer managed key from AWS KMS."
+        }
+      ]
+    },
+    "EnableInteroperability": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "When <code>true</code>, allows organization interoperability between WorkMail and Microsoft Exchange. If <code>true</code>, you must include a AD Connector directory ID in the request."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-create-organization-request-schema.json",
+  "description": "CreateOrganizationRequest schema from Amazon WorkMail API"
+}

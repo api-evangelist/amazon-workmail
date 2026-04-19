@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "DomainName"
+  ],
+  "title": "UpdateAvailabilityConfigurationRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The WorkMail organization for which the <code>AvailabilityConfiguration</code> will be updated."
+        }
+      ]
+    },
+    "DomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainName"
+        },
+        {
+          "description": "The domain to which the provider applies the availability configuration."
+        }
+      ]
+    },
+    "EwsProvider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EwsAvailabilityProvider"
+        },
+        {
+          "description": "The EWS availability provider definition. The request must contain exactly one provider definition, either <code>EwsProvider</code> or <code>LambdaProvider</code>. The previously stored provider will be overridden by the one provided."
+        }
+      ]
+    },
+    "LambdaProvider": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LambdaAvailabilityProvider"
+        },
+        {
+          "description": "The Lambda availability provider definition. The request must contain exactly one provider definition, either <code>EwsProvider</code> or <code>LambdaProvider</code>. The previously stored provider will be overridden by the one provided."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-update-availability-configuration-request-schema.json",
+  "description": "UpdateAvailabilityConfigurationRequest schema from Amazon WorkMail API"
+}

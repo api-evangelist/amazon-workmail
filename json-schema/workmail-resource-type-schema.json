@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ROOM",
+    "EQUIPMENT"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResourceType",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-resource-type-schema.json",
+  "description": "ResourceType schema from Amazon WorkMail API"
+}

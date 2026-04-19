@@ -1,0 +1,10 @@
+{
+  "ClientToken": "abc123def456",
+  "OrganizationId": "500123",
+  "EntityId": "500123",
+  "Description": "example-value",
+  "RoleArn": "arn:aws:workmail:us-east-1:123456789012:organization/m-abc123",
+  "KmsKeyArn": "arn:aws:workmail:us-east-1:123456789012:organization/m-abc123",
+  "S3BucketName": "Example Workmail Resource",
+  "S3Prefix": "example-value"
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "LimitExceededException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-limit-exceeded-exception-structure.json",
+  "description": "LimitExceededException schema from Amazon WorkMail API"
+}

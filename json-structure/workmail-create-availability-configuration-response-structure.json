@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "CreateAvailabilityConfigurationResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-availability-configuration-response-structure.json",
+  "description": "CreateAvailabilityConfigurationResponse schema from Amazon WorkMail API"
+}

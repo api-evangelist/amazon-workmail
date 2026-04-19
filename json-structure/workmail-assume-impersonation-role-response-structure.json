@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Token": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationToken"
+        },
+        {
+          "description": "The authentication token for the impersonation role."
+        }
+      ]
+    },
+    "ExpiresIn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExpiresIn"
+        },
+        {
+          "description": "The authentication token's validity, in seconds."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "AssumeImpersonationRoleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-assume-impersonation-role-response-structure.json",
+  "description": "AssumeImpersonationRoleResponse schema from Amazon WorkMail API"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "Name",
+    "Action"
+  ],
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FolderName"
+        },
+        {
+          "description": "The folder name."
+        }
+      ]
+    },
+    "Action": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RetentionAction"
+        },
+        {
+          "description": "The action to take on the folder contents at the end of the folder configuration period."
+        }
+      ]
+    },
+    "Period": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RetentionPeriod"
+        },
+        {
+          "description": "The number of days for which the folder-configuration action applies."
+        }
+      ]
+    }
+  },
+  "description": "The configuration applied to an organization's folders by its retention policy.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "FolderConfiguration",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-folder-configuration-structure.json"
+}

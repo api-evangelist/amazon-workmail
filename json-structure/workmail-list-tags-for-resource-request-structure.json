@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "ResourceARN"
+  ],
+  "name": "ListTagsForResourceRequest",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The resource ARN."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-list-tags-for-resource-request-structure.json",
+  "description": "ListTagsForResourceRequest schema from Amazon WorkMail API"
+}

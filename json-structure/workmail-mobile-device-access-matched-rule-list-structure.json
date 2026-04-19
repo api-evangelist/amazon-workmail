@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MobileDeviceAccessMatchedRule"
+  },
+  "minItems": 0,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "MobileDeviceAccessMatchedRuleList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-mobile-device-access-matched-rule-list-structure.json",
+  "description": "MobileDeviceAccessMatchedRuleList schema from Amazon WorkMail API"
+}

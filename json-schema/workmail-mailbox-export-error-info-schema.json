@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[\\S\\s]*",
+  "minLength": 1,
+  "maxLength": 1024,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MailboxExportErrorInfo",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-mailbox-export-error-info-schema.json",
+  "description": "MailboxExportErrorInfo schema from Amazon WorkMail API"
+}

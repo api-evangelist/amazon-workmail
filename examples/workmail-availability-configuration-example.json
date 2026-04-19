@@ -1,0 +1,8 @@
+{
+  "DomainName": "Example Workmail Resource",
+  "ProviderType": "500123",
+  "EwsProvider": "500123",
+  "LambdaProvider": "500123",
+  "DateCreated": "example-value",
+  "DateModified": "example-value"
+}

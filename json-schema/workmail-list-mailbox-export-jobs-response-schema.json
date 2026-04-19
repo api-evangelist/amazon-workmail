@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Jobs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Jobs"
+        },
+        {
+          "description": "The mailbox export job details."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token to use to retrieve the next page of results."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListMailboxExportJobsResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-mailbox-export-jobs-response-schema.json",
+  "description": "ListMailboxExportJobsResponse schema from Amazon WorkMail API"
+}

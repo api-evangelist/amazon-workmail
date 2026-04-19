@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "Resources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Resources"
+        },
+        {
+          "description": "One page of the organization's resource representation."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": " The token used to paginate through all the organization's resources. While results are still available, it has an associated value. When the last page is reached, the token is empty."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListResourcesResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-list-resources-response-schema.json",
+  "description": "ListResourcesResponse schema from Amazon WorkMail API"
+}

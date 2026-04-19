@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "^m-[0-9a-f]{32}$",
+  "minLength": 34,
+  "maxLength": 34,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OrganizationId",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-organization-id-schema.json",
+  "description": "OrganizationId schema from Amazon WorkMail API"
+}

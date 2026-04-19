@@ -1,0 +1,8 @@
+{
+  "ImpersonationRuleId": "500123",
+  "Name": "Example Workmail Resource",
+  "Description": "example-value",
+  "Effect": "example-value",
+  "TargetUsers": "example-value",
+  "NotTargetUsers": "example-value"
+}

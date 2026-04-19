@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "Id",
+    "Type"
+  ],
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The identifier for the user or group associated as the resource's delegate."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MemberType"
+        },
+        {
+          "description": "The type of the delegate: user or group."
+        }
+      ]
+    }
+  },
+  "description": "The name of the attribute, which is one of the values defined in the UserAttribute enumeration.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "Delegate",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delegate-structure.json"
+}

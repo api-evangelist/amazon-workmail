@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "required": [
+    "OrganizationId",
+    "Name",
+    "DisplayName",
+    "Password"
+  ],
+  "name": "CreateUserRequest",
+  "properties": {
+    "OrganizationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OrganizationId"
+        },
+        {
+          "description": "The identifier of the organization for which the user is created."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "The name for the new user. WorkMail directory user names have a maximum length of 64. All others have a maximum length of 20."
+        }
+      ]
+    },
+    "DisplayName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The display name for the new user."
+        }
+      ]
+    },
+    "Password": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Password"
+        },
+        {
+          "description": "The password for the new user."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-create-user-request-structure.json",
+  "description": "CreateUserRequest schema from Amazon WorkMail API"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRoleType"
+        },
+        {
+          "description": "The impersonation role type."
+        }
+      ]
+    },
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessEffect"
+        },
+        {
+          "description": " <code/>Effect of the impersonation role on the target user based on its rules. Available effects are <code>ALLOW</code> or <code>DENY</code>."
+        }
+      ]
+    },
+    "MatchedRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationMatchedRuleList"
+        },
+        {
+          "description": "A list of the rules that match the input and produce the configured effect."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "GetImpersonationRoleEffectResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-impersonation-role-effect-response-structure.json",
+  "description": "GetImpersonationRoleEffectResponse schema from Amazon WorkMail API"
+}

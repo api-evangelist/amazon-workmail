@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The identifier of the described resource."
+        }
+      ]
+    },
+    "Email": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailAddress"
+        },
+        {
+          "description": "The email of the described resource."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceName"
+        },
+        {
+          "description": "The name of the described resource."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceType"
+        },
+        {
+          "description": "The type of the described resource."
+        }
+      ]
+    },
+    "BookingOptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BookingOptions"
+        },
+        {
+          "description": "The booking options for the described resource."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EntityState"
+        },
+        {
+          "description": "The state of the resource: enabled (registered to WorkMail), disabled (deregistered or never registered to WorkMail), or deleted."
+        }
+      ]
+    },
+    "EnabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date and time when a resource was enabled for WorkMail, in UNIX epoch time format."
+        }
+      ]
+    },
+    "DisabledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The date and time when a resource was disabled from WorkMail, in UNIX epoch time format."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DescribeResourceResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-schema/workmail-describe-resource-response-schema.json",
+  "description": "DescribeResourceResponse schema from Amazon WorkMail API"
+}

@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "Records": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsRecords"
+        },
+        {
+          "description": "A list of the DNS records that WorkMail recommends adding in your DNS provider for the best user experience. The records configure your domain with DMARC, SPF, DKIM, and direct incoming email traffic to SES. See admin guide for more details."
+        }
+      ]
+    },
+    "IsTestDomain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Specifies whether the domain is a test domain provided by WorkMail, or a custom domain."
+        }
+      ]
+    },
+    "IsDefault": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Specifies whether the domain is the default domain for your organization."
+        }
+      ]
+    },
+    "OwnershipVerificationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsRecordVerificationStatus"
+        },
+        {
+          "description": " Indicates the status of the domain ownership verification."
+        }
+      ]
+    },
+    "DkimVerificationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsRecordVerificationStatus"
+        },
+        {
+          "description": "Indicates the status of a DKIM verification."
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "GetMailDomainResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-get-mail-domain-response-structure.json",
+  "description": "GetMailDomainResponse schema from Amazon WorkMail API"
+}

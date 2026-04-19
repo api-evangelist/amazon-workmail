@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/DeviceModel"
+  },
+  "minItems": 1,
+  "maxItems": 10,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeviceModelList",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-device-model-list-structure.json",
+  "description": "DeviceModelList schema from Amazon WorkMail API"
+}

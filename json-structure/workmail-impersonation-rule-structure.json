@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "required": [
+    "ImpersonationRuleId",
+    "Effect"
+  ],
+  "properties": {
+    "ImpersonationRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleId"
+        },
+        {
+          "description": "The identifier of the rule."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleName"
+        },
+        {
+          "description": "The rule name."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImpersonationRuleDescription"
+        },
+        {
+          "description": "The rule description."
+        }
+      ]
+    },
+    "Effect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessEffect"
+        },
+        {
+          "description": "The effect of the rule when it matches the input. Allowed effect values are <code>ALLOW</code> or <code>DENY</code>."
+        }
+      ]
+    },
+    "TargetUsers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TargetUsers"
+        },
+        {
+          "description": "A list of user IDs that match the rule."
+        }
+      ]
+    },
+    "NotTargetUsers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TargetUsers"
+        },
+        {
+          "description": "A list of user IDs that don't match the rule."
+        }
+      ]
+    }
+  },
+  "description": "The rules for the given impersonation role.",
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImpersonationRule",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-impersonation-rule-structure.json"
+}

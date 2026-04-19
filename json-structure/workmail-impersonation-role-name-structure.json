@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "pattern": "[^\\x00-\\x1F\\x7F\\x3C\\x3E\\x5C]+",
+  "minLength": 1,
+  "maxLength": 64,
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "ImpersonationRoleName",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-impersonation-role-name-structure.json",
+  "description": "ImpersonationRoleName schema from Amazon WorkMail API"
+}

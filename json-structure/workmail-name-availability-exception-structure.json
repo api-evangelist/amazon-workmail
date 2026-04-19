@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "NameAvailabilityException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-name-availability-exception-structure.json",
+  "description": "NameAvailabilityException schema from Amazon WorkMail API"
+}

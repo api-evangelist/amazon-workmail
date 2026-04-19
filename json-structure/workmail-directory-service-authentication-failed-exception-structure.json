@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DirectoryServiceAuthenticationFailedException",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-directory-service-authentication-failed-exception-structure.json",
+  "description": "DirectoryServiceAuthenticationFailedException schema from Amazon WorkMail API"
+}

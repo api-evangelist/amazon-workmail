@@ -1,0 +1,8 @@
+{
+  "OrganizationId": "500123",
+  "ImpersonationRoleId": "500123",
+  "Name": "Example Workmail Resource",
+  "Type": "ROOM",
+  "Description": "example-value",
+  "Rules": "example-value"
+}

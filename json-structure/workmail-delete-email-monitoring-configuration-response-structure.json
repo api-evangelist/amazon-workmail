@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "DeleteEmailMonitoringConfigurationResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-delete-email-monitoring-configuration-response-structure.json",
+  "description": "DeleteEmailMonitoringConfigurationResponse schema from Amazon WorkMail API"
+}

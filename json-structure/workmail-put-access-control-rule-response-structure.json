@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {},
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "name": "PutAccessControlRuleResponse",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/json-structure/workmail-put-access-control-rule-response-structure.json",
+  "description": "PutAccessControlRuleResponse schema from Amazon WorkMail API"
+}
