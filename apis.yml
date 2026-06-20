@@ -5,7 +5,7 @@ description: Amazon WorkMail is a secure, managed business email and calendar se
   enterprise-grade security controls for business communications. WorkMail integrates with Active Directory, supports IMAP
   and Exchange ActiveSync for mobile devices, and provides 80 API operations for programmatic management.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - AWS
 - Business Communication
