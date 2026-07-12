@@ -50,6 +50,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-workmail.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-workmail-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-workmail-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-workmail-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-workmail-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/
 - type: Website
