@@ -1,7 +1,21 @@
-# Amazon WorkMail API Spectral Ruleset
-
+# amazon-workmail — Spectral ruleset (strengthened)
+# Plain Spectral. Existing hand-authored rules preserved; measured rules added
+# from this provider's own OpenAPI conventions by strengthen_ruleset.py,
+# then self-validated against the spec.
+#
+# Provenance:
+#   - servers-https-only: 50% of servers already https (warn)
+#   - query-params-casing: pascal @ 100% (n=26)
+#   - operationid-casing: pascal @ 100% (n=80)
+#   - schema-names-casing: pascal @ 100% (n=317)
+#   - schema-properties-casing: pascal @ 100% (n=504)
+#   - security: global (root) — NOT emitting operation-security-required
+#   - error-schema-defined: MailboxExportErrorInfo
+#   - merge: kept 19 existing, added 5 measured, upgraded 0
+#   - added: query-params-casing, operationid-casing, schema-names-casing, schema-properties-casing, error-schema-defined
+extends:
+  - spectral:oas
 rules:
-
   info-title-format:
     description: API title should reference Amazon WorkMail
     severity: warn
@@ -10,8 +24,7 @@ rules:
       field: title
       function: pattern
       functionOptions:
-        match: "^Amazon WorkMail"
-
+        match: ^Amazon WorkMail
   info-description-required:
     description: API info must have a description
     severity: error
@@ -19,7 +32,6 @@ rules:
     then:
       field: description
       function: truthy
-
   info-version-required:
     description: API info must have a version
     severity: error
@@ -27,7 +39,6 @@ rules:
     then:
       field: version
       function: truthy
-
   openapi-version:
     description: Must use OpenAPI 3.0.x
     severity: error
@@ -36,8 +47,7 @@ rules:
       field: openapi
       function: pattern
       functionOptions:
-        match: "^3\\.0\\."
-
+        match: ^3\.0\.
   servers-defined:
     description: At least one server must be defined
     severity: error
@@ -45,7 +55,6 @@ rules:
     then:
       field: servers
       function: truthy
-
   servers-https:
     description: All server URLs must use HTTPS
     severity: error
@@ -54,18 +63,16 @@ rules:
       field: url
       function: pattern
       functionOptions:
-        match: "^https://"
-
+        match: ^https://
   paths-no-trailing-slash:
     description: Paths must not have a trailing slash
     severity: warn
     given: $.paths
     then:
-      field: "@key"
+      field: '@key'
       function: pattern
       functionOptions:
-        notMatch: "/$"
-
+        notMatch: /$
   operation-operationid-required:
     description: Every operation must have an operationId
     severity: error
@@ -73,7 +80,6 @@ rules:
     then:
       field: operationId
       function: truthy
-
   operation-summary-required:
     description: Every operation must have a summary
     severity: warn
@@ -81,7 +87,6 @@ rules:
     then:
       field: summary
       function: truthy
-
   operation-summary-prefix:
     description: Operation summary should start with Amazon WorkMail
     severity: info
@@ -90,8 +95,7 @@ rules:
       field: summary
       function: pattern
       functionOptions:
-        match: "^Amazon WorkMail"
-
+        match: ^Amazon WorkMail
   operation-tags-required:
     description: Every operation must have at least one tag
     severity: warn
@@ -99,7 +103,6 @@ rules:
     then:
       field: tags
       function: truthy
-
   parameter-description-required:
     description: All parameters must have a description
     severity: warn
@@ -107,7 +110,6 @@ rules:
     then:
       field: description
       function: truthy
-
   request-body-json-content:
     description: Request bodies should support application/json
     severity: warn
@@ -115,7 +117,6 @@ rules:
     then:
       field: application/json
       function: truthy
-
   response-description-required:
     description: All responses must have a description
     severity: error
@@ -123,7 +124,6 @@ rules:
     then:
       field: description
       function: truthy
-
   schema-description-recommended:
     description: Top-level schemas should have a description
     severity: info
@@ -131,7 +131,6 @@ rules:
     then:
       field: description
       function: truthy
-
   get-no-request-body:
     description: GET operations must not have a request body
     severity: error
@@ -139,7 +138,6 @@ rules:
     then:
       field: requestBody
       function: falsy
-
   no-empty-descriptions:
     description: Descriptions must not be empty strings
     severity: warn
@@ -147,8 +145,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: ".+"
-
+        match: .+
   security-schemes-defined:
     description: Security schemes should be defined in components
     severity: warn
@@ -156,11 +153,52 @@ rules:
     then:
       field: securitySchemes
       function: truthy
-
   components-schemas-exist:
     description: Components schemas should be defined for reuse
     severity: info
     given: $.components
     then:
       field: schemas
+      function: truthy
+  query-params-casing:
+    description: Query parameters should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].parameters[?(@.in=='query')]
+    then:
+      field: name
+      function: casing
+      functionOptions:
+        type: pascal
+  operationid-casing:
+    description: Operation IDs should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].operationId
+    then:
+      function: casing
+      functionOptions:
+        type: pascal
+  schema-names-casing:
+    description: Component schema names should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: '@key'
+      function: casing
+      functionOptions:
+        type: pascal
+  schema-properties-casing:
+    description: Schema properties should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.components.schemas[*].properties
+    then:
+      field: '@key'
+      function: pattern
+      functionOptions:
+        match: ^[A-Z][A-Za-z0-9]*$
+  error-schema-defined:
+    description: A shared error schema (MailboxExportErrorInfo) should be defined for error payloads.
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: MailboxExportErrorInfo
       function: truthy
