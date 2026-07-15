@@ -50,6 +50,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-workmail.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/amazon-workmail-agentic-access.yml
 - type: TrustCenter
   url: security/amazon-workmail-trust-center.yml
 - type: VulnerabilityDisclosure
