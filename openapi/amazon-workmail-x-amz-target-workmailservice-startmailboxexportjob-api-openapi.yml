@@ -1,0 +1,337 @@
+openapi: 3.0.0
+info:
+  version: '2017-10-01'
+  x-release: v4
+  title: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.StartMailboxExportJob API'
+  description: <p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: workmail
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workmail-2017-10-01.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://workmail.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkMail multi-region endpoint
+- url: https://workmail.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Amazon WorkMail multi-region endpoint
+- url: http://workmail.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkMail endpoint for China (Beijing) and China (Ningxia)
+- url: https://workmail.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Amazon WorkMail endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=WorkMailService.StartMailboxExportJob'
+paths:
+  /#X-Amz-Target=WorkMailService.StartMailboxExportJob:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: StartMailboxExportJob
+      description: Starts a mailbox export job to export MIME-format email messages and calendar items from the specified mailbox to the specified Amazon Simple Storage Service (Amazon S3) bucket. For more information, see <a href="https://docs.aws.amazon.com/workmail/latest/adminguide/mail-export.html">Exporting mailbox content</a> in the <i>WorkMail Administrator Guide</i>.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StartMailboxExportJobResponse'
+        '480':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '481':
+          description: OrganizationNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrganizationNotFoundException'
+        '482':
+          description: OrganizationStateException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrganizationStateException'
+        '483':
+          description: EntityNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityNotFoundException'
+        '484':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StartMailboxExportJobRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - WorkMailService.StartMailboxExportJob
+      summary: Amazon WorkMail Start Mailbox Export Job
+      tags:
+      - '#X Amz Target=WorkMailService.StartMailboxExportJob'
+components:
+  schemas:
+    MailboxExportJobId:
+      type: string
+      pattern: '[A-Za-z0-9-]+'
+      minLength: 1
+      maxLength: 63
+    OrganizationId:
+      type: string
+      pattern: ^m-[0-9a-f]{32}$
+      minLength: 34
+      maxLength: 34
+    OrganizationStateException: {}
+    Description:
+      type: string
+      pattern: '[\S\s]*'
+      minLength: 0
+      maxLength: 1023
+    InvalidParameterException: {}
+    OrganizationNotFoundException: {}
+    IdempotencyClientToken:
+      type: string
+      pattern: '[\x21-\x7e]+'
+      minLength: 1
+      maxLength: 128
+    LimitExceededException: {}
+    StartMailboxExportJobResponse:
+      type: object
+      properties:
+        JobId:
+          allOf:
+          - $ref: '#/components/schemas/MailboxExportJobId'
+          - description: The job ID.
+    RoleArn:
+      type: string
+      minLength: 20
+      maxLength: 2048
+    S3ObjectKey:
+      type: string
+      pattern: '[A-Za-z0-9!_.*''()/-]+'
+      minLength: 1
+      maxLength: 1023
+    S3BucketName:
+      type: string
+      pattern: '[A-Za-z0-9.-]+'
+      minLength: 1
+      maxLength: 63
+    WorkMailIdentifier:
+      type: string
+      minLength: 12
+      maxLength: 256
+    EntityNotFoundException: {}
+    StartMailboxExportJobRequest:
+      type: object
+      required:
+      - ClientToken
+      - OrganizationId
+      - EntityId
+      - RoleArn
+      - KmsKeyArn
+      - S3BucketName
+      - S3Prefix
+      title: StartMailboxExportJobRequest
+      properties:
+        ClientToken:
+          allOf:
+          - $ref: '#/components/schemas/IdempotencyClientToken'
+          - description: The idempotency token for the client request.
+        OrganizationId:
+          allOf:
+          - $ref: '#/components/schemas/OrganizationId'
+          - description: The identifier associated with the organization.
+        EntityId:
+          allOf:
+          - $ref: '#/components/schemas/WorkMailIdentifier'
+          - description: The identifier of the user or resource associated with the mailbox.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The mailbox export job description.
+        RoleArn:
+          allOf:
+          - $ref: '#/components/schemas/RoleArn'
+          - description: The ARN of the AWS Identity and Access Management (IAM) role that grants write permission to the S3 bucket.
+        KmsKeyArn:
+          allOf:
+          - $ref: '#/components/schemas/KmsKeyArn'
+          - description: The Amazon Resource Name (ARN) of the symmetric AWS Key Management Service (AWS KMS) key that encrypts the exported mailbox content.
+        S3BucketName:
+          allOf:
+          - $ref: '#/components/schemas/S3BucketName'
+          - description: The name of the S3 bucket.
+        S3Prefix:
+          allOf:
+          - $ref: '#/components/schemas/S3ObjectKey'
+          - description: The S3 bucket prefix.
+    KmsKeyArn:
+      type: string
+      pattern: arn:aws:kms:[a-z0-9-]*:[a-z0-9-]+:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}
+      minLength: 20
+      maxLength: 2048
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/workmail/
+x-hasEquivalentPaths: true
