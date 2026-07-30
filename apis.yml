@@ -5,7 +5,20 @@ description: Amazon WorkMail is a secure, managed business email and calendar se
   enterprise-grade security controls for business communications. WorkMail integrates with Active Directory, supports IMAP
   and Exchange ActiveSync for mobile devices, and provides 80 API operations for programmatic management.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-workmail.png
 tags:
 - AWS
 - Business Communication
@@ -18,19 +31,20 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: amazon-workmail:amazon-workmail-api
-  name: Amazon WorkMail API
-  description: The Amazon WorkMail API provides programmatic access to manage organizations, users, groups, aliases, mailboxes,
-    resources, and mobile device access. It enables automation of email infrastructure provisioning and management for enterprise
-    deployments with 80 operations.
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-associatedelegatetoresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.AssociateDelegateToResource API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.associatedelegatetoresource.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
   tags:
-  - AWS
-  - Calendar
-  - Email
-  - Enterprise
+  - '#X Amz Target=WorkMailService.AssociateDelegateToResource'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-associatedelegatetoresource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/workmail/latest/adminguide/
   - type: APIReference
@@ -41,8 +55,2290 @@ apis:
     url: https://aws.amazon.com/workmail/pricing/
   - type: FAQ
     url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-associatemembertogroup-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateMemberToGroup API'
+  description: >-
+    The #X Amz Target=WorkMailService.AssociateMemberToGroup API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.associatemembertogroup.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.AssociateMemberToGroup'
+  properties:
   - type: OpenAPI
-    url: openapi/amazon-workmail-openapi-original.yaml
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-associatemembertogroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-assumeimpersonationrole-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.AssumeImpersonationRole API'
+  description: >-
+    The #X Amz Target=WorkMailService.AssumeImpersonationRole API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.assumeimpersonationrole.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.AssumeImpersonationRole'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-assumeimpersonationrole-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-cancelmailboxexportjob-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CancelMailboxExportJob API'
+  description: >-
+    The #X Amz Target=WorkMailService.CancelMailboxExportJob API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.cancelmailboxexportjob.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CancelMailboxExportJob'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-cancelmailboxexportjob-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createalias-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateAlias API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateAlias API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.createalias.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateAlias'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-createalias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createavailabilityconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateAvailabilityConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateAvailabilityConfiguration API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.createavailabilityconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateAvailabilityConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-createavailabilityconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-creategroup-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateGroup API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateGroup API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.creategroup.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateGroup'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-creategroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createimpersonationrole-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateImpersonationRole API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateImpersonationRole API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.createimpersonationrole.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateImpersonationRole'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-createimpersonationrole-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createmobiledeviceaccessrule-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateMobileDeviceAccessRule API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateMobileDeviceAccessRule API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.createmobiledeviceaccessrule.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateMobileDeviceAccessRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-createmobiledeviceaccessrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createorganization-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateOrganization API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateOrganization API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.createorganization.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateOrganization'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-createorganization-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateResource API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.createresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-createresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-createuser-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.CreateUser API'
+  description: >-
+    The #X Amz Target=WorkMailService.CreateUser API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.createuser.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.CreateUser'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-createuser-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteaccesscontrolrule-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteAccessControlRule API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteAccessControlRule API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deleteaccesscontrolrule.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteAccessControlRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deleteaccesscontrolrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deletealias-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteAlias API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteAlias API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.deletealias.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteAlias'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-deletealias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteavailabilityconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteAvailabilityConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteAvailabilityConfiguration API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deleteavailabilityconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteAvailabilityConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deleteavailabilityconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteemailmonitoringconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteEmailMonitoringConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteEmailMonitoringConfiguration API from Amazon WorkMail — 1
+    operation(s) for #x amz target=workmailservice.deleteemailmonitoringconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteEmailMonitoringConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deleteemailmonitoringconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deletegroup-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteGroup API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteGroup API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.deletegroup.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteGroup'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-deletegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteimpersonationrole-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteImpersonationRole API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteImpersonationRole API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deleteimpersonationrole.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteImpersonationRole'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deleteimpersonationrole-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deletemailboxpermissions-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteMailboxPermissions API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteMailboxPermissions API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deletemailboxpermissions.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteMailboxPermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deletemailboxpermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessoverride-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteMobileDeviceAccessOverride API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteMobileDeviceAccessOverride API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deletemobiledeviceaccessoverride.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteMobileDeviceAccessOverride'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessoverride-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessrule-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteMobileDeviceAccessRule API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteMobileDeviceAccessRule API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deletemobiledeviceaccessrule.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteMobileDeviceAccessRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteorganization-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteOrganization API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteOrganization API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.deleteorganization.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteOrganization'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-deleteorganization-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteResource API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.deleteresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-deleteresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteretentionpolicy-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteRetentionPolicy API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteRetentionPolicy API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deleteretentionpolicy.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteRetentionPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deleteretentionpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deleteuser-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeleteUser API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeleteUser API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.deleteuser.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeleteUser'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-deleteuser-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deregisterfromworkmail-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeregisterFromWorkMail API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeregisterFromWorkMail API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.deregisterfromworkmail.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeregisterFromWorkMail'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deregisterfromworkmail-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-deregistermaildomain-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DeregisterMailDomain API'
+  description: >-
+    The #X Amz Target=WorkMailService.DeregisterMailDomain API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.deregistermaildomain.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DeregisterMailDomain'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-deregistermaildomain-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describeemailmonitoringconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeEmailMonitoringConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeEmailMonitoringConfiguration API from Amazon WorkMail —
+    1 operation(s) for #x amz target=workmailservice.describeemailmonitoringconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeEmailMonitoringConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-describeemailmonitoringconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describegroup-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeGroup API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeGroup API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.describegroup.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeGroup'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-describegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describeinbounddmarcsettings-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeInboundDmarcSettings API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeInboundDmarcSettings API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.describeinbounddmarcsettings.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeInboundDmarcSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-describeinbounddmarcsettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describemailboxexportjob-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeMailboxExportJob API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeMailboxExportJob API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.describemailboxexportjob.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeMailboxExportJob'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-describemailboxexportjob-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describeorganization-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeOrganization API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeOrganization API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.describeorganization.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeOrganization'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-describeorganization-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describeresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeResource API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.describeresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-describeresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-describeuser-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DescribeUser API'
+  description: >-
+    The #X Amz Target=WorkMailService.DescribeUser API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.describeuser.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DescribeUser'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-describeuser-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-disassociatedelegatefromresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DisassociateDelegateFromResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.DisassociateDelegateFromResource API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.disassociatedelegatefromresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DisassociateDelegateFromResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-disassociatedelegatefromresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-disassociatememberfromgroup-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.DisassociateMemberFromGroup API'
+  description: >-
+    The #X Amz Target=WorkMailService.DisassociateMemberFromGroup API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.disassociatememberfromgroup.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.DisassociateMemberFromGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-disassociatememberfromgroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getaccesscontroleffect-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetAccessControlEffect API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetAccessControlEffect API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.getaccesscontroleffect.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetAccessControlEffect'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getaccesscontroleffect-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getdefaultretentionpolicy-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetDefaultRetentionPolicy API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetDefaultRetentionPolicy API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.getdefaultretentionpolicy.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetDefaultRetentionPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getdefaultretentionpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getimpersonationrole-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetImpersonationRole API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetImpersonationRole API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.getimpersonationrole.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetImpersonationRole'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getimpersonationrole-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getimpersonationroleeffect-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetImpersonationRoleEffect API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetImpersonationRoleEffect API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.getimpersonationroleeffect.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetImpersonationRoleEffect'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getimpersonationroleeffect-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getmailboxdetails-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetMailboxDetails API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetMailboxDetails API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.getmailboxdetails.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetMailboxDetails'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-getmailboxdetails-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getmaildomain-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetMailDomain API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetMailDomain API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.getmaildomain.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetMailDomain'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-getmaildomain-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccesseffect-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetMobileDeviceAccessEffect API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetMobileDeviceAccessEffect API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.getmobiledeviceaccesseffect.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetMobileDeviceAccessEffect'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccesseffect-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccessoverride-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.GetMobileDeviceAccessOverride API'
+  description: >-
+    The #X Amz Target=WorkMailService.GetMobileDeviceAccessOverride API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.getmobiledeviceaccessoverride.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.GetMobileDeviceAccessOverride'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccessoverride-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listaccesscontrolrules-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListAccessControlRules API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListAccessControlRules API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listaccesscontrolrules.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListAccessControlRules'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listaccesscontrolrules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listaliases-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListAliases API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListAliases API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.listaliases.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListAliases'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listaliases-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listavailabilityconfigurations-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListAvailabilityConfigurations API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListAvailabilityConfigurations API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listavailabilityconfigurations.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListAvailabilityConfigurations'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listavailabilityconfigurations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listgroupmembers-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListGroupMembers API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListGroupMembers API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.listgroupmembers.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListGroupMembers'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listgroupmembers-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listgroups-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListGroups API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListGroups API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.listgroups.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListGroups'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listgroups-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listimpersonationroles-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListImpersonationRoles API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListImpersonationRoles API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listimpersonationroles.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListImpersonationRoles'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listimpersonationroles-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listmailboxexportjobs-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListMailboxExportJobs API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListMailboxExportJobs API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listmailboxexportjobs.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListMailboxExportJobs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listmailboxexportjobs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listmailboxpermissions-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListMailboxPermissions API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListMailboxPermissions API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listmailboxpermissions.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListMailboxPermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listmailboxpermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listmaildomains-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListMailDomains API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListMailDomains API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.listmaildomains.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListMailDomains'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listmaildomains-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessoverrides-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListMobileDeviceAccessOverrides API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListMobileDeviceAccessOverrides API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listmobiledeviceaccessoverrides.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListMobileDeviceAccessOverrides'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessoverrides-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessrules-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListMobileDeviceAccessRules API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListMobileDeviceAccessRules API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listmobiledeviceaccessrules.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListMobileDeviceAccessRules'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessrules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listorganizations-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListOrganizations API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListOrganizations API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.listorganizations.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListOrganizations'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listorganizations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listresourcedelegates-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListResourceDelegates API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListResourceDelegates API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.listresourcedelegates.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListResourceDelegates'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-listresourcedelegates-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listresources-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListResources API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListResources API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.listresources.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListResources'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listresources-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listtagsforresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListTagsForResource API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.listtagsforresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-listusers-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ListUsers API'
+  description: >-
+    The #X Amz Target=WorkMailService.ListUsers API from Amazon WorkMail — 1 operation(s) for #x amz target=workmailservice.listusers.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ListUsers'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-listusers-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putaccesscontrolrule-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutAccessControlRule API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutAccessControlRule API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.putaccesscontrolrule.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutAccessControlRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-putaccesscontrolrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putemailmonitoringconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutEmailMonitoringConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutEmailMonitoringConfiguration API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.putemailmonitoringconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutEmailMonitoringConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-putemailmonitoringconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putinbounddmarcsettings-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutInboundDmarcSettings API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutInboundDmarcSettings API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.putinbounddmarcsettings.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutInboundDmarcSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-putinbounddmarcsettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putmailboxpermissions-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutMailboxPermissions API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutMailboxPermissions API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.putmailboxpermissions.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutMailboxPermissions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-putmailboxpermissions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putmobiledeviceaccessoverride-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutMobileDeviceAccessOverride API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutMobileDeviceAccessOverride API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.putmobiledeviceaccessoverride.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutMobileDeviceAccessOverride'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-putmobiledeviceaccessoverride-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-putretentionpolicy-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.PutRetentionPolicy API'
+  description: >-
+    The #X Amz Target=WorkMailService.PutRetentionPolicy API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.putretentionpolicy.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.PutRetentionPolicy'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-putretentionpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-registermaildomain-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.RegisterMailDomain API'
+  description: >-
+    The #X Amz Target=WorkMailService.RegisterMailDomain API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.registermaildomain.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.RegisterMailDomain'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-registermaildomain-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-registertoworkmail-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.RegisterToWorkMail API'
+  description: >-
+    The #X Amz Target=WorkMailService.RegisterToWorkMail API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.registertoworkmail.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.RegisterToWorkMail'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-registertoworkmail-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-resetpassword-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.ResetPassword API'
+  description: >-
+    The #X Amz Target=WorkMailService.ResetPassword API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.resetpassword.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.ResetPassword'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-resetpassword-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-startmailboxexportjob-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.StartMailboxExportJob API'
+  description: >-
+    The #X Amz Target=WorkMailService.StartMailboxExportJob API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.startmailboxexportjob.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.StartMailboxExportJob'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-startmailboxexportjob-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-tagresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.TagResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.TagResource API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.tagresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.TagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-tagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-testavailabilityconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.TestAvailabilityConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.TestAvailabilityConfiguration API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.testavailabilityconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.TestAvailabilityConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-testavailabilityconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-untagresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UntagResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.UntagResource API from Amazon WorkMail — 1 operation(s) for #x amz
+    target=workmailservice.untagresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UntagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-untagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updateavailabilityconfiguration-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateAvailabilityConfiguration API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateAvailabilityConfiguration API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.updateavailabilityconfiguration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateAvailabilityConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-updateavailabilityconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updatedefaultmaildomain-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateDefaultMailDomain API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateDefaultMailDomain API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.updatedefaultmaildomain.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateDefaultMailDomain'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-updatedefaultmaildomain-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updateimpersonationrole-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateImpersonationRole API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateImpersonationRole API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.updateimpersonationrole.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateImpersonationRole'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-updateimpersonationrole-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updatemailboxquota-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateMailboxQuota API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateMailboxQuota API from Amazon WorkMail — 1 operation(s) for
+    #x amz target=workmailservice.updatemailboxquota.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateMailboxQuota'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-updatemailboxquota-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updatemobiledeviceaccessrule-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateMobileDeviceAccessRule API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateMobileDeviceAccessRule API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.updatemobiledeviceaccessrule.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateMobileDeviceAccessRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-updatemobiledeviceaccessrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: >-
+    amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updateprimaryemailaddress-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdatePrimaryEmailAddress API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdatePrimaryEmailAddress API from Amazon WorkMail — 1 operation(s)
+    for #x amz target=workmailservice.updateprimaryemailaddress.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdatePrimaryEmailAddress'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-workmail-x-amz-target-workmailservice-updateprimaryemailaddress-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONSchema
+    url: json-schema/workmail-organization-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-workmail.yaml
+- aid: amazon-workmail:amazon-workmail-x-amz-target-workmailservice-updateresource-api
+  name: 'Amazon WorkMail #X Amz Target=WorkMailService.UpdateResource API'
+  description: >-
+    The #X Amz Target=WorkMailService.UpdateResource API from Amazon WorkMail — 1 operation(s) for #x
+    amz target=workmailservice.updateresource.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - '#X Amz Target=WorkMailService.UpdateResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-x-amz-target-workmailservice-updateresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
   - type: JSONSchema
     url: json-schema/workmail-organization-schema.json
   - type: JSONLD
@@ -50,6 +2346,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-workmail.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-workmail/overview
 - type: AgenticAccess
   url: agentic-access/amazon-workmail-agentic-access.yml
 - type: TrustCenter
