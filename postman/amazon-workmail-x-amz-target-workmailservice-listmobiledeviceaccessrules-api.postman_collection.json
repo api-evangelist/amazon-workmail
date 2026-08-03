@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "511cbc1f-0c3b-445d-89fa-a3c288bc3b1f",
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.ListMobileDeviceAccessRules API",
+    "description": "<p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:52:11.000Z",
+    "updatedAt": "2026-07-28T10:52:11.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-511cbc1f-0c3b-445d-89fa-a3c288bc3b1f"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+      "item": [
+        {
+          "name": "Amazon WorkMail List Mobile Device Access Rules",
+          "id": "5aff7e31-a769-41e4-ad70-497a9062e64a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkMailService.ListMobileDeviceAccessRules"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"OrganizationId\": \"m-ae5025142d233b41ac8fee54ab6a6743\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules"
+            },
+            "description": "Lists the mobile device access rules for the specified WorkMail organization."
+          },
+          "response": [
+            {
+              "id": "bfc605d4-559c-48be-8b41-342574ebb538",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListMobileDeviceAccessRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-ae5025142d233b41ac8fee54ab6a6743\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"Rules\": [\n    {\n      \"MobileDeviceAccessRuleId\": \"8r\",\n      \"Name\": \"\u20284!3\u2008CPc\",\n      \"Description\": \"#\\u000bo1=D\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"\u00f5\u0099\u00ce\"\n      ],\n      \"NotDeviceTypes\": [\n        \"c\u00cf \u00dc\u007f\"\n      ],\n      \"DeviceModels\": [\n        \"\u0089\u00c9\u009f+Yk\"\n      ],\n      \"NotDeviceModels\": [\n        \"p\u00ae\u00c2/H\u00fd3A\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \" \"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"M\u00c2\u00b5\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u008b\u00a7\\\"\u00c2?\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"H7_N\u0084I\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"OTioVh\",\n      \"Name\": \"\u1680bF{Q\u2009@\",\n      \"Description\": \"\u2004\u2008^\ufeff:?7u\",\n      \"Effect\": \"DENY\",\n      \"DeviceTypes\": [\n        \"\u00ddj\u00a7\u00cc\u00cb\u00ffA\u00f4~\u00f8\u008c\"\n      ],\n      \"NotDeviceTypes\": [\n        \"R\u00ac\u00bc\"\n      ],\n      \"DeviceModels\": [\n        \"\u00d4:\"\n      ],\n      \"NotDeviceModels\": [\n        \"3~\u0082\u00e4\u0085\u008a\u00c6\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"\u0091\u00f5\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u00bb|\u0091\u009f\u00d6i<G\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u00b2Q\u00d4\u00c8\u00af\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"c\u00cc\u00e3\u00d0\u008a\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"b2IIq04Z\",\n      \"Name\": \"\\\"\\tfmw5\",\n      \"Description\": \"\u2005Gq@M0>sc[\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"#>\u0083\u00aa\u00a5oX\u00d0\u00a4W\"\n      ],\n      \"NotDeviceTypes\": [\n        \"\u00ce\u00ff,yo\u0094Q\u0088\"\n      ],\n      \"DeviceModels\": [\n        \"vt5\u00c8\u00fb\u00d2\u00a8\u00d6\"\n      ],\n      \"NotDeviceModels\": [\n        \"\u00e9\u00a9\u00ff\u0096\u0089\u00d3B*\u00fc\u00b0\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"6\u00e7\u00b91\u0080\u00a3\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u007f\u00c0;\u00b3\"\n      ],\n      \"DeviceUserAgents\": [\n        \"4\u00b8\u00e3o0\u0083\u00da\u00ce.qk\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"\u00cd\u00c8\u00e8\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"O97SF\",\n      \"Name\": \"k\\r%\u2008AB\",\n      \"Description\": \"\u2004\u2008G\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"-\u00ea\u00c1\u00b3aT\"\n      ],\n      \"NotDeviceTypes\": [\n        \"mFA\u0096\u00a6A/\u008b\u00bay\"\n      ],\n      \"DeviceModels\": [\n        \"ae1\u00fdL\u00a6\"\n      ],\n      \"NotDeviceModels\": [\n        \"\u0080\u00d6>NQDt\u00f3\u00e4R\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \")\u00f7\u00b4\u00b3kc[Q\u00cbX\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"x\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u00fe\\\"?eE\u00aa\u0091\u00ea\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"ocE&\u00ac\u0097\u00f7\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"o3q9VKoQ9-Y\",\n      \"Name\": \"ckJ\u2007\",\n      \"Description\": \"\\\\p&h\u2008i\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"\u0095\\\\\u00a0X\u00fe\u00d4\"\n      ],\n      \"NotDeviceTypes\": [\n        \"\u00e5\u00d7\"\n      ],\n      \"DeviceModels\": [\n        \"\u00f0'\u00f6\u00b0\u00ec\u008f;\u00cb\"\n      ],\n      \"NotDeviceModels\": [\n        \"`*\u00dc\u00ef\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"B\u00ce\u00d0\u00cc\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u00bc\u0091\u00d5\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u00e3D\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"\u00efu\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"MlS\",\n      \"Name\": \"\u2001zI\u202fG\",\n      \"Description\": \"N\\nu]M]\u2005q\u2006X\",\n      \"Effect\": \"DENY\",\n      \"DeviceTypes\": [\n        \"ic/\"\n      ],\n      \"NotDeviceTypes\": [\n        \"\u00e4t<\u00f4\u00829\"\n      ],\n      \"DeviceModels\": [\n        \"\u0097\u0098\u00af\u00e4\"\n      ],\n      \"NotDeviceModels\": [\n        \"T\u00d0\u00fe\u00ab\u00c4`\u00c7\u00d4\u00ac7Y\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"\u00e9-\u0086\u00f1\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u00ff\u00b2\u00aa\"\n      ],\n      \"DeviceUserAgents\": [\n        \"g+\u00cb\u00b9\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"2G\u00c3w\u008d\u007f6i\u00e9\u00f8\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"FRGvowSx9Ge\",\n      \"Name\": \"\u00a0?\u2001,J\",\n      \"Description\": \"\u2005\",\n      \"Effect\": \"DENY\",\n      \"DeviceTypes\": [\n        \"\u00f8\"\n      ],\n      \"NotDeviceTypes\": [\n        \"\u00d6\\\"\u00a1\u00e6@\u008c\u00dd\"\n      ],\n      \"DeviceModels\": [\n        \" \"\n      ],\n      \"NotDeviceModels\": [\n        \"\u00de\u0089tR\u0095\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"mn\u00c1\u00d8U\u0086G\u00cb]\u0086F\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u009d>\u00e5\u007f@\u00bbTwI\u00ca\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u008a\u00d6\u008d\u008d\u00ad\u00d9h\u00ab\u00e11\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"\u00c0{n\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"cDbKQXNh\",\n      \"Name\": \"n\u2008\u00a0\\fV&\\u000be\u2000\",\n      \"Description\": \"{\u200a\u2008g\u2007:i[\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"\u00ec\"\n      ],\n      \"NotDeviceTypes\": [\n        \"4\u00d9\u00858|1\u0091|\u00aa\"\n      ],\n      \"DeviceModels\": [\n        \"7\u00e1\u00bd\u00afQ\u0095\u00af\"\n      ],\n      \"NotDeviceModels\": [\n        \"\u00c8=\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"\u00ec/J\u00fd\u00d1\u0080\u00ce\u00fc\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"k5\"\n      ],\n      \"DeviceUserAgents\": [\n        \"x\u00d6mg/~\u0089\u00e1\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"\u00d6\u0098gr'\u00ae\u00b7\u00fa\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"j\",\n      \"Name\": \"\\\"\",\n      \"Description\": \"%gwI\ufeff\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"\u00ba.+\u0089S\u00ef)\u008c3\u0082\"\n      ],\n      \"NotDeviceTypes\": [\n        \"\u00e3E\u00b5\u00c5\u00ba\u0090\u0081H\u00fa\"\n      ],\n      \"DeviceModels\": [\n        \"&%\u0087\"\n      ],\n      \"NotDeviceModels\": [\n        \"\u0092v>\u00e6\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"{d\u0086\u008a\u00dc\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"5\u00bb\u0085\u00bc\u00ec(\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u00ba\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"=\u00e4\u00f3=e\u00f7\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    },\n    {\n      \"MobileDeviceAccessRuleId\": \"GO\",\n      \"Name\": \"V\u2004r*Hm|g\u2000~\",\n      \"Description\": \"\\rM\\f~(j\\u000b3lV\",\n      \"Effect\": \"ALLOW\",\n      \"DeviceTypes\": [\n        \"\u00cb\u00de\u00ff\u00d2\u009e-\"\n      ],\n      \"NotDeviceTypes\": [\n        \"S6\u00ffOI\"\n      ],\n      \"DeviceModels\": [\n        \"G\u00b6\u00cf\u00da\u00b8\u00f6\"\n      ],\n      \"NotDeviceModels\": [\n        \"\u00a9\u0098\u00f8\"\n      ],\n      \"DeviceOperatingSystems\": [\n        \"\u00cd\"\n      ],\n      \"NotDeviceOperatingSystems\": [\n        \"\u00a0\"\n      ],\n      \"DeviceUserAgents\": [\n        \"\u0090)D\u00fc\u00b5\u00c0\"\n      ],\n      \"NotDeviceUserAgents\": [\n        \"\u00edX\u0092Z\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\"\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T10:52:12.000Z",
+              "updatedAt": "2026-07-28T10:52:12.000Z",
+              "uid": "35240-bfc605d4-559c-48be-8b41-342574ebb538"
+            },
+            {
+              "id": "a313dd32-7210-46fb-b3fb-4c96a45ff3bd",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListMobileDeviceAccessRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-ae5025142d233b41ac8fee54ab6a6743\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:12.000Z",
+              "updatedAt": "2026-07-28T10:52:12.000Z",
+              "uid": "35240-a313dd32-7210-46fb-b3fb-4c96a45ff3bd"
+            },
+            {
+              "id": "b3796e9b-e088-464c-879d-aa5f8357ba0a",
+              "name": "OrganizationNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListMobileDeviceAccessRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-ae5025142d233b41ac8fee54ab6a6743\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:12.000Z",
+              "updatedAt": "2026-07-28T10:52:12.000Z",
+              "uid": "35240-b3796e9b-e088-464c-879d-aa5f8357ba0a"
+            },
+            {
+              "id": "fb8dbd95-7137-4192-9ed2-53d065a41410",
+              "name": "OrganizationStateException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListMobileDeviceAccessRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-ae5025142d233b41ac8fee54ab6a6743\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:12.000Z",
+              "updatedAt": "2026-07-28T10:52:12.000Z",
+              "uid": "35240-fb8dbd95-7137-4192-9ed2-53d065a41410"
+            }
+          ],
+          "createdAt": "2026-07-28T10:52:12.000Z",
+          "updatedAt": "2026-07-28T10:52:12.000Z",
+          "uid": "35240-5aff7e31-a769-41e4-ad70-497a9062e64a"
+        }
+      ],
+      "id": "c795f5bd-bf43-4604-a9ad-4f5eb5ed69b1",
+      "createdAt": "2026-07-28T10:52:12.000Z",
+      "updatedAt": "2026-07-28T10:52:12.000Z",
+      "uid": "35240-c795f5bd-bf43-4604-a9ad-4f5eb5ed69b1"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workmail.{{region}}.amazonaws.com"
+    }
+  ]
+}

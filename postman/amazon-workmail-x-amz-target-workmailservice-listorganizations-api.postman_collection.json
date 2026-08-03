@@ -1,0 +1,346 @@
+{
+  "info": {
+    "_postman_id": "492e2bcc-828f-4ef1-afa7-0740ad45d177",
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.ListOrganizations API",
+    "description": "<p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:52:12.000Z",
+    "updatedAt": "2026-07-28T10:52:12.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-492e2bcc-828f-4ef1-afa7-0740ad45d177"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkMailService.ListOrganizations",
+      "item": [
+        {
+          "name": "Amazon WorkMail List Organizations",
+          "id": "b2a40d03-eb50-40bd-9c08-30c66b3617ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkMailService.ListOrganizations"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"NextToken\": \"1X6Ka=xlMs8dF1Zb1Ed7NdX17Lsaiktpa8+kRLovsnbIl8=USv3yVHWJIXk6vcWsnHUxp5+D9414VD/43i0DbC58nWC+vEiyXkr3qbPvZbHdCyww5xReMNz44tZU7uXg94+LIXKW=vsj7N1SFq8qRunJ3jzoe9JEZKfNicrsJFrIwKEoWgvrCQVh2Nh1iTnuTdZRqcEi1+1ubjWA1S813GiF7y9DE86U4fbmJZzeZHyG3fvSXRzgXlXPvu7KTLQD\",\n  \"MaxResults\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListOrganizations",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination limit",
+                  "key": "MaxResults",
+                  "value": "<string>"
+                },
+                {
+                  "description": "Pagination token",
+                  "key": "NextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=WorkMailService.ListOrganizations"
+            },
+            "description": "Returns summaries of the customer's organizations."
+          },
+          "response": [
+            {
+              "id": "c918457e-1e9b-4e49-9dbb-ea8b8240bb03",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListOrganizations"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"NextToken\": \"1X6Ka=xlMs8dF1Zb1Ed7NdX17Lsaiktpa8+kRLovsnbIl8=USv3yVHWJIXk6vcWsnHUxp5+D9414VD/43i0DbC58nWC+vEiyXkr3qbPvZbHdCyww5xReMNz44tZU7uXg94+LIXKW=vsj7N1SFq8qRunJ3jzoe9JEZKfNicrsJFrIwKEoWgvrCQVh2Nh1iTnuTdZRqcEi1+1ubjWA1S813GiF7y9DE86U4fbmJZzeZHyG3fvSXRzgXlXPvu7KTLQD\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListOrganizations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListOrganizations"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"OrganizationSummaries\": [\n    {\n      \"OrganizationId\": \"m-d6ff80f3565658000e434c1647814cf6\",\n      \"Alias\": \"63JKKceEdx3-qe0bJ3KU-97hnYT\",\n      \"DefaultMailDomain\": \"TtF6.LmEnJJWD\",\n      \"ErrorMessage\": \"<string>\",\n      \"State\": \"<string>\"\n    },\n    {\n      \"OrganizationId\": \"m-26d54644409b26ba74b461adc3363b34\",\n      \"Alias\": \"jTa-g9m1pRfW-pEYj0-RLz-Ww4d12-YX5Sjfazswm\",\n      \"DefaultMailDomain\": \"AJhFE1.YhD\",\n      \"ErrorMessage\": \"<string>\",\n      \"State\": \"<string>\"\n    }\n  ],\n  \"NextToken\": \",\u200a\"\n}",
+              "createdAt": "2026-07-28T10:52:13.000Z",
+              "updatedAt": "2026-07-28T10:52:13.000Z",
+              "uid": "35240-c918457e-1e9b-4e49-9dbb-ea8b8240bb03"
+            },
+            {
+              "id": "7302fba5-33bf-40af-87bc-d10d56f8f94f",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListOrganizations"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"NextToken\": \"1X6Ka=xlMs8dF1Zb1Ed7NdX17Lsaiktpa8+kRLovsnbIl8=USv3yVHWJIXk6vcWsnHUxp5+D9414VD/43i0DbC58nWC+vEiyXkr3qbPvZbHdCyww5xReMNz44tZU7uXg94+LIXKW=vsj7N1SFq8qRunJ3jzoe9JEZKfNicrsJFrIwKEoWgvrCQVh2Nh1iTnuTdZRqcEi1+1ubjWA1S813GiF7y9DE86U4fbmJZzeZHyG3fvSXRzgXlXPvu7KTLQD\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListOrganizations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListOrganizations"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:13.000Z",
+              "updatedAt": "2026-07-28T10:52:13.000Z",
+              "uid": "35240-7302fba5-33bf-40af-87bc-d10d56f8f94f"
+            }
+          ],
+          "createdAt": "2026-07-28T10:52:13.000Z",
+          "updatedAt": "2026-07-28T10:52:13.000Z",
+          "uid": "35240-b2a40d03-eb50-40bd-9c08-30c66b3617ef"
+        }
+      ],
+      "id": "543572c6-9095-42fc-b452-35ba5e78f551",
+      "createdAt": "2026-07-28T10:52:13.000Z",
+      "updatedAt": "2026-07-28T10:52:13.000Z",
+      "uid": "35240-543572c6-9095-42fc-b452-35ba5e78f551"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workmail.{{region}}.amazonaws.com"
+    }
+  ]
+}

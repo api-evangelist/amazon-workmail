@@ -1,0 +1,574 @@
+{
+  "info": {
+    "_postman_id": "71434b75-ea9c-43de-ae97-a48791565e92",
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.PutRetentionPolicy API",
+    "description": "<p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:52:52.000Z",
+    "updatedAt": "2026-07-28T10:52:52.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-71434b75-ea9c-43de-ae97-a48791565e92"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+      "item": [
+        {
+          "name": "Amazon WorkMail Put Retention Policy",
+          "id": "11fa2deb-33b3-42a4-b4f8-3163c122eaa8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkMailService.PutRetentionPolicy"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+            },
+            "description": "Puts a retention policy to the specified organization."
+          },
+          "response": [
+            {
+              "id": "9fb7960d-b8ef-4c5d-abfa-2ee3cde5d012",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.PutRetentionPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:52.000Z",
+              "updatedAt": "2026-07-28T10:52:52.000Z",
+              "uid": "35240-9fb7960d-b8ef-4c5d-abfa-2ee3cde5d012"
+            },
+            {
+              "id": "d1614c9e-adbe-4c9f-a861-767c5a78f195",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.PutRetentionPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:52.000Z",
+              "updatedAt": "2026-07-28T10:52:52.000Z",
+              "uid": "35240-d1614c9e-adbe-4c9f-a861-767c5a78f195"
+            },
+            {
+              "id": "4791ebbd-e37f-455b-b330-873d7f19ef84",
+              "name": "OrganizationNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.PutRetentionPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:52.000Z",
+              "updatedAt": "2026-07-28T10:52:52.000Z",
+              "uid": "35240-4791ebbd-e37f-455b-b330-873d7f19ef84"
+            },
+            {
+              "id": "83fddf61-7aac-4e33-b918-72be8785d7dc",
+              "name": "OrganizationStateException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.PutRetentionPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:52.000Z",
+              "updatedAt": "2026-07-28T10:52:52.000Z",
+              "uid": "35240-83fddf61-7aac-4e33-b918-72be8785d7dc"
+            },
+            {
+              "id": "b1cb6ce8-e2b4-4aa4-aa2f-6ab12c5c9a0d",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.PutRetentionPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-0f4e478885b787d1fcd8e54000f7b8a4\",\n  \"Name\": \"-c4nKg8X\",\n  \"FolderConfigurations\": [\n    {\n      \"Name\": \"SENT_ITEMS\",\n      \"Action\": \"DELETE\",\n      \"Period\": \"<integer>\"\n    },\n    {\n      \"Name\": \"DELETED_ITEMS\",\n      \"Action\": \"PERMANENTLY_DELETE\",\n      \"Period\": \"<integer>\"\n    }\n  ],\n  \"Id\": \"haA7zNN\",\n  \"Description\": \"xV\u00a0\u2008{;\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.PutRetentionPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.PutRetentionPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:52.000Z",
+              "updatedAt": "2026-07-28T10:52:52.000Z",
+              "uid": "35240-b1cb6ce8-e2b4-4aa4-aa2f-6ab12c5c9a0d"
+            }
+          ],
+          "createdAt": "2026-07-28T10:52:52.000Z",
+          "updatedAt": "2026-07-28T10:52:52.000Z",
+          "uid": "35240-11fa2deb-33b3-42a4-b4f8-3163c122eaa8"
+        }
+      ],
+      "id": "581e321d-1ca5-4697-97b3-3a546d196994",
+      "createdAt": "2026-07-28T10:52:52.000Z",
+      "updatedAt": "2026-07-28T10:52:52.000Z",
+      "uid": "35240-581e321d-1ca5-4697-97b3-3a546d196994"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workmail.{{region}}.amazonaws.com"
+    }
+  ]
+}

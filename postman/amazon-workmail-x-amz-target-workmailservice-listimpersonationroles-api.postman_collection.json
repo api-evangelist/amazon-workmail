@@ -1,0 +1,546 @@
+{
+  "info": {
+    "_postman_id": "bb76cf85-e46b-451e-9917-bd3cff69c9ed",
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.ListImpersonationRoles API",
+    "description": "<p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:52:06.000Z",
+    "updatedAt": "2026-07-28T10:52:06.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-bb76cf85-e46b-451e-9917-bd3cff69c9ed"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+      "item": [
+        {
+          "name": "Amazon WorkMail List Impersonation Roles",
+          "id": "b6d239b9-0e08-45f4-b4e4-691c2c6c9f8c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkMailService.ListImpersonationRoles"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"OrganizationId\": \"m-6405332f4a39fc033ecca414e2fff491\",\n  \"NextToken\": \"n+zu1cerrYBZJnx7i8Q3=/Jg6lNZWLl4ZppBCHZpwUZn5yMoZM/29OMsDrpvaQHz+aS/CJvBcI6JCQqQ0etb1Bp9WN9Uao19ZF3CnqJsFq8YDUKE53TF9wPqBj/GlG3k/8ylTSWnlSa6eVBVZIOhSCHH3LjZgtvajgvmf8kS+PngL+krQ3ekvz1Q57LzqTzvTWfl68yP=DTBuaM28WTeaT4am6HMyJMH6qJbw8W8xxwE37bItN4Nc1usxtqa73xd\",\n  \"MaxResults\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination limit",
+                  "key": "MaxResults",
+                  "value": "<string>"
+                },
+                {
+                  "description": "Pagination token",
+                  "key": "NextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=WorkMailService.ListImpersonationRoles"
+            },
+            "description": "Lists all the impersonation roles for the given WorkMail organization."
+          },
+          "response": [
+            {
+              "id": "9d6e92a7-6458-4472-b4b8-ed39a428b4ce",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListImpersonationRoles"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-6405332f4a39fc033ecca414e2fff491\",\n  \"NextToken\": \"n+zu1cerrYBZJnx7i8Q3=/Jg6lNZWLl4ZppBCHZpwUZn5yMoZM/29OMsDrpvaQHz+aS/CJvBcI6JCQqQ0etb1Bp9WN9Uao19ZF3CnqJsFq8YDUKE53TF9wPqBj/GlG3k/8ylTSWnlSa6eVBVZIOhSCHH3LjZgtvajgvmf8kS+PngL+krQ3ekvz1Q57LzqTzvTWfl68yP=DTBuaM28WTeaT4am6HMyJMH6qJbw8W8xxwE37bItN4Nc1usxtqa73xd\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListImpersonationRoles"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "null",
+              "createdAt": "2026-07-28T10:52:06.000Z",
+              "updatedAt": "2026-07-28T10:52:06.000Z",
+              "uid": "35240-9d6e92a7-6458-4472-b4b8-ed39a428b4ce"
+            },
+            {
+              "id": "006de4be-e9f5-4613-8f84-76618c2a64c0",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListImpersonationRoles"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-6405332f4a39fc033ecca414e2fff491\",\n  \"NextToken\": \"n+zu1cerrYBZJnx7i8Q3=/Jg6lNZWLl4ZppBCHZpwUZn5yMoZM/29OMsDrpvaQHz+aS/CJvBcI6JCQqQ0etb1Bp9WN9Uao19ZF3CnqJsFq8YDUKE53TF9wPqBj/GlG3k/8ylTSWnlSa6eVBVZIOhSCHH3LjZgtvajgvmf8kS+PngL+krQ3ekvz1Q57LzqTzvTWfl68yP=DTBuaM28WTeaT4am6HMyJMH6qJbw8W8xxwE37bItN4Nc1usxtqa73xd\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListImpersonationRoles"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:06.000Z",
+              "updatedAt": "2026-07-28T10:52:06.000Z",
+              "uid": "35240-006de4be-e9f5-4613-8f84-76618c2a64c0"
+            },
+            {
+              "id": "23044a9c-6f32-4c79-bcf1-d88cc70f4f25",
+              "name": "OrganizationNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListImpersonationRoles"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-6405332f4a39fc033ecca414e2fff491\",\n  \"NextToken\": \"n+zu1cerrYBZJnx7i8Q3=/Jg6lNZWLl4ZppBCHZpwUZn5yMoZM/29OMsDrpvaQHz+aS/CJvBcI6JCQqQ0etb1Bp9WN9Uao19ZF3CnqJsFq8YDUKE53TF9wPqBj/GlG3k/8ylTSWnlSa6eVBVZIOhSCHH3LjZgtvajgvmf8kS+PngL+krQ3ekvz1Q57LzqTzvTWfl68yP=DTBuaM28WTeaT4am6HMyJMH6qJbw8W8xxwE37bItN4Nc1usxtqa73xd\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListImpersonationRoles"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:06.000Z",
+              "updatedAt": "2026-07-28T10:52:06.000Z",
+              "uid": "35240-23044a9c-6f32-4c79-bcf1-d88cc70f4f25"
+            },
+            {
+              "id": "7ce71472-711d-4c0f-90a9-230e541246d8",
+              "name": "OrganizationStateException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListImpersonationRoles"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-6405332f4a39fc033ecca414e2fff491\",\n  \"NextToken\": \"n+zu1cerrYBZJnx7i8Q3=/Jg6lNZWLl4ZppBCHZpwUZn5yMoZM/29OMsDrpvaQHz+aS/CJvBcI6JCQqQ0etb1Bp9WN9Uao19ZF3CnqJsFq8YDUKE53TF9wPqBj/GlG3k/8ylTSWnlSa6eVBVZIOhSCHH3LjZgtvajgvmf8kS+PngL+krQ3ekvz1Q57LzqTzvTWfl68yP=DTBuaM28WTeaT4am6HMyJMH6qJbw8W8xxwE37bItN4Nc1usxtqa73xd\",\n  \"MaxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?MaxResults=<string>&NextToken=<string>#X-Amz-Target=WorkMailService.ListImpersonationRoles",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "MaxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListImpersonationRoles"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:06.000Z",
+              "updatedAt": "2026-07-28T10:52:06.000Z",
+              "uid": "35240-7ce71472-711d-4c0f-90a9-230e541246d8"
+            }
+          ],
+          "createdAt": "2026-07-28T10:52:06.000Z",
+          "updatedAt": "2026-07-28T10:52:06.000Z",
+          "uid": "35240-b6d239b9-0e08-45f4-b4e4-691c2c6c9f8c"
+        }
+      ],
+      "id": "d0932663-eedd-4a35-b1c8-1c81c6651e84",
+      "createdAt": "2026-07-28T10:52:06.000Z",
+      "updatedAt": "2026-07-28T10:52:06.000Z",
+      "uid": "35240-d0932663-eedd-4a35-b1c8-1c81c6651e84"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workmail.{{region}}.amazonaws.com"
+    }
+  ]
+}

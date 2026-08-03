@@ -1,0 +1,398 @@
+{
+  "info": {
+    "_postman_id": "af84653c-afb9-4c34-9979-c533fb86305e",
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.ListAccessControlRules API",
+    "description": "<p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:52:00.000Z",
+    "updatedAt": "2026-07-28T10:52:00.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-af84653c-afb9-4c34-9979-c533fb86305e"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=WorkMailService.ListAccessControlRules",
+      "item": [
+        {
+          "name": "Amazon WorkMail List Access Control Rules",
+          "id": "589407cb-eaa2-4d82-9bc9-43799055cebd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "WorkMailService.ListAccessControlRules"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"OrganizationId\": \"m-bb5c8230f36206b27c7c525acfcd52bc\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListAccessControlRules",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=WorkMailService.ListAccessControlRules"
+            },
+            "description": "Lists the access control rules for the specified organization."
+          },
+          "response": [
+            {
+              "id": "fe5e583a-f590-450d-9c8c-8e937b85e0e6",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListAccessControlRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-bb5c8230f36206b27c7c525acfcd52bc\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListAccessControlRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListAccessControlRules"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"Rules\": [\n    {\n      \"Name\": \"ZFFsls\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"c\u00a8_twC\",\n      \"IpRanges\": [\n        \"0.232.103.185/32\",\n        \"243.143.5.14/1\",\n        \"248.252.57.253/9\",\n        \"71.152.96.188/13\",\n        \"252.0.31.237/9\",\n        \"255.198.226.46/30\",\n        \"46.75.201.182/9\",\n        \"53.1.24.113/1\",\n        \"0.35.168.9/6\",\n        \"252.0.8.71/2\",\n        \"0.203.220.156/3\",\n        \"255.123.212.41/31\",\n        \"78.254.66.1/9\",\n        \"209.72.252.1/3\",\n        \"6.180.237.22/30\",\n        \"3.253.190.1/2\",\n        \"251.166.1.13/4\",\n        \"10.253.128.239/4\",\n        \"184.83.254.250/30\",\n        \"251.100.239.189/2\"\n      ],\n      \"NotIpRanges\": [\n        \"251.24.19.8/32\",\n        \"124.227.197.1/7\",\n        \"189.78.1.252/13\",\n        \"178.2.71.6/8\",\n        \"4.254.254.119/30\",\n        \"253.200.235.214/32\",\n        \"104.250.250.213/3\",\n        \"253.250.79.200/15\",\n        \"7.252.0.187/32\",\n        \"29.162.211.254/30\",\n        \"216.61.50.18/13\",\n        \"157.120.227.249/31\",\n        \"250.247.6.98/29\",\n        \"254.0.18.230/32\",\n        \"252.166.159.46/30\",\n        \"154.250.107.241/31\",\n        \"7.64.28.164/30\",\n        \"7.215.216.9/4\",\n        \"7.243.207.133/2\",\n        \"239.253.5.145/30\"\n      ],\n      \"Actions\": [\n        \"ALUXR\",\n        \"IjHWSadU\",\n        \"OcDxcxp\",\n        \"ppgh\",\n        \"A\",\n        \"Ic\",\n        \"TTuc\",\n        \"L\",\n        \"wfFmQF\",\n        \"KfLeDhuX\"\n      ],\n      \"NotActions\": [\n        \"AyP\",\n        \"ZCCFLQQxSs\",\n        \"TWFqwIXL\",\n        \"tRNFjFTuUTc\",\n        \"mfNr\",\n        \"iNhSzwubOsg\",\n        \"sCYriUtMEn\",\n        \"fuK\",\n        \"pseDECpasI\",\n        \"Di\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"oROo\",\n        \"Y\",\n        \"criuLsqMCsC\",\n        \"kJPTwxIx\",\n        \"6_\",\n        \"8Xo\",\n        \"o6\",\n        \"x-a1ey\",\n        \"bn2yt5\",\n        \"O8F2BLx_\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"4g1cNbx0Du\",\n        \"WqH\",\n        \"XhlX\",\n        \"K0k62CkXwA\",\n        \"Df-v4\",\n        \"kb6D4VxY7vi\",\n        \"q\",\n        \"RzVTH9\",\n        \"cSfehh-\",\n        \"pcdCQsr\"\n      ]\n    },\n    {\n      \"Name\": \"QTn\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"X9\u00ec\u00c8\u00e6\u00df\u00e9\",\n      \"IpRanges\": [\n        \"7.253.84.54/32\",\n        \"3.212.251.229/30\",\n        \"250.252.67.70/3\",\n        \"107.251.126.135/1\",\n        \"142.163.185.31/32\",\n        \"250.239.227.17/5\",\n        \"211.82.250.188/5\",\n        \"155.89.255.207/27\",\n        \"98.70.213.169/31\",\n        \"189.6.11.251/24\",\n        \"158.143.7.250/30\",\n        \"59.255.28.255/26\",\n        \"234.254.248.6/2\",\n        \"253.231.250.5/32\",\n        \"243.228.248.32/8\",\n        \"0.76.250.219/20\",\n        \"7.237.142.107/14\",\n        \"77.6.210.56/32\",\n        \"249.69.1.215/1\",\n        \"144.171.252.9/5\"\n      ],\n      \"NotIpRanges\": [\n        \"55.167.4.212/26\",\n        \"255.58.38.250/5\",\n        \"234.253.210.244/32\",\n        \"2.250.225.9/12\",\n        \"131.93.92.6/1\",\n        \"253.2.9.6/23\",\n        \"170.14.3.250/11\",\n        \"240.60.70.155/30\",\n        \"0.82.251.207/31\",\n        \"156.245.255.2/6\",\n        \"0.253.4.7/5\",\n        \"254.116.211.252/25\",\n        \"35.6.117.0/19\",\n        \"4.254.255.249/15\",\n        \"9.1.253.202/30\",\n        \"252.6.116.147/31\",\n        \"4.253.152.5/9\",\n        \"236.255.202.106/1\",\n        \"250.200.253.209/32\",\n        \"1.11.228.251/6\"\n      ],\n      \"Actions\": [\n        \"LIUFqQA\",\n        \"RXgxPLu\",\n        \"JsLPobNIi\",\n        \"IdYZ\",\n        \"AuhdWuYk\",\n        \"ovxqv\",\n        \"wmcxyrTuC\",\n        \"kaxIibwMk\",\n        \"DaoOvIPcaoK\",\n        \"emWhnS\"\n      ],\n      \"NotActions\": [\n        \"C\",\n        \"eHoKLdOtjq\",\n        \"MpQV\",\n        \"lTLm\",\n        \"JJiG\",\n        \"B\",\n        \"q\",\n        \"nL\",\n        \"ZBaQMtwbRLi\",\n        \"IgRcUZwoq\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"uGC5898j\",\n        \"AiJEL3\",\n        \"mznd0SAHsA1\",\n        \"BKN\",\n        \"zoj-tk8bDC\",\n        \"3aSh\",\n        \"oZ\",\n        \"Nw9kIG2P3cj\",\n        \"yVfa7HGrUO9\",\n        \"B4HpS\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"xTkzxT\",\n        \"lqVBjL9i\",\n        \"UBNTIP7qWNf\",\n        \"OwI\",\n        \"3-L_sQ14On\",\n        \"TDfjBQqm\",\n        \"69gl\",\n        \"W8G\",\n        \"Q-9KHvK\",\n        \"vUUrcPwd3\"\n      ]\n    },\n    {\n      \"Name\": \"y04kruLBMU\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"\u0091\u008f\u00f1\u00fe\",\n      \"IpRanges\": [\n        \"241.6.0.158/9\",\n        \"7.108.226.1/0\",\n        \"169.95.213.252/31\",\n        \"39.250.218.9/30\",\n        \"4.81.180.255/32\",\n        \"254.25.4.169/16\",\n        \"225.159.225.251/5\",\n        \"142.33.3.54/2\",\n        \"254.3.217.132/18\",\n        \"253.1.91.252/30\",\n        \"4.101.252.237/27\",\n        \"155.188.246.6/14\",\n        \"195.132.9.158/30\",\n        \"225.255.6.3/30\",\n        \"254.254.248.8/31\",\n        \"253.96.1.0/6\",\n        \"224.23.194.42/27\",\n        \"203.20.252.36/8\",\n        \"48.78.3.104/8\",\n        \"251.229.6.254/32\"\n      ],\n      \"NotIpRanges\": [\n        \"251.52.6.141/31\",\n        \"251.103.3.253/31\",\n        \"4.207.14.1/24\",\n        \"250.80.94.65/31\",\n        \"62.199.251.251/30\",\n        \"107.252.48.1/30\",\n        \"5.250.7.168/8\",\n        \"254.200.6.224/24\",\n        \"217.155.1.138/22\",\n        \"40.179.1.240/14\",\n        \"131.5.121.252/2\",\n        \"35.9.85.8/21\",\n        \"51.250.14.203/1\",\n        \"252.136.250.149/27\",\n        \"87.255.8.28/32\",\n        \"5.250.90.209/5\",\n        \"33.98.224.9/31\",\n        \"254.1.189.218/9\",\n        \"254.131.245.223/9\",\n        \"44.118.7.7/32\"\n      ],\n      \"Actions\": [\n        \"XIFOZF\",\n        \"aWZybsPyJjz\",\n        \"hioP\",\n        \"iQL\",\n        \"TdCSNOMFz\",\n        \"l\",\n        \"ZMbXSXMHq\",\n        \"zKqKIFBeYUI\",\n        \"sZiIYyiPD\",\n        \"p\"\n      ],\n      \"NotActions\": [\n        \"dQC\",\n        \"VRhV\",\n        \"XBcQmp\",\n        \"yLlgEG\",\n        \"H\",\n        \"cWhT\",\n        \"qHHG\",\n        \"yMVOzl\",\n        \"EApw\",\n        \"aOOXt\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"_V-YzMxxxVV\",\n        \"cN\",\n        \"ywSGxYXQqA1\",\n        \"_qbLSTW1ut\",\n        \"d-T\",\n        \"SUbVk\",\n        \"ufrsVV\",\n        \"cEYz\",\n        \"D\",\n        \"lG\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"SHbyM\",\n        \"kcA3f\",\n        \"ECj47UZP\",\n        \"e_TqnIMw87\",\n        \"lGqfDTJk\",\n        \"HTt\",\n        \"Uon2h\",\n        \"R_pp\",\n        \"a\",\n        \"o1CZ5\"\n      ]\n    },\n    {\n      \"Name\": \"ta\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"\u00e0\",\n      \"IpRanges\": [\n        \"8.182.21.235/30\",\n        \"213.133.1.250/32\",\n        \"244.188.6.151/23\",\n        \"9.232.219.204/0\",\n        \"190.61.251.43/12\",\n        \"178.81.6.105/31\",\n        \"42.250.215.253/4\",\n        \"251.104.115.101/21\",\n        \"245.55.213.200/9\",\n        \"15.22.99.255/17\",\n        \"101.253.4.217/2\",\n        \"207.76.101.212/28\",\n        \"63.251.255.27/6\",\n        \"249.221.246.65/16\",\n        \"3.250.75.157/17\",\n        \"255.243.254.1/4\",\n        \"252.254.250.1/8\",\n        \"1.4.140.176/29\",\n        \"246.233.8.9/19\",\n        \"1.246.250.255/6\"\n      ],\n      \"NotIpRanges\": [\n        \"172.76.254.252/29\",\n        \"254.22.55.31/32\",\n        \"239.250.254.208/24\",\n        \"251.161.107.1/30\",\n        \"254.250.4.115/2\",\n        \"1.2.186.254/31\",\n        \"27.88.172.103/5\",\n        \"250.7.254.215/14\",\n        \"117.137.9.37/1\",\n        \"63.5.251.13/2\",\n        \"201.253.232.5/12\",\n        \"255.156.9.55/2\",\n        \"253.129.129.147/32\",\n        \"8.226.188.4/13\",\n        \"46.206.3.41/5\",\n        \"175.25.243.254/5\",\n        \"173.127.204.154/30\",\n        \"226.4.204.54/0\",\n        \"1.134.126.251/31\",\n        \"18.92.7.167/12\"\n      ],\n      \"Actions\": [\n        \"M\",\n        \"vdoeYpBIFsA\",\n        \"zDJmNCYEc\",\n        \"DoffdAMSEq\",\n        \"QMCUR\",\n        \"TxVvpFUL\",\n        \"qlzIdC\",\n        \"yjyHANLwnK\",\n        \"dOOZO\",\n        \"yTjKKuxfMxR\"\n      ],\n      \"NotActions\": [\n        \"fnz\",\n        \"ZcEKvoxE\",\n        \"bKoBoukmct\",\n        \"Px\",\n        \"jPzsjdMee\",\n        \"u\",\n        \"ROhYzVh\",\n        \"KjsBsmLfZm\",\n        \"OPRjruPXo\",\n        \"O\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"E65byI4FyK\",\n        \"ZkgMbV_JA\",\n        \"Y9VHyiL7GmS\",\n        \"2LSCiykZDi\",\n        \"bxQ5H8\",\n        \"Ex5\",\n        \"DfrNJkDhx8G\",\n        \"0EL\",\n        \"U2gc07cRR\",\n        \"ij6IUo\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"u\",\n        \"tlyNSWMdr\",\n        \"0M0Op_or2CT\",\n        \"Sutaodk1\",\n        \"HTu5QpvtZs\",\n        \"Vkyi\",\n        \"WtSVtj\",\n        \"3L7H8TPTE7\",\n        \"kDHvhlsi\",\n        \"HhZ2watl6F\"\n      ]\n    },\n    {\n      \"Name\": \"xymecBLnlXp\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"S\u00ba\u0085)\u00ee\u00e76 \u00f3\u00e7\",\n      \"IpRanges\": [\n        \"0.1.18.5/31\",\n        \"23.254.0.45/0\",\n        \"146.2.202.8/5\",\n        \"2.143.156.253/15\",\n        \"4.163.242.206/30\",\n        \"252.71.230.4/31\",\n        \"149.7.191.5/22\",\n        \"21.251.204.253/20\",\n        \"83.7.203.106/31\",\n        \"251.121.251.250/16\",\n        \"8.208.4.43/15\",\n        \"8.252.122.251/0\",\n        \"255.2.217.251/0\",\n        \"254.2.252.52/0\",\n        \"250.114.187.1/19\",\n        \"237.171.59.5/13\",\n        \"251.169.1.115/30\",\n        \"10.44.250.250/20\",\n        \"252.255.206.0/11\",\n        \"6.217.255.212/21\"\n      ],\n      \"NotIpRanges\": [\n        \"122.192.205.254/5\",\n        \"159.87.60.207/30\",\n        \"239.252.156.9/3\",\n        \"218.190.112.5/24\",\n        \"140.134.214.251/20\",\n        \"137.7.252.103/4\",\n        \"118.225.136.187/27\",\n        \"255.160.177.45/6\",\n        \"132.38.98.146/30\",\n        \"209.153.3.253/32\",\n        \"41.19.223.157/31\",\n        \"177.84.73.212/32\",\n        \"229.122.9.252/31\",\n        \"237.215.250.187/2\",\n        \"179.28.162.128/10\",\n        \"81.137.8.250/31\",\n        \"2.4.190.90/32\",\n        \"251.252.22.85/32\",\n        \"35.92.253.2/32\",\n        \"176.254.243.207/9\"\n      ],\n      \"Actions\": [\n        \"vOJYbGOtB\",\n        \"d\",\n        \"P\",\n        \"wvVYbdWeqGt\",\n        \"UgTkZLTaqqa\",\n        \"MdtAt\",\n        \"nQdJoTHlreB\",\n        \"Xe\",\n        \"udKP\",\n        \"xTQFX\"\n      ],\n      \"NotActions\": [\n        \"XxYkUCwcINc\",\n        \"oVlu\",\n        \"ekmaeIUftEe\",\n        \"EGFXbANoWO\",\n        \"sbArGa\",\n        \"tutVZblwFb\",\n        \"IqVuugk\",\n        \"MxzHKgFp\",\n        \"iGEPPcjKol\",\n        \"epFt\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"p\",\n        \"U\",\n        \"iu2yS\",\n        \"EZaJ\",\n        \"8Psc\",\n        \"QRAFWjQaK2\",\n        \"Okne\",\n        \"q3\",\n        \"lW5pz7APa\",\n        \"4HPq9WgVLT3\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"R3S\",\n        \"jyEWWL\",\n        \"5mmGFysSuj\",\n        \"133_9M5Oj\",\n        \"cIC5\",\n        \"1\",\n        \"kFO-D3\",\n        \"-yuk\",\n        \"Z8s\",\n        \"5iAAsEpvEi\"\n      ]\n    },\n    {\n      \"Name\": \"vcx0fscXDU8\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"LP\",\n      \"IpRanges\": [\n        \"251.122.185.219/28\",\n        \"73.49.156.254/2\",\n        \"224.219.205.214/31\",\n        \"247.43.71.210/16\",\n        \"175.47.211.178/0\",\n        \"251.1.156.1/22\",\n        \"173.109.3.5/1\",\n        \"252.117.252.69/5\",\n        \"216.47.250.255/24\",\n        \"58.1.65.1/31\",\n        \"253.236.214.94/27\",\n        \"149.250.159.251/31\",\n        \"207.254.253.254/0\",\n        \"179.224.253.47/30\",\n        \"251.244.14.185/30\",\n        \"27.13.59.251/8\",\n        \"166.4.253.254/7\",\n        \"204.205.56.186/27\",\n        \"79.2.7.112/9\",\n        \"224.242.222.254/1\"\n      ],\n      \"NotIpRanges\": [\n        \"1.223.2.4/6\",\n        \"123.8.5.68/25\",\n        \"250.215.190.58/30\",\n        \"34.49.212.251/32\",\n        \"122.5.33.56/17\",\n        \"253.12.152.250/30\",\n        \"226.187.38.244/16\",\n        \"254.0.83.26/31\",\n        \"164.179.15.255/32\",\n        \"3.186.162.167/25\",\n        \"3.241.209.6/2\",\n        \"122.43.251.252/31\",\n        \"62.85.98.170/17\",\n        \"250.254.38.133/22\",\n        \"107.57.68.250/30\",\n        \"224.5.250.124/14\",\n        \"255.249.252.201/14\",\n        \"219.251.4.242/30\",\n        \"171.114.5.243/31\",\n        \"105.150.255.172/32\"\n      ],\n      \"Actions\": [\n        \"N\",\n        \"gdzHLO\",\n        \"l\",\n        \"waPdetZq\",\n        \"YRZErw\",\n        \"hGGTsIEhVdM\",\n        \"kZursVCt\",\n        \"Rk\",\n        \"Tsi\",\n        \"Gi\"\n      ],\n      \"NotActions\": [\n        \"WgMiTr\",\n        \"pRhNNP\",\n        \"SPTy\",\n        \"CarRursoGj\",\n        \"UeyREsu\",\n        \"kbJpmETfae\",\n        \"xHo\",\n        \"fARuNyYW\",\n        \"KLvcOy\",\n        \"QOE\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"8B5N\",\n        \"X\",\n        \"pca-\",\n        \"7\",\n        \"mB\",\n        \"WMKLf70Vx\",\n        \"CJ\",\n        \"oLddsP4j\",\n        \"y2\",\n        \"b3zl\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"oewo\",\n        \"MfvtsXgIMC\",\n        \"WcB-\",\n        \"c\",\n        \"Jw7U7rg\",\n        \"1J0bS4oPN_N\",\n        \"6WDsSAFD1ms\",\n        \"d\",\n        \"U7IV8cGG_Y-\",\n        \"hUDYIajh\"\n      ]\n    },\n    {\n      \"Name\": \"0A\",\n      \"Effect\": \"DENY\",\n      \"Description\": \"Hx\u00c6g\u00dbF\",\n      \"IpRanges\": [\n        \"252.255.190.252/13\",\n        \"83.250.178.85/32\",\n        \"149.8.33.8/4\",\n        \"224.28.112.90/25\",\n        \"169.120.30.75/25\",\n        \"91.206.252.41/23\",\n        \"223.138.100.217/26\",\n        \"250.20.7.244/29\",\n        \"35.5.250.83/9\",\n        \"229.250.64.6/31\",\n        \"234.252.255.251/21\",\n        \"68.9.29.235/31\",\n        \"211.254.9.204/11\",\n        \"2.56.208.154/6\",\n        \"82.6.165.184/7\",\n        \"187.68.9.195/31\",\n        \"0.4.1.0/31\",\n        \"110.112.254.55/10\",\n        \"26.250.3.8/17\",\n        \"5.5.45.240/0\"\n      ],\n      \"NotIpRanges\": [\n        \"7.7.255.1/4\",\n        \"156.140.253.212/22\",\n        \"255.6.8.251/31\",\n        \"208.251.51.202/19\",\n        \"245.1.254.225/4\",\n        \"98.4.240.240/4\",\n        \"32.6.7.176/2\",\n        \"254.251.252.9/25\",\n        \"246.221.3.250/21\",\n        \"0.247.254.225/30\",\n        \"157.178.217.1/32\",\n        \"216.254.167.75/6\",\n        \"4.12.40.253/27\",\n        \"219.129.251.255/32\",\n        \"88.207.0.12/4\",\n        \"35.89.134.200/7\",\n        \"0.77.48.105/32\",\n        \"93.90.252.224/8\",\n        \"9.9.201.219/31\",\n        \"126.6.188.251/0\"\n      ],\n      \"Actions\": [\n        \"lnOV\",\n        \"QkcdrI\",\n        \"LJxSuUgYpQv\",\n        \"dC\",\n        \"ZvA\",\n        \"qrHapgb\",\n        \"jPErHKQzJx\",\n        \"yhAAfBnlej\",\n        \"PZBUToX\",\n        \"ZUKCgmbli\"\n      ],\n      \"NotActions\": [\n        \"rGP\",\n        \"dWzFj\",\n        \"CGFFty\",\n        \"yiO\",\n        \"jEoqODXk\",\n        \"tlOaI\",\n        \"TujeoGnNG\",\n        \"hGlHQwr\",\n        \"hVaKdIxd\",\n        \"sVEpAXXEc\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"RJbY6oWIH\",\n        \"kpOusRHQkn\",\n        \"fOh6WjV\",\n        \"_Wg_ug\",\n        \"EyqF\",\n        \"11\",\n        \"26\",\n        \"fuDyf69Z7gJ\",\n        \"XPsJwwXIJ\",\n        \"wxSzo1\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"Bdsf\",\n        \"0of\",\n        \"_enS\",\n        \"45WN_YQ_B\",\n        \"Lpt48b8x_x\",\n        \"gCfPxsrjlW\",\n        \"kk_\",\n        \"xwUI\",\n        \"Ln0vGVON5\",\n        \"aExoCii\"\n      ]\n    },\n    {\n      \"Name\": \"1stw1Czoq\",\n      \"Effect\": \"DENY\",\n      \"Description\": \"\u0091\",\n      \"IpRanges\": [\n        \"174.253.253.1/29\",\n        \"82.97.18.1/22\",\n        \"255.9.40.211/31\",\n        \"255.8.21.2/2\",\n        \"253.74.62.47/2\",\n        \"182.139.254.239/3\",\n        \"151.5.3.9/2\",\n        \"231.251.116.7/29\",\n        \"7.243.119.68/29\",\n        \"250.254.143.240/29\",\n        \"8.214.255.111/8\",\n        \"76.39.253.7/8\",\n        \"59.8.60.255/9\",\n        \"250.92.147.2/15\",\n        \"5.68.8.52/8\",\n        \"109.212.50.203/0\",\n        \"250.251.162.63/17\",\n        \"68.147.220.6/9\",\n        \"43.162.228.253/0\",\n        \"3.253.216.9/18\"\n      ],\n      \"NotIpRanges\": [\n        \"253.2.254.81/30\",\n        \"96.247.70.223/8\",\n        \"238.253.255.187/8\",\n        \"103.252.7.6/30\",\n        \"201.209.113.234/9\",\n        \"119.213.4.246/31\",\n        \"2.255.118.251/32\",\n        \"88.255.251.250/13\",\n        \"80.250.222.3/32\",\n        \"217.33.126.253/6\",\n        \"244.49.250.32/2\",\n        \"71.217.32.116/31\",\n        \"253.255.253.214/7\",\n        \"80.221.6.83/2\",\n        \"246.39.252.143/13\",\n        \"40.251.0.243/26\",\n        \"254.227.239.218/0\",\n        \"252.255.249.205/31\",\n        \"96.3.124.62/30\",\n        \"52.44.252.1/32\"\n      ],\n      \"Actions\": [\n        \"wKGWqwz\",\n        \"khIWOUxt\",\n        \"qzloNLgQbx\",\n        \"N\",\n        \"xIgySgu\",\n        \"ydsfPT\",\n        \"UX\",\n        \"eNSUQbg\",\n        \"Zg\",\n        \"sOqupwT\"\n      ],\n      \"NotActions\": [\n        \"wRatRKPAi\",\n        \"JUZrzaUqbmo\",\n        \"pz\",\n        \"eNXhsSWHIi\",\n        \"MU\",\n        \"HofNndcW\",\n        \"yc\",\n        \"YWsFrKlj\",\n        \"fq\",\n        \"pV\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"xSHx\",\n        \"6kOf\",\n        \"hIgZ38qqV\",\n        \"QQ_bIcTU\",\n        \"fFgwJw3En7\",\n        \"Y\",\n        \"kA\",\n        \"aikl-Xvaex8\",\n        \"GG6no\",\n        \"z\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"_--ExxD\",\n        \"c-ZsVFDs\",\n        \"dBd9zM\",\n        \"hWZd05HA\",\n        \"ixrVdt\",\n        \"VrhmD5\",\n        \"baHcH_2\",\n        \"44IXGd\",\n        \"2RAox\",\n        \"SWlewWtZ\"\n      ]\n    },\n    {\n      \"Name\": \"Jo7Fa9\",\n      \"Effect\": \"ALLOW\",\n      \"Description\": \"j\u009cz|\u00d3o\u00fb\u0081;\",\n      \"IpRanges\": [\n        \"250.25.252.255/17\",\n        \"200.2.252.90/20\",\n        \"1.247.210.251/30\",\n        \"230.69.153.80/32\",\n        \"154.254.237.85/24\",\n        \"82.5.8.254/32\",\n        \"252.144.218.248/24\",\n        \"233.201.253.4/31\",\n        \"8.254.169.6/29\",\n        \"248.21.58.133/0\",\n        \"106.221.29.254/14\",\n        \"148.17.162.252/30\",\n        \"187.229.231.49/0\",\n        \"0.254.251.223/7\",\n        \"210.1.136.247/32\",\n        \"2.37.5.9/32\",\n        \"3.33.7.240/22\",\n        \"208.77.192.251/12\",\n        \"253.5.126.64/1\",\n        \"253.6.217.210/30\"\n      ],\n      \"NotIpRanges\": [\n        \"24.109.216.132/32\",\n        \"6.4.225.29/29\",\n        \"86.219.1.11/5\",\n        \"253.235.226.250/30\",\n        \"255.175.253.225/20\",\n        \"211.231.17.3/2\",\n        \"8.4.252.183/30\",\n        \"251.165.211.252/25\",\n        \"146.249.5.250/0\",\n        \"238.101.1.30/4\",\n        \"127.2.238.99/2\",\n        \"61.57.5.0/21\",\n        \"254.1.70.233/30\",\n        \"42.254.63.8/27\",\n        \"31.252.121.177/27\",\n        \"214.91.56.252/32\",\n        \"203.8.60.238/26\",\n        \"254.203.167.131/30\",\n        \"1.248.131.174/6\",\n        \"255.250.7.211/30\"\n      ],\n      \"Actions\": [\n        \"krrMGzyC\",\n        \"Y\",\n        \"ZkJUjeicfy\",\n        \"pgBpyR\",\n        \"VIyxINvvuA\",\n        \"DYDCJVzU\",\n        \"RcaN\",\n        \"gGhiBtaq\",\n        \"AXFAe\",\n        \"SGJvCFxrZj\"\n      ],\n      \"NotActions\": [\n        \"mqHxUDcbs\",\n        \"R\",\n        \"nxzpwcXUj\",\n        \"HqbmVxqcj\",\n        \"AVkcfF\",\n        \"OKftTBoqvZ\",\n        \"skCb\",\n        \"CjMiFhCIgD\",\n        \"l\",\n        \"fi\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"F\",\n        \"Z-8E\",\n        \"wl\",\n        \"Y\",\n        \"RbQFKETMfD\",\n        \"6SOFsd-256\",\n        \"zCSr1iuDB\",\n        \"EMrGxCL3\",\n        \"8PnflJg1\",\n        \"o5FkJ\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"S\",\n        \"da\",\n        \"HBfDKF9n0I\",\n        \"pvmer\",\n        \"szC8jaQ4Gl7\",\n        \"AV2cG9Cj\",\n        \"2t\",\n        \"HTag8S9\",\n        \"lHdDicWG\",\n        \"anjl-AVOY4\"\n      ]\n    },\n    {\n      \"Name\": \"i9Y\",\n      \"Effect\": \"DENY\",\n      \"Description\": \"\u00a7\",\n      \"IpRanges\": [\n        \"151.5.253.54/13\",\n        \"254.215.177.53/7\",\n        \"255.255.6.244/16\",\n        \"5.114.140.0/13\",\n        \"250.224.150.208/32\",\n        \"1.177.192.164/31\",\n        \"5.244.220.253/30\",\n        \"232.7.252.9/9\",\n        \"79.252.252.251/26\",\n        \"237.86.252.156/0\",\n        \"39.238.207.251/6\",\n        \"178.172.239.252/5\",\n        \"65.4.186.8/4\",\n        \"46.228.232.205/14\",\n        \"50.200.4.106/8\",\n        \"255.189.9.228/32\",\n        \"108.251.34.35/29\",\n        \"84.252.240.33/31\",\n        \"255.253.2.251/32\",\n        \"213.4.229.253/7\"\n      ],\n      \"NotIpRanges\": [\n        \"7.0.171.9/32\",\n        \"3.246.4.185/21\",\n        \"147.209.253.242/32\",\n        \"255.4.220.248/14\",\n        \"253.39.27.8/30\",\n        \"254.254.123.151/1\",\n        \"1.108.238.253/17\",\n        \"91.44.2.114/15\",\n        \"1.242.255.227/3\",\n        \"212.162.9.9/25\",\n        \"69.80.1.8/31\",\n        \"251.21.2.250/31\",\n        \"38.223.254.235/25\",\n        \"210.98.254.4/6\",\n        \"217.198.1.5/32\",\n        \"8.47.83.169/21\",\n        \"191.152.26.151/21\",\n        \"88.129.1.196/0\",\n        \"242.9.2.251/6\",\n        \"255.255.215.222/31\"\n      ],\n      \"Actions\": [\n        \"r\",\n        \"EFOYNtPD\",\n        \"OyLzlnYfjv\",\n        \"kLXHJyDaEF\",\n        \"WkPVMfTyhoa\",\n        \"w\",\n        \"hIDQ\",\n        \"bQOcjddLf\",\n        \"iUQi\",\n        \"ouQjIUd\"\n      ],\n      \"NotActions\": [\n        \"Ou\",\n        \"QfAZbtfiX\",\n        \"JUIyvTUBYNa\",\n        \"siyvJHot\",\n        \"Am\",\n        \"Xpr\",\n        \"hemQLWrmI\",\n        \"qZpPm\",\n        \"l\",\n        \"SMd\"\n      ],\n      \"UserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"NotUserIds\": [\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"DateCreated\": \"<dateTime>\",\n      \"DateModified\": \"<dateTime>\",\n      \"ImpersonationRoleIds\": [\n        \"cZ\",\n        \"UpFv_BDA\",\n        \"qmi6a\",\n        \"WrFGdawrG7\",\n        \"GUE-8zqcZ_\",\n        \"O\",\n        \"kQwSB\",\n        \"7h\",\n        \"Y\",\n        \"vXQxK1\"\n      ],\n      \"NotImpersonationRoleIds\": [\n        \"gB\",\n        \"kHk9sCgJJ\",\n        \"HLvU-BLDI9e\",\n        \"uUlT\",\n        \"S\",\n        \"k\",\n        \"p\",\n        \"fSkSpo_H69\",\n        \"wDa\",\n        \"1M\"\n      ]\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T10:52:01.000Z",
+              "updatedAt": "2026-07-28T10:52:01.000Z",
+              "uid": "35240-fe5e583a-f590-450d-9c8c-8e937b85e0e6"
+            },
+            {
+              "id": "487c4d2b-84f5-4879-8c1d-4a1aeaf63757",
+              "name": "OrganizationNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListAccessControlRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-bb5c8230f36206b27c7c525acfcd52bc\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListAccessControlRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListAccessControlRules"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:01.000Z",
+              "updatedAt": "2026-07-28T10:52:01.000Z",
+              "uid": "35240-487c4d2b-84f5-4879-8c1d-4a1aeaf63757"
+            },
+            {
+              "id": "202027a7-e1e1-4433-88e0-72f4964ce415",
+              "name": "OrganizationStateException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "WorkMailService.ListAccessControlRules"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"OrganizationId\": \"m-bb5c8230f36206b27c7c525acfcd52bc\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=WorkMailService.ListAccessControlRules",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=WorkMailService.ListAccessControlRules"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:52:01.000Z",
+              "updatedAt": "2026-07-28T10:52:01.000Z",
+              "uid": "35240-202027a7-e1e1-4433-88e0-72f4964ce415"
+            }
+          ],
+          "createdAt": "2026-07-28T10:52:01.000Z",
+          "updatedAt": "2026-07-28T10:52:01.000Z",
+          "uid": "35240-589407cb-eaa2-4d82-9bc9-43799055cebd"
+        }
+      ],
+      "id": "42dd7313-ac7e-46b8-a379-e82d27f7047a",
+      "createdAt": "2026-07-28T10:52:01.000Z",
+      "updatedAt": "2026-07-28T10:52:01.000Z",
+      "uid": "35240-42dd7313-ac7e-46b8-a379-e82d27f7047a"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://workmail.{{region}}.amazonaws.com"
+    }
+  ]
+}
