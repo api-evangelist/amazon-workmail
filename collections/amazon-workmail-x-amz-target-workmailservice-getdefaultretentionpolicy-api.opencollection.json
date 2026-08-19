@@ -1,0 +1,75 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.GetDefaultRetentionPolicy API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "#X Amz Target=WorkMailService.GetDefaultRetentionPolicy",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Amazon WorkMail Get Default Retention Policy",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://workmail.{region}.amazonaws.com/#X-Amz-Target=WorkMailService.GetDefaultRetentionPolicy",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Target",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Gets the default retention policy details for the specified organization."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
