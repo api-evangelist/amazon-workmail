@@ -164,7 +164,8 @@ apis:
     for #x amz target=workmailservice.createavailabilityconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.CreateAvailabilityConfiguration'
   properties:
   - type: OpenAPI
@@ -386,7 +387,8 @@ apis:
     for #x amz target=workmailservice.deleteavailabilityconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.DeleteAvailabilityConfiguration'
   properties:
   - type: OpenAPI
@@ -412,7 +414,8 @@ apis:
     operation(s) for #x amz target=workmailservice.deleteemailmonitoringconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.DeleteEmailMonitoringConfiguration'
   properties:
   - type: OpenAPI
@@ -513,7 +516,8 @@ apis:
     for #x amz target=workmailservice.deletemobiledeviceaccessoverride.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.DeleteMobileDeviceAccessOverride'
   properties:
   - type: OpenAPI
@@ -712,7 +716,8 @@ apis:
     1 operation(s) for #x amz target=workmailservice.describeemailmonitoringconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.DescribeEmailMonitoringConfiguration'
   properties:
   - type: OpenAPI
@@ -887,7 +892,8 @@ apis:
     for #x amz target=workmailservice.disassociatedelegatefromresource.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.DisassociateDelegateFromResource'
   properties:
   - type: OpenAPI
@@ -1363,7 +1369,8 @@ apis:
     for #x amz target=workmailservice.listmobiledeviceaccessoverrides.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.ListMobileDeviceAccessOverrides'
   properties:
   - type: OpenAPI
@@ -1560,7 +1567,8 @@ apis:
     for #x amz target=workmailservice.putemailmonitoringconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.PutEmailMonitoringConfiguration'
   properties:
   - type: OpenAPI
@@ -1857,7 +1865,8 @@ apis:
     for #x amz target=workmailservice.updateavailabilityconfiguration.
   humanURL: https://aws.amazon.com/workmail/
   baseURL: https://workmail.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=WorkMailService.UpdateAvailabilityConfiguration'
   properties:
   - type: OpenAPI
