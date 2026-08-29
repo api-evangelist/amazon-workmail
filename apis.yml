@@ -2047,6 +2047,9 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-workmail-context.jsonld
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-workmail-capability-edges.yml
+  name: Amazon WorkMail Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-workmail/overview
 - type: AgenticAccess
