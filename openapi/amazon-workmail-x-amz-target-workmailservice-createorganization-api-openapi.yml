@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.CreateOrganization API'
+  title: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.CreateOrganization #X Amz Target=WorkMailService.CreateOrganization API'
   description: <p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -181,7 +181,6 @@ paths:
       - '#X Amz Target=WorkMailService.CreateOrganization'
 components:
   schemas:
-    NameAvailabilityException: {}
     CreateOrganizationRequest:
       type: object
       required:
@@ -212,42 +211,18 @@ components:
           allOf:
           - $ref: '#/components/schemas/Boolean'
           - description: When <code>true</code>, allows organization interoperability between WorkMail and Microsoft Exchange. If <code>true</code>, you must include a AD Connector directory ID in the request.
+    DirectoryInUseException: {}
     OrganizationId:
       type: string
       pattern: ^m-[0-9a-f]{32}$
       minLength: 34
       maxLength: 34
-    InvalidParameterException: {}
-    DirectoryUnavailableException: {}
-    IdempotencyClientToken:
-      type: string
-      pattern: '[\x21-\x7e]+'
-      minLength: 1
-      maxLength: 128
-    LimitExceededException: {}
-    Boolean:
-      type: boolean
-    Domains:
-      type: array
-      items:
-        $ref: '#/components/schemas/Domain'
-      minItems: 0
-      maxItems: 5
     OrganizationName:
       type: string
       pattern: ^(?!d-)([\da-zA-Z]+)([-][\da-zA-Z]+)*
       minLength: 1
       maxLength: 62
-    DomainName:
-      type: string
-      pattern: '[a-zA-Z0-9.-]+\.[a-zA-Z-]{2,}'
-      minLength: 3
-      maxLength: 255
-    HostedZoneId:
-      type: string
-      pattern: '[\S\s]*'
-      minLength: 1
-      maxLength: 32
+    DirectoryUnavailableException: {}
     Domain:
       type: object
       properties:
@@ -265,12 +240,32 @@ components:
       pattern: ^d-[0-9a-f]{10}$
       minLength: 12
       maxLength: 12
-    DirectoryInUseException: {}
+    Boolean:
+      type: boolean
+    NameAvailabilityException: {}
     KmsKeyArn:
       type: string
       pattern: arn:aws:kms:[a-z0-9-]*:[a-z0-9-]+:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}
       minLength: 20
       maxLength: 2048
+    HostedZoneId:
+      type: string
+      pattern: '[\S\s]*'
+      minLength: 1
+      maxLength: 32
+    DomainName:
+      type: string
+      pattern: '[a-zA-Z0-9.-]+\.[a-zA-Z-]{2,}'
+      minLength: 3
+      maxLength: 255
+    InvalidParameterException: {}
+    LimitExceededException: {}
+    Domains:
+      type: array
+      items:
+        $ref: '#/components/schemas/Domain'
+      minItems: 0
+      maxItems: 5
     CreateOrganizationResponse:
       type: object
       properties:
@@ -278,7 +273,30 @@ components:
           allOf:
           - $ref: '#/components/schemas/OrganizationId'
           - description: The organization ID.
+    IdempotencyClientToken:
+      type: string
+      pattern: '[\x21-\x7e]+'
+      minLength: 1
+      maxLength: 128
   parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -297,26 +315,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
