@@ -2048,6 +2048,8 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-workmail-context.jsonld
 common:
+- type: Plans
+  url: plans/amazon-workmail-plans-pricing.yml
 - type: CapabilityMap
   url: capabilities/amazon-workmail-capability-edges.yml
   name: Amazon WorkMail Business Capability Map
