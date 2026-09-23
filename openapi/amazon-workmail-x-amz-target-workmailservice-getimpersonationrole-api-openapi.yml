@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2017-10-01'
   x-release: v4
-  title: 'Amazon WorkMail #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.AssociateDelegateToResource #X Amz Target=WorkMailService.GetImpersonationRole #X Amz Target=WorkMailService.GetImpersonationRole API'
-  description: <p>WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients. You can access your email, contacts, and calendars using Microsoft Outlook, your browser, or other native iOS and Android email applications. You can integrate WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.</p> <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li> <p>Listing and describing organizations</p> </li> </ul> <ul> <li> <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li> </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API operations are Amazon-authenticated and certificate-signed. They not only require the use of the AWS SDK, but also allow for the exclusive use of AWS Identity and Access Management users and roles to help facilitate access, trust, and permission policies. By creating a role and allowing an IAM user to access the WorkMail site, the IAM user gains full administrative visibility into the entire WorkMail organization (or as set in the IAM policy). This includes, but is not limited to, the ability to create, update, and delete users, groups, and resources. This allows developers to perform the scenarios listed above, as well as give users the ability to grant access on a selective basis using the IAM model.</p>
+  title: 'Amazon WorkMail #X Amz Target=WorkMailService.GetImpersonati…'
+  description: WorkMail is a secure, managed business email and calendaring service with support for existing desktop and mobile email clients.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/workmail-2017-10-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -175,110 +176,52 @@ paths:
       - '#X Amz Target=WorkMailService.GetImpersonationRole'
 components:
   schemas:
-    ImpersonationRuleList:
-      type: array
-      items:
-        $ref: '#/components/schemas/ImpersonationRule'
-      minItems: 0
-      maxItems: 10
+    ImpersonationRuleDescription:
+      type: string
+      pattern: '[^\x00-\x09\x0B\x0C\x0E-\x1F\x7F\x3C\x3E\x5C]+'
+      minLength: 1
+      maxLength: 256
+    ResourceNotFoundException: {}
     Timestamp:
       type: string
       format: date-time
-    GetImpersonationRoleResponse:
-      type: object
-      properties:
-        ImpersonationRoleId:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRoleId'
-          - description: The impersonation role ID.
-        Name:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRoleName'
-          - description: The impersonation role name.
-        Type:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRoleType'
-          - description: The impersonation role type.
-        Description:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRoleDescription'
-          - description: The impersonation role description.
-        Rules:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRuleList'
-          - description: The list of rules for the given impersonation role.
-        DateCreated:
-          allOf:
-          - $ref: '#/components/schemas/Timestamp'
-          - description: The date when the impersonation role was created.
-        DateModified:
-          allOf:
-          - $ref: '#/components/schemas/Timestamp'
-          - description: The date when the impersonation role was last modified.
     AccessEffect:
       type: string
       enum:
       - ALLOW
       - DENY
-    ImpersonationRoleDescription:
+    EntityIdentifier:
       type: string
-      pattern: '[^\x00-\x09\x0B\x0C\x0E-\x1F\x7F\x3C\x3E\x5C]+'
+      pattern: '[a-zA-Z0-9._%+@-]+'
       minLength: 1
       maxLength: 256
+    InvalidParameterException: {}
     OrganizationId:
       type: string
       pattern: ^m-[0-9a-f]{32}$
       minLength: 34
       maxLength: 34
-    ImpersonationRuleName:
-      type: string
-      pattern: '[^\x00-\x1F\x7F\x3C\x3E\x5C]+'
-      minLength: 1
-      maxLength: 64
-    ImpersonationRoleId:
-      type: string
-      pattern: '[a-zA-Z0-9_-]+'
-      minLength: 1
-      maxLength: 64
-    ImpersonationRoleName:
-      type: string
-      pattern: '[^\x00-\x1F\x7F\x3C\x3E\x5C]+'
-      minLength: 1
-      maxLength: 64
-    OrganizationNotFoundException: {}
-    ImpersonationRuleId:
-      type: string
-      pattern: '[a-zA-Z0-9_-]+'
-      minLength: 1
-      maxLength: 64
     TargetUsers:
       type: array
       items:
         $ref: '#/components/schemas/EntityIdentifier'
       minItems: 1
       maxItems: 10
-    GetImpersonationRoleRequest:
-      type: object
-      required:
-      - OrganizationId
-      - ImpersonationRoleId
-      title: GetImpersonationRoleRequest
-      properties:
-        OrganizationId:
-          allOf:
-          - $ref: '#/components/schemas/OrganizationId'
-          - description: The WorkMail organization from which to retrieve the impersonation role.
-        ImpersonationRoleId:
-          allOf:
-          - $ref: '#/components/schemas/ImpersonationRoleId'
-          - description: The impersonation role ID to retrieve.
-    ResourceNotFoundException: {}
-    InvalidParameterException: {}
     ImpersonationRoleType:
       type: string
       enum:
       - FULL_ACCESS
       - READ_ONLY
+    ImpersonationRoleDescription:
+      type: string
+      pattern: '[^\x00-\x09\x0B\x0C\x0E-\x1F\x7F\x3C\x3E\x5C]+'
+      minLength: 1
+      maxLength: 256
+    ImpersonationRoleName:
+      type: string
+      pattern: '[^\x00-\x1F\x7F\x3C\x3E\x5C]+'
+      minLength: 1
+      maxLength: 64
     ImpersonationRule:
       type: object
       required:
@@ -310,20 +253,90 @@ components:
           - $ref: '#/components/schemas/TargetUsers'
           - description: A list of user IDs that don't match the rule.
       description: The rules for the given impersonation role.
-    ImpersonationRuleDescription:
+    GetImpersonationRoleResponse:
+      type: object
+      properties:
+        ImpersonationRoleId:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRoleId'
+          - description: The impersonation role ID.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRoleName'
+          - description: The impersonation role name.
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRoleType'
+          - description: The impersonation role type.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRoleDescription'
+          - description: The impersonation role description.
+        Rules:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRuleList'
+          - description: The list of rules for the given impersonation role.
+        DateCreated:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The date when the impersonation role was created.
+        DateModified:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The date when the impersonation role was last modified.
+    ImpersonationRuleList:
+      type: array
+      items:
+        $ref: '#/components/schemas/ImpersonationRule'
+      minItems: 0
+      maxItems: 10
+    GetImpersonationRoleRequest:
+      type: object
+      required:
+      - OrganizationId
+      - ImpersonationRoleId
+      title: GetImpersonationRoleRequest
+      properties:
+        OrganizationId:
+          allOf:
+          - $ref: '#/components/schemas/OrganizationId'
+          - description: The WorkMail organization from which to retrieve the impersonation role.
+        ImpersonationRoleId:
+          allOf:
+          - $ref: '#/components/schemas/ImpersonationRoleId'
+          - description: The impersonation role ID to retrieve.
+    ImpersonationRoleId:
       type: string
-      pattern: '[^\x00-\x09\x0B\x0C\x0E-\x1F\x7F\x3C\x3E\x5C]+'
+      pattern: '[a-zA-Z0-9_-]+'
       minLength: 1
-      maxLength: 256
-    EntityIdentifier:
+      maxLength: 64
+    ImpersonationRuleId:
       type: string
-      pattern: '[a-zA-Z0-9._%+@-]+'
+      pattern: '[a-zA-Z0-9_-]+'
       minLength: 1
-      maxLength: 256
+      maxLength: 64
+    OrganizationNotFoundException: {}
+    ImpersonationRuleName:
+      type: string
+      pattern: '[^\x00-\x1F\x7F\x3C\x3E\x5C]+'
+      minLength: 1
+      maxLength: 64
     OrganizationStateException: {}
   parameters:
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -340,26 +353,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
