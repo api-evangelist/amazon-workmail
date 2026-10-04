@@ -37,7 +37,6 @@ tags:
 - Business Communication
 - Calendar
 - Email
-- Exchange
 - Enterprise
 url: https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -171,3 +170,5 @@ maintainers:
   email: kin@apievangelist.com
 x-parent: amazon-web-services
 x-relationship: product
+x-tags-removed:
+- Exchange
