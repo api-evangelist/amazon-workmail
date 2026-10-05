@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 17
+edge_count: 18
 edges:
 - tag: '#X Amz Target=WorkMailService.GetAccessControlEffect'
   spec_file: amazon-workmail-x-amz-target-workmailservice-getaccesscontroleffect-api-openapi.yml
@@ -172,3 +172,16 @@ edges:
   evidence: UpdateImpersonationRole; schemas AccessEffect, ImpersonationRule, TargetUsers, ImpersonationRoleType
   reason: Defines roles and rules granting one identity access to other users' mailboxes with allow/deny
     effects — access rights administration, i.e. Identity & Access Management.
+- tag: Amazon WorkMail
+  spec_file: amazon-workmail-amazon-workmail-api-openapi.yml
+  capability_id: BC-600
+  capability_id_l1: BC-600
+  capability_name: Information Technology Management
+  confidence: 0.7
+  evidence: '"WorkMail is a secure, managed business email and calendaring service"; operations "CreateUser",
+    "CreateGroup", "CreateOrganization", "CreateMobileDeviceAccessRule", "DeleteMailboxPermissionsRequest"'
+  reason: This is administration of a corporate email/calendar application — provisioning organizations,
+    users, groups, mailbox permissions and mobile device access rules. That is enterprise IT service/application
+    administration (BC-600), not HR employee records despite the user-centric nouns. Left at L1 because
+    the surface spans application administration, identity provisioning and device policy without one
+    dominant sub-capability.
