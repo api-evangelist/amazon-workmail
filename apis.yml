@@ -66,6 +66,8 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-workmail-context.jsonld
 common:
+- type: Pricing
+  url: https://aws.amazon.com/workmail/pricing/
 - type: Plans
   url: plans/amazon-workmail-plans-pricing.yml
 - type: CapabilityMap
