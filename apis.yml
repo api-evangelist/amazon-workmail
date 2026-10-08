@@ -66,6 +66,10 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-workmail-context.jsonld
 common:
+- type: RateLimits
+  url: rate-limits/amazon-workmail-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-workmail-finops.yml
 - type: Pricing
   url: https://aws.amazon.com/workmail/pricing/
 - type: Plans
