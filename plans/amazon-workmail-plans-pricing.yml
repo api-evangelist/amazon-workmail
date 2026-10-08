@@ -25,3 +25,18 @@ plans:
   period: month
   unit: user
   included_quota: 50 GB of mailbox storage for each user; 30-day free trial for up to 25 users
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units:
+  - seat
+  plans:
+  - name: Amazon WorkMail
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
