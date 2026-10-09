@@ -1,17 +1,76 @@
-generated: '2026-07-15'
+generated: '2026-09-23'
 method: generated
-source: openapi/amazon-workmail-openapi-original.yaml
+source: openapi/amazon-workmail-x-amz-target-workmailservice-associatedelegatetoresource-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-associatemembertogroup-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-assumeimpersonationrole-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-cancelmailboxexportjob-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-createalias-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-createavailabilityconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-creategroup-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-createimpersonationrole-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-createmobiledeviceaccessrule-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-createorganization-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-createresource-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-createuser-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-deleteaccesscontrolrule-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deletealias-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-deleteavailabilityconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deleteemailmonitoringconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deletegroup-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-deleteimpersonationrole-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deletemailboxpermissions-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessoverride-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deletemobiledeviceaccessrule-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deleteorganization-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-deleteresource-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deleteretentionpolicy-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deleteuser-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-deregisterfromworkmail-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-deregistermaildomain-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-describeemailmonitoringconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-describegroup-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-describeinbounddmarcsettings-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-describemailboxexportjob-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-describeorganization-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-describeresource-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-describeuser-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-disassociatedelegatefromresource-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-disassociatememberfromgroup-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getaccesscontroleffect-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getdefaultretentionpolicy-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getimpersonationrole-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getimpersonationroleeffect-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getmailboxdetails-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-getmaildomain-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccesseffect-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-getmobiledeviceaccessoverride-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listaccesscontrolrules-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listaliases-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-listavailabilityconfigurations-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listgroupmembers-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-listgroups-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listimpersonationroles-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listmailboxexportjobs-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listmailboxpermissions-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listmaildomains-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessoverrides-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listmobiledeviceaccessrules-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listorganizations-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-listresourcedelegates-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listresources-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-listtagsforresource-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-listusers-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-putaccesscontrolrule-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-putemailmonitoringconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-putinbounddmarcsettings-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-putmailboxpermissions-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-putmobiledeviceaccessoverride-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-putretentionpolicy-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-registermaildomain-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-registertoworkmail-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-resetpassword-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-startmailboxexportjob-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-tagresource-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-testavailabilityconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-untagresource-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-updateavailabilityconfiguration-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-updatedefaultmaildomain-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-updateimpersonationrole-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-updatemailboxquota-api-openapi.yml, openapi/amazon-workmail-x-amz-target-workmailservice-updatemobiledeviceaccessrule-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-updateprimaryemailaddress-api-openapi.yml,
+  openapi/amazon-workmail-x-amz-target-workmailservice-updateresource-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 80
   by_action_class:
-    acting: 80
+    acting: 59
+    connected: 21
   by_consequence:
-    write: 71
-    safety-critical: 9
-  human_in_the_loop_required: 9
+    write: 51
+    safety-critical: 8
+    read: 21
+  human_in_the_loop_required: 8
 operations:
 - path: /#X-Amz-Target=WorkMailService.AssociateDelegateToResource
   method: post
@@ -609,98 +668,62 @@ operations:
   method: post
   operationId: GetDefaultRetentionPolicy
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.GetImpersonationRole
   method: post
   operationId: GetImpersonationRole
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.GetImpersonationRoleEffect
   method: post
   operationId: GetImpersonationRoleEffect
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=WorkMailService.GetMailDomain
-  method: post
-  operationId: GetMailDomain
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.GetMailboxDetails
   method: post
   operationId: GetMailboxDetails
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=WorkMailService.GetMailDomain
+  method: post
+  operationId: GetMailDomain
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.GetMobileDeviceAccessEffect
   method: post
   operationId: GetMobileDeviceAccessEffect
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.GetMobileDeviceAccessOverride
   method: post
   operationId: GetMobileDeviceAccessOverride
@@ -737,242 +760,152 @@ operations:
   method: post
   operationId: ListAliases
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListAvailabilityConfigurations
   method: post
   operationId: ListAvailabilityConfigurations
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListGroupMembers
   method: post
   operationId: ListGroupMembers
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListGroups
   method: post
   operationId: ListGroups
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListImpersonationRoles
   method: post
   operationId: ListImpersonationRoles
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=WorkMailService.ListMailDomains
-  method: post
-  operationId: ListMailDomains
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListMailboxExportJobs
   method: post
   operationId: ListMailboxExportJobs
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListMailboxPermissions
   method: post
   operationId: ListMailboxPermissions
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=WorkMailService.ListMailDomains
+  method: post
+  operationId: ListMailDomains
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListMobileDeviceAccessOverrides
   method: post
   operationId: ListMobileDeviceAccessOverrides
   x-agentic-access:
-    action-class: acting
-    consequence: safety-critical
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 120
-      exchange: true
-      purpose-required: true
-      proof-of-possession: true
-    escalation:
-      human-in-the-loop: required
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListMobileDeviceAccessRules
   method: post
   operationId: ListMobileDeviceAccessRules
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListOrganizations
   method: post
   operationId: ListOrganizations
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListResourceDelegates
   method: post
   operationId: ListResourceDelegates
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListResources
   method: post
   operationId: ListResources
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListTagsForResource
   method: post
   operationId: ListTagsForResource
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.ListUsers
   method: post
   operationId: ListUsers
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=WorkMailService.PutAccessControlRule
   method: post
   operationId: PutAccessControlRule
