@@ -26,7 +26,7 @@ plans:
   unit: user
   included_quota: 50 GB of mailbox storage for each user; 30-day free trial for up to 25 users
 x-canonical:
-  generated: '2026-11-01'
+  generated: '2026-11-02'
   vocabulary: engine/economics/plans-canonical.yml
   models: []
   units:
