@@ -5,12 +5,24 @@ artifacts:
   agentic-access/amazon-workmail-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-workmail-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-workmail-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-workmail-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  cli/amazon-workmail-cli.yml:
+    method: searched
+    evidence: declared in the artifact
   collections/amazon-workmail-x-amz-target-workmailservice-associatedelegatetoresource-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -491,6 +503,18 @@ artifacts:
   collections/amazon-workmail-x-amz-target-workmailservice-updateresource-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  conformance/amazon-workmail-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-workmail-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  errors/amazon-workmail-error-codes.yml:
+    method: searched
+    evidence: declared in the artifact
+  errors/amazon-workmail-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/workmail-access-control-rule-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -935,6 +959,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-workmail-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -942,6 +969,60 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-ld/amazon-workmail-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-create-mobile-device-access-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-delete-identity-provider-configuration-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-delete-identity-provider-configuration-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-deregister-from-work-mail-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-describe-identity-provider-configuration-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-describe-identity-provider-configuration-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-describe-mailbox-export-job-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-describe-user-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-get-personal-access-token-metadata-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-list-groups-for-entity-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-put-access-control-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-put-identity-provider-configuration-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-put-identity-provider-configuration-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-put-mailbox-permissions-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-register-to-work-mail-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-update-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-update-mobile-device-access-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-workmail-update-user-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/workmail-access-control-rule-action-schema.json:
@@ -2849,7 +2930,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -2918,10 +2999,21 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-workmail-openapi-original.yaml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  lifecycle/amazon-workmail-lifecycle.yml:
+    method: searched
+    evidence: declared in the artifact
+  llms/amazon-workmail-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-workmail-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-workmail-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-workmail-amazon-workmail-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -2931,6 +3023,12 @@ artifacts:
   openapi/amazon-workmail-operations-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-workmail-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-workmail-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-workmail-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -3174,10 +3272,16 @@ artifacts:
   postman/amazon-workmail-x-amz-target-workmailservice-updateresource-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  privacy/amazon-workmail-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-workmail-rate-limits.yml:
-    method: generated
+    method: searched
     evidence: declared in the artifact
   rules/amazon-workmail-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-workmail-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-workmail-spectral-rules.yml:
@@ -3196,8 +3300,27 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/workmail-2017-10-01.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/workmail/service/2017-10-01/workmail-2017-10-01.json
+      (sha256 6fffab8ab53d, fetched 2026-11-11T21:16:20+00:00)
+  terms/amazon-workmail-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-workmail-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-workmail-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-workmail-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-workmail-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-workmail-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-workmail-well-known.yml:
     method: unknown
     evidence: no authorship recorded

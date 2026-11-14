@@ -1,10 +1,14 @@
 aid: amazon-workmail
+
 name: Amazon WorkMail
-description: Amazon WorkMail is a secure, managed business email and calendar service with support for existing desktop and
-  mobile email client applications. It provides encrypted mailboxes, corporate calendaring, full Outlook compatibility, and
-  enterprise-grade security controls for business communications. WorkMail integrates with Active Directory, supports IMAP
-  and Exchange ActiveSync for mobile devices, and provides 80 API operations for programmatic management.
+
+description: Amazon WorkMail is a secure, managed business email and calendar service with support for existing desktop and mobile email client
+  applications. It provides encrypted mailboxes, corporate calendaring, full Outlook compatibility, and enterprise-grade security controls for
+  business communications. WorkMail integrates with Active Directory, supports IMAP and Exchange ActiveSync for mobile devices, and provides 80
+  API operations for programmatic management.
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -17,6 +21,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -28,10 +33,12 @@ accessModel:
   source:
   - plans
   - authentication
+  - rate-limits
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-workmail.png
+
 tags:
 - Amazon Web Services
 - Business Communication
@@ -44,57 +51,62 @@ tags_raw:
 - Calendar
 - Email
 - Enterprise
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-workmail/refs/heads/main/apis.yml
+
 created: '2026-03-16'
+
 modified: '2026-05-19'
+
 specificationVersion: '0.23'
-apis:
-- aid: amazon-workmail:amazon-workmail-amazon-workmail-api
-  name: Amazon WorkMail Amazon WorkMail API
-  description: The Amazon WorkMail API from Amazon WorkMail — 80 operation(s) for amazon workmail.
-  humanURL: https://aws.amazon.com/workmail/
-  baseURL: https://workmail.amazonaws.com
-  tags:
-  - Amazon WorkMail
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workmail-amazon-workmail-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
-  - type: APIReference
-    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
-  - type: GettingStarted
-    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
-  - type: Pricing
-    url: https://aws.amazon.com/workmail/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/workmail/faqs/
-  - type: JSONLD
-    url: json-ld/amazon-workmail-context.jsonld
-- aid: amazon-workmail:amazon-workmail-identity-provider-configuration-api
-  name: Amazon WorkMail Workmail Identity Provider Configuration API
-  description: >-
-    The Workmail Identity Provider Configuration API from Amazon WorkMail — 3 operation(s) for workmail
-    identity provider configuration.
-  humanURL: https://aws.amazon.com/workmail/
-  baseURL: https://workmail.amazonaws.com
-  tags:
-  - Workmail Identity Provider Configuration
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workmail-identity-provider-configuration-api-openapi.yml
-- aid: amazon-workmail:amazon-workmail-operations-api
-  name: Amazon WorkMail Workmail Operations API
-  description: >-
-    The Workmail Operations API from Amazon WorkMail — 9 operation(s) for workmail operations.
-  humanURL: https://aws.amazon.com/workmail/
-  baseURL: https://workmail.amazonaws.com
-  tags:
-  - Workmail Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-workmail-operations-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Spectral
+  url: rules/amazon-workmail-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-workmail-rules.yml
+- type: Spectral
+  url: rules/amazon-workmail-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-workmail-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-workmail-data-model.yml
+- type: CLI
+  url: cli/amazon-workmail-cli.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: Deprecation
+  url: https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html
+- type: Lifecycle
+  url: lifecycle/amazon-workmail-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/amazon-workmail-error-codes.yml
+- type: ErrorCatalog
+  url: errors/amazon-workmail-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-workmail-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-workmail-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-workmail-security.txt
+- type: WellKnown
+  url: well-known/amazon-workmail-well-known.yml
+- type: Hosts
+  url: hosts/amazon-workmail-hosts.yml
+- type: Vendors
+  url: vendors/amazon-workmail-vendors.yml
+- type: SDKs
+  url: packages/amazon-workmail-packages.yml
+- type: Packages
+  url: packages/amazon-workmail-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
 - type: RateLimits
   url: rate-limits/amazon-workmail-rate-limits.yml
 - type: FinOps
@@ -147,16 +159,14 @@ common:
 - type: Features
   data:
   - name: Outlook Compatibility
-    description: Native support for Microsoft Outlook on Windows and Mac OS X with free/busy scheduling, delegation, and out-of-office
-      replies.
+    description: Native support for Microsoft Outlook on Windows and Mac OS X with free/busy scheduling, delegation, and out-of-office replies.
   - name: Enterprise-Grade Security
     description: Automatic encryption at rest using AWS KMS and SSL encryption in transit with spam and virus protection.
   - name: Active Directory Integration
-    description: Integration with AWS Directory Service AD Connector and Microsoft Active Directory for seamless enterprise
-      authentication.
+    description: Integration with AWS Directory Service AD Connector and Microsoft Active Directory for seamless enterprise authentication.
   - name: Mobile Device Management
-    description: Exchange ActiveSync support with remote device encryption, lock, password reset, and wipe capabilities across
-      iOS, Android, and Windows.
+    description: Exchange ActiveSync support with remote device encryption, lock, password reset, and wipe capabilities across iOS, Android, and
+      Windows.
   - name: Exchange Interoperability
     description: Hybrid environments with Microsoft Exchange Server 2010 and 2013 for gradual migration scenarios.
   - name: Administrative SDK
@@ -191,6 +201,93 @@ common:
     description: Native Outlook MAPI support for Windows and Mac desktops.
 - type: Integrations
   url: https://aws.amazon.com/partners/
+- type: UsageTerms
+  url: terms/amazon-workmail-terms-of-service.yml
+- type: DataProcessing
+  url: privacy/amazon-workmail-privacy-policy.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-workmail-ai-preferences.yml
+
+apis:
+- aid: amazon-workmail:amazon-workmail-amazon-workmail-api
+  name: Amazon WorkMail Amazon WorkMail API
+  description: The Amazon WorkMail API from Amazon WorkMail — 80 operation(s) for amazon workmail.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - Amazon WorkMail
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-amazon-workmail-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/workmail/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started.html
+  - type: Pricing
+    url: https://aws.amazon.com/workmail/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/workmail/faqs/
+  - type: JSONLD
+    url: json-ld/amazon-workmail-context.jsonld
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-describe-user-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-update-mobile-device-access-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-create-mobile-device-access-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-put-mailbox-permissions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-put-access-control-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-describe-mailbox-export-job-response-schema.json
+- aid: amazon-workmail:amazon-workmail-identity-provider-configuration-api
+  name: Amazon WorkMail Workmail Identity Provider Configuration API
+  description: The Workmail Identity Provider Configuration API from Amazon WorkMail — 3 operation(s) for workmail identity provider configuration.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - Workmail Identity Provider Configuration
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-identity-provider-configuration-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-put-identity-provider-configuration-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-describe-identity-provider-configuration-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-delete-identity-provider-configuration-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-describe-identity-provider-configuration-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-delete-identity-provider-configuration-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-put-identity-provider-configuration-response-schema.json
+- aid: amazon-workmail:amazon-workmail-operations-api
+  name: Amazon WorkMail Workmail Operations API
+  description: The Workmail Operations API from Amazon WorkMail — 9 operation(s) for workmail operations.
+  humanURL: https://aws.amazon.com/workmail/
+  baseURL: https://workmail.amazonaws.com
+  tags:
+  - Workmail Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-workmail-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-update-user-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-list-groups-for-entity-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-get-personal-access-token-metadata-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-register-to-work-mail-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-update-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-workmail-deregister-from-work-mail-request-schema.json
+
 integrations:
 - name: Partner Programs
 - name: Resources
@@ -200,10 +297,15 @@ integrations:
 - name: AWS Partner Central
 - name: Partner Paths
 - name: co-sell with AWS
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
 x-parent: amazon-web-services
+
 x-relationship: product
+
 x-tags-removed:
 - Exchange
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v6
